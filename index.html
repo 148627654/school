@@ -1,0 +1,1722 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<!-- 元数据 -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 注意：上面三个 meta 标签应放在 head 的最前面，其他 head 内容应放在其后 -->
+
+	<!-- 字体 -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+		rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+	<!-- 网站标题 -->
+	<title>ACP SS 2026</title>
+
+	<!-- 网站图标 (favicon) -->
+	<link rel="shortcut icon" type="image/icon" href="assets\images\ACP_2.png" />
+
+	<!-- font-awesome 图标样式 -->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<!-- linearicons 图标样式 -->
+	<link rel="stylesheet" href="assets/css/linearicons.css">
+
+	<!-- flaticon 图标样式 -->
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+
+	<!-- 动画样式 -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+	<!-- 轮播样式 (owl.carousel) -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+	<!-- Bootstrap 样式 -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- 导航栏样式 (bootsnav) -->
+	<link rel="stylesheet" href="assets/css/bootsnav.css">
+
+	<!-- 站点样式 (style.css) -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- 响应式样式 (responsive.css) -->
+
+
+	<!-- 为 IE8 提供 HTML5 元素和媒体查询支持的 HTML5 shim 和 Respond.js -->
+	<!-- 警告：通过 file:// 打开时 Respond.js 可能无法正常工作 -->
+
+	<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body style="background-color:rgba(162, 180, 165, 0.555);">
+	<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+	<!-- 欢迎区（hero）: 主页面顶部信息和倒计时 -->
+	<section id="home" class="welcome-hero">
+
+		<!-- 顶部区域：包含站点头部和导航 -->
+		<div class="top-area">
+			<div class="header-area">
+				<!-- 导航开始 -->
+				<nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"
+					data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+					<div class="container">
+
+						<!-- 头部导航 -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#navbar-menu">
+								<i class="fa fa-bars"></i>
+							</button>
+
+							<a class="navbar-brand" href="index.html"> <img src="assets/images/ACP_2.png" alt="ACP logo"
+									width="60"> ACP Summer School 2026<span></span></a>
+
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+							<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+								<li class=" scroll active"><a href="#home">home</a></li>
+								<li class="scroll"><a href="#schedule">schedule</a></li>
+								<li class="scroll"><a href="#speakers">speakers</a></li>
+								<li class="scroll"><a href="#venue">venue</a></li>
+								<li class="scroll"><a href="#registration-details">registration</a></li>
+								<li class="scroll"><a href="#sponsors">sponsors</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<!-- 导航结束 -->
+			</div>
+			<div class="clearfix"></div>
+
+		</div>
+
+		<div class="container">
+			<div class="welcome-hero-txt">
+				<h2>ACP Summer School 2026</h2>
+				<p>
+					CP: Explanation, Verification and Applications <br>
+					Changchun, China<br>
+					August 24 - 28, 2026<br>
+				</p>
+				<button class="welcome-btn"
+					onclick="window.location.href='index.html#registration-details'">Registration
+					details</button>
+			</div>
+		</div>
+		<!-- 倒计时容器 -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="model-search-content" id="countdown-container">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<h2 style="margin-bottom: 30px; font-size: 24px; text-transform: uppercase;">
+									ACP Summer School 2026 Starts In
+								</h2>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single-countdown-item">
+									<div class="countdown-value" id="months">00</div>
+									<div class="countdown-label">Months</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single-countdown-item">
+									<div class="countdown-value" id="weeks">00</div>
+									<div class="countdown-label">Weeks</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single-countdown-item">
+									<div class="countdown-value" id="days">00</div>
+									<div class="countdown-label">Days</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6">
+								<div class="single-countdown-item">
+									<div class="countdown-value" id="hours">00</div>
+									<div class="countdown-label">Hours</div>
+								</div>
+							</div>
+
+							<!-- 注：隐藏的重复信息已移除 -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- 欢迎区结束 -->
+
+	<!-- ACP 介绍区 -->
+	<section id="acp-intro" class="acp-intro">
+		<div class="container">
+			<div class="section-header">
+				<h2>About the Summer School</h2>
+			</div><!-- 结束：section-header -->
+			<div class="service-content">
+				<!-- 新增的链接内容 -->
+				<div class="row mb-4">
+					<div class="col-md-12 text-center">
+						<p>ACP Summer School is committed to creating an inclusive environment. Please refer to our
+							<a href="https://www.a4cp.org/events/duty-of-respect-equal-opportunity" target="_blank"
+								style="color: blue;">Duty of Respect and Equal Opportunity Policy</a>.
+						</p>
+					</div>
+				</div>
+				<!-- 原有的三个div内容 -->
+				<div class="row">
+					<!-- 左侧内容 -->
+					<div class="col-md-4 col-sm-12">
+						<div class="single-service-item" style="padding-top: 20px; height: 100%;">
+							<div class="single-service-icon">
+								<i class="flaticon-book"></i>
+							</div>
+							<h2><a href="#">series <span>overview</span></a></h2>
+							<p>
+								The ACP Summer School series was spear-headed by the Association for Constraint
+								Programming (CP) as a means to augment and complement university teaching of CP, and to
+								disseminate a core body of CP knowledge supporting the recognition of CP as a mature and
+								relevant technology for use in industry. ACP Summer School 2026 will be hosted by the
+								Jilin University and held in Changchun, China, during August 24-28, 2026.
+							</p>
+						</div>
+					</div>
+
+					<!-- 中间内容 -->
+					<div class="col-md-4 col-sm-12">
+						<div class="single-service-item" style="padding-top: 20px; height: 100%;">
+							<div class="single-service-icon">
+								<i class="flaticon-graduation-cap"></i>
+							</div>
+							<h2><a href="#">2026 <span>program</span></a></h2>
+							<p>
+								The Summer School, themed “CP: Explanation, Verification and Applications”, will have
+								eight international experts to provide a general introduction to CP and applications in
+								addition to specialised topics. Learning activities include lectures and hands-on
+								sessions. A hackathon will also be organised allowing learners to further practise their
+								skills. There will also be Teaching Assistants to guide the learners and enhance their
+								learning experience.
+							</p>
+						</div>
+					</div>
+
+					<!-- 右侧内容 -->
+					<div class="col-md-4 col-sm-12">
+						<div class="single-service-item" style="padding-top: 20px; height: 100%;">
+							<div class="single-service-icon">
+								<i class="flaticon-users"></i>
+							</div>
+							<h2><a href="#">target <span>audience</span></a></h2>
+							<p>
+								PhD and Masters students, young PhD graduates and industrial practitioners who want to
+								gain a good understanding of CP and its current research directions are all welcome.
+								Prior knowledge of CP is not assumed, but general problem-solving skills, good
+								programming and mathematical know-how are useful.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ACP 介绍结束 -->
+
+	<!-- 吉林大学介绍 区 -->
+	<section id="service" class="service">
+		<div class="container">
+			<div class="section-header">
+				<h2>about jilin university</h2>
+			</div><!-- 结束：section-header -->
+
+			<!-- 2x2四宫格布局：左上角图片（完全居中），其余三个区域放内容 -->
+			<div class="row g-4 mb-5">
+				<!-- 2. 右上角：内容区域1 -->
+				<div class="col-md-6 col-sm-12">
+					<div class="h-100 p-4 bg-light rounded-5 shadow-sm">
+						<div class="single-service-img">
+							<img src="assets\images\JLU.jpg" alt="JLU" width="70%" height="70%">
+						</div>
+					</div>
+				</div>
+				<!-- 2. 右上角：内容区域1 -->
+				<div class="col-md-6 col-sm-12">
+					<div class="h-100 p-4 bg-light rounded-5 shadow-sm">
+						<div class="single-service-item">
+							<div class="single-service-icon">
+								<i class="flaticon-graduation-cap"></i>
+							</div>
+							<h2><a href="#">Rich <span>history</span></a></h2>
+							<p>
+								Founded in 1946, Jilin University (JLU) is one of China's key comprehensive universities
+								under the direct administration of the Ministry of Education. It has developed a
+								multidisciplinary system covering 13 major fields including philosophy, economics, law,
+								science, engineering, medicine, and management.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- 3. 左下角：内容区域2 -->
+				<div class="col-md-6 col-sm-12">
+					<div class="h-100 p-4 bg-light rounded-5 shadow-sm">
+						<div class="single-service-item">
+							<div class="single-service-icon">
+								<i class="flaticon-graduation-cap"></i>
+							</div>
+							<h2><a href="#">academic <span>excellence</span></a></h2>
+							<p>
+								Jilin University boasts a team of distinguished faculty members, including academicians
+								of the Chinese Academy of Sciences and Engineering. It has state-of-the-art research
+								facilities and fosters a vibrant academic community that promotes innovation and
+								collaboration.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- 4. 右下角：内容区域3 -->
+				<div class="col-md-6 col-sm-12">
+					<div class="h-100 p-4 bg-light rounded-5 shadow-sm">
+						<div class="single-service-item">
+							<div class="single-service-icon">
+								<i class="flaticon-globe"></i>
+							</div>
+							<h2><a href="#">international <span>cooperation</span></a></h2>
+							<p>
+								JLU has established cooperative relationships with over 300 universities and research
+								institutions worldwide. It promotes student exchange programs, joint research projects,
+								and academic seminars, fostering a global perspective among students and faculty.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 吉林大学介绍 结束 -->
+
+	<!-- 日程区 -->
+	<section id="schedule" class="schedule">
+		<div class="container">
+			<div class="section-header text-center">
+				<!-- <p>august 24-28, 2026</p> -->
+				<h2>event schedule</h2>
+			</div>
+			<div class="new-cars-content">
+				<h2 style="text-align: center;">TBD</h2>
+			</div>
+
+		</div>
+		<!-- <div class="container">
+			<div class="section-header text-center"> 
+				<p>august 24-28, 2026</p>
+				<h2>event schedule TBD</h2>
+			</div>
+			<div class="new-cars-content">
+				<div class="owl-carousel owl-theme" id="new-cars-carousel">
+					<div class="new-cars-item">
+						<div class="single-new-cars-item">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 col-sm-12">
+									<div class="new-cars-txt">
+										<h2><a href="#">day 1 <span>august 24</span></a></h2>
+										<table class="schedule-table">
+											<tr>
+												<td class="time-col">09:00 - 10:00</td>
+												<td>Opening Ceremony<br>Group Photo</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">10:00 - 10:30</td>
+												<td>Coffee Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">10:30 - 12:00</td>
+												<td>Invited Talk<br>XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">12:00 - 14:00</td>
+												<td>Lunch Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">14:00 - 15:00</td>
+												<td>Lab session<br>XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">15:00 - 15:15</td>
+												<td>Coffee Break</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">15:15 - 16:15</td>
+												<td>Lab session<br>XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr>
+												<td class="time-col">16:30 - 17:10</td>
+												<td>Lecture</td>
+											</tr>
+											<tr>
+												<td class="time-col">18:30 - 20:30</td>
+												<td>Dinner</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="new-cars-item">
+						<div class="single-new-cars-item">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 col-sm-12">
+									<div class="new-cars-txt">
+										<h2><a href="#">day 2 <span>august 25</span></a></h2>
+										<table class="schedule-table">
+											<tr>
+												<td class="time-col">09:00 - 10:30</td>
+												<td>Invited Talk<br>XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">10:30 - 11:00</td>
+												<td>Coffee Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">11:00 - 12:30</td>
+												<td>Invited Talk<br>XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">12:30 - 14:00</td>
+												<td>Lunch Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">14:00 - 15:30</td>
+												<td>Lab Session<br>Lab: XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">15:30 - 16:00</td>
+												<td>Coffee Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">16:00 - 17:30</td>
+												<td>Social event</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">18:00 - 19:30</td>
+												<td>Social Dinner</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">19:30 - 21:30</td>
+												<td>Bonfire party</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="new-cars-item">
+						<div class="single-new-cars-item">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 col-sm-12">
+									<div class="new-cars-txt">
+										<h2><a href="#">day 3 <span>august 26</span></a></h2>
+										<table class="schedule-table">
+											<tr>
+												<td class="time-col">09:00 - 10:30</td>
+												<td>Invited Talk<br>XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">10:30 - 11:00</td>
+												<td>Coffee Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">11:00 - 12:30</td>
+												<td>Lecture<br>XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">12:30 - 14:00</td>
+												<td>Lunch Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">14:00 - 15:30</td>
+												<td>Lab Session<br>Lab: XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">15:30 - 16:00</td>
+												<td>Coffee Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">16:00 - 17:30</td>
+												<td>Invited Talk<br>XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">18:30 - 20:30</td>
+												<td>Dinner</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="new-cars-item">
+						<div class="single-new-cars-item">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 col-sm-12">
+									<div class="new-cars-txt">
+										<h2><a href="#">day 4 <span>august 27</span></a></h2>
+										<table class="schedule-table">
+											<tr>
+												<td class="time-col">09:00 - 10:30</td>
+												<td>Invited Talk<br>XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">10:30 - 11:00</td>
+												<td>Coffee Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">11:00 - 12:30</td>
+												<td>Invited Talk<br>XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">12:30 - 14:00</td>
+												<td>Lunch Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">14:00 - 15:30</td>
+												<td>Lab Session<br>Lab: XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">15:30 - 16:00</td>
+												<td>Coffee Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">16:00 - 17:30</td>
+												<td>Invited Talk<br>XXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">18:30 - 20:30</td>
+												<td>Dinner</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="new-cars-item">
+						<div class="single-new-cars-item">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 col-sm-12">
+									<div class="new-cars-txt">
+										<h2><a href="#">day 5 <span>august 28</span></a></h2>
+										<table class="schedule-table">
+											<tr>
+												<td class="time-col">09:00 - 10:30</td>
+												<td>Public conference</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">10:30 - 11:00</td>
+												<td>Coffee Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">11:00 - 12:00</td>
+												<td>Public conference</td>
+											</tr>
+											<tr class="alt-row">
+												<td class="time-col">12:00 - 14:00</td>
+												<td>Lunch Break</td>
+											</tr>
+											<tr>
+												<td class="time-col">14:00 - 18:30</td>
+												<td>Tour to Lianhua Island</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</section>
+
+
+	<!-- 教师讲座与留言 -->
+	<section id="speakers" class="speakers">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2>our speakers</h2>
+			</div><!-- 结束：section-header -->
+			<div class="featured-cars-content">
+				<!-- 第一行演讲者 -->
+				<div class="row" id="speakers-row-1">
+					<!-- Peter Stuckey -->
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="assets\images\speakers\Peter Stuckey.jpeg" alt="Peter Stuckey">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										Peter Stuckey<br>
+										Monash University<br>
+										Australia
+									</p>
+									<button class="speaker-details-btn" data-target="peter-details" data-row="1"
+										type="button">View Details</button>
+								</div>
+							</div>
+							<div class="featured-ACP-txt">
+								<div id="peter-details" class="speaker-details" style="display: none;">
+									<h4>Peter J. Stuckey</h4>
+									<div style="margin-top: 16px;">
+										<p><strong>Title and official affiliation: </strong> Professor,
+											Monash University
+										</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Topic: </strong>Modelling Discrete Optimisation Problems</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Bio: </strong>Peter J. Stuckey is a Professor in the Department of
+											Data
+											Science and Artificial Intelligences in the Faculty of Information
+											Technology at
+											Monash University.  He is a pioneer in constraint programming, the science
+											of
+											modelling and solving complex combinatorial problems.  His research
+											interests
+											include: discrete optimization; programming languages, in particular
+											declarative
+											programming languages; constraint solving algorithms; path finding;
+											bioinformatics; and constraint-based graphics.  He enjoys problem solving in
+											many areas, having publications in e.g. databases, election science, system
+											security, and timetabling, and working with companies such as Oracle and Rio
+											Tinto on problems that interest them. </p>
+										<p>Peter Stuckey received a B.Sc and Ph.D both in Computer Science from Monash
+											University in 1985 and 1988 respectively.  In 2009 he was recognized as an
+											ACM
+											Distinguished Scientist.  In 2010 he was awarded the Google Australia Eureka
+											Prize for Innovation in Computer Science for his work on lazy clause
+											generation.
+											He was awarded the 2010 University of Melbourne Woodward Medal for most
+											outstanding publication in Science and Technology across the university.  In
+											2019 he was elected as an AAAI Fellow. and awarded the Association of
+											Constraint
+											Programming Award for Research Excellence.</p>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Guido Tack -->
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="assets/images/speakers/Guido Tack.jpeg" alt="Guido Tack">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										Guido Tack<br>
+										Monash University<br>
+										Australia
+									</p>
+									<button class="speaker-details-btn" data-target="guido-details" data-row="1"
+										type="button">View Details</button>
+								</div>
+							</div>
+							<div class="featured-ACP-txt">
+								<div id="guido-details" class="speaker-details" style="display: none;">
+									<h4>Guido Tack</h4>
+									<div style="margin-top: 16px;">
+										<p><strong>Title and official affiliation: </strong> Assoc Prof Guido Tack,
+											Department of Data Science and AI, Monash University, Australia
+										</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Topic: </strong>Fundamentals of Constraint Programming solvers</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Bio: </strong>Guido Tack's research focuses on combinatorial
+											optimisation, in particular architecture and
+											implementation techniques for constraint solvers, translation of constraint
+											modelling languages, and industrial
+											applications. Guido leads the development of the MiniZinc constraint
+											modelling language and toolchain, and he is
+											one of the main developers of the Gecode constraint programming library. His
+											broader research interests include
+											programming languages and computational logic. </p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Alexey Ignatiev -->
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="assets/images/speakers/Alexey Ignatiev.jpeg" alt="Alexey Ignatiev">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										Alexey Ignatiev<br>
+										Monash University<br>
+										Australia
+									</p>
+									<button class="speaker-details-btn" data-target="alexey-details" data-row="1"
+										type="button">View Details</button>
+
+								</div>
+							</div>
+							<div class="featured-ACP-txt">
+								<div id="alexey-details" class="speaker-details" style="display: none;">
+									<h4>Alexey Ignatiev</h4>
+									<div style="margin-top: 16px;">
+										<p><strong>Title and official affiliation: </strong>Associate Professor,
+											Monash University
+										</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Topic: </strong>Efficient Computing with SAT</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Bio: </strong>Alexey Ignatiev is an Associate Professor in the
+											Optimisation research group of the Faculty
+											of Information Technology at Monash University, Melbourne. His research lies
+											at the intersection of
+											propositional satisfiability (SAT), satisfiability modulo theories (SMT),
+											and artificial intelligence, with a
+											focus on developing efficient reasoning and optimization algorithms. Before
+											joining Monash, he worked with Joao
+											Marques-Silva and at the University of Lisbon, Portugal, advancing methods
+											for reasoning with SAT oracles. He
+											did his PhD at the Matrosov Institute for System Dynamics and Control Theory
+											of the Russian Academy of Sciences,
+											where he studied the integration of conflict-driven clause learning with
+											binary decision diagrams. Alexey has
+											authored state-of-the-art solving technology, including the award-winning
+											MaxSAT solver RC2 and the widely
+											adopted PySAT toolkit, which has become a core component of the Python
+											ecosystem for SAT-based problem solving.
+											His recent work also helped establish the foundations of formal explainable
+											AI (FXAI), defining formal abductive
+											and contrastive explanations for machine learning (ML) models and
+											introducing efficient algorithms for their
+											computation and enumeration. </p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Emir Demirovic -->
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="assets/images/speakers/Emir Demirovic.jpg" alt="Emir Demirovic">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										Emir Demirovic<br>
+										Delft University of Technology, Netherlands
+									</p>
+									<button class="speaker-details-btn" data-target="emir-details" data-row="1"
+										type="button">View Details</button>
+								</div>
+							</div>
+							<div class="featured-ACP-txt">
+								<div id="emir-details" class="speaker-details" style="display: none;">
+									<h4>Emir Demirović</h4>
+									<div style="margin-top: 16px;">
+										<p><strong>Title and official affiliation: </strong>Associate Professor, TU
+											Delft
+										</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Topic: </strong>LCG Solving</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Bio: </strong>Emir Demirović is an associate professor of computer
+											science at TU Delft (Netherlands),
+											where he leads the Constraint Solving ("ConSol") research group and directs
+											the Explainable AI in Transportation
+											("XAIT") lab. He has been recognised with the Early Career Researcher Award
+											2025 from the Association for
+											Constraint Programming and is an ELLIS Scholar. His research focuses on
+											exploiting structural properties of
+											NP-hard problems to design algorithms that are both theoretically complete
+											and efficient in practice, with a
+											particular emphasis on constraint programming and dynamic programming
+											techniques. His techniques have advanced
+											state-of-the-art solvers in MaxSAT and constraint programming (achieving
+											high rankings in competitions such as
+											the MaxSAT Evaluation and the MiniZinc Challenge), his optimal decision tree
+											methods (machine learning) are
+											among the fastest, and his recent approach to certifying outputs of
+											constraint programming solvers on
+											large-scale problems has been highlighted by Donald Knuth in The Art of
+											Computer Programming (Vol. 4, Fasc. 7)
+											as a promising advancement. </p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 第一行详情展示区域 -->
+				<div class="row speaker-details-full-row" id="details-row-1" style="display: none; margin: 30px 0;">
+					<div class="col-12">
+						<div class="speaker-full-details"
+							style="padding: 20px; border: 1px solid #dadfe9; border-radius: 5px; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+							<button class="close-details-btn" data-row="1"
+								style="float: right; background: none; border: 1px solid #4e4ffa; color: #4e4ffa; padding: 5px 12px; border-radius: 3px; cursor: pointer;"
+								type="button">
+								Close Details
+							</button>
+							<div class="full-details-content"></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 第二行演讲者 -->
+				<div class="row" id="speakers-row-2">
+					<!-- Tias Guns -->
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="assets/images/speakers/Tias Guns.jpeg" alt="Tias Guns">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										Tias Guns<br>
+										KU Leuven<br>
+										Belgium
+									</p>
+									<button class="speaker-details-btn" data-target="tias-details" data-row="2"
+										type="button">View Details</button>
+								</div>
+							</div>
+							<div class="featured-ACP-txt">
+								<div id="tias-details" class="speaker-details" style="display: none;">
+									<h4>Tias Guns</h4>
+									<div style="margin-top: 16px;">
+										<p><strong>Title and official affiliation: </strong>Professor, KU Leuven,
+											Belgium
+										</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Topic: </strong>Explainable Constraint Programming</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Bio: </strong>Tias Guns is Professor in Computer Science at the DTAI
+											lab of KU Leuven, in Belgium. His
+											research is at the intersection of combinatorial optimisation and machine
+											learning. He was awarded a prestigious
+											5-year ERC Consolidator Grant on "Conversational Human-aware Technologies
+											for Optimisation" in 2021. He has
+											organized a number of workshops and tutorials on the topic of explainable
+											constraint solving, and his CP25 paper
+											"Modeling and Explaining an Industrial Workforce Allocation and Scheduling
+											Problem" won the best application
+											paper award. He is keen to share insights and techniques on this topic at
+											the summer school. </p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Cieran McCreesh -->
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="assets/images/speakers/Cieran McCreesh.jpeg" alt="Cieran McCreesh">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										Cieran McCreesh<br>
+										University of Glasgow<br>
+										UK
+									</p>
+									<button class="speaker-details-btn" data-target="cieran-details" data-row="2"
+										type="button">View Details</button>
+								</div>
+							</div>
+							<div class="featured-ACP-txt">
+								<div id="cieran-details" class="speaker-details" style="display: none;">
+									<h4>Ciaran McCreesh</h4>
+									<div style="margin-top: 16px;">
+										<p><strong>Title and official affiliation: </strong>Royal Academy of Engineering
+											Research Fellow, University of Glasgow
+										</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Topic: </strong>proof logging</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Bio: </strong>A simple writeup to introduce themselves: Ciaran
+											McCreesh is interested in using algorithms
+											to find little graphs inside bigger graphs. To do this, he combines ideas
+											taken from constraint programming and
+											Boolean satisfiability with techniques from algorithm engineering and high
+											performance computing. Recently, his
+											main focus has been in working out how we can be sure that complex algorithm
+											implementations are giving the
+											right answer: he will introduce a technique known as "proof logging", where
+											solvers output not just a solution,
+											but also an independently verifiable mathematical proof of its correctness.
+										</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Helmut Simonis -->
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="assets/images/speakers/Helmut Simonis.jpeg" alt="Helmut Simonis">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										Helmut Simonis<br>
+										University College Cork<br>
+										UK
+									</p>
+									<button class="speaker-details-btn" data-target="helmut-details" data-row="2"
+										type="button">View Details</button>
+								</div>
+							</div>
+							<div class="featured-ACP-txt">
+								<div id="helmut-details" class="speaker-details" style="display: none;">
+									<h4>Helmut Simonis</h4>
+									<div style="margin-top: 16px;">
+										<p><strong>Title and official affiliation: </strong>Senior Research Fellow,
+											Insight Centre for Data Analytics, University College Cork
+										</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Topic: </strong>TBD</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Bio: </strong>The course is delivered by Helmut Simonis, an
+											internationally recognised expert in
+											Constraint Programming since 1986. Helmut has led industrial research
+											projects across Europe, co-founded COSYTEC
+											SA in Paris, France, and has been a key researcher at UCC since 2008. He has
+											received multiple awards for his
+											contributions to scheduling and AI, holds four patents now owned by Cisco
+											Systems, and has decades of experience
+											training organisations to implement AI-powered scheduling solutions. </p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Allen Zhong -->
+					<div class="col-lg-3 col-md-4 col-sm-6">
+						<div class="single-featured-cars">
+							<div class="featured-img-box">
+								<div class="featured-cars-img">
+									<img src="assets/images/speakers/Allen Zhong.jpeg" alt="Allen Zhong">
+								</div>
+								<div class="featured-model-info">
+									<p>
+										Allen Zhong<br>
+										Monash University<br>
+										Australia
+									</p>
+									<button class="speaker-details-btn" data-target="allen-details" data-row="2"
+										type="button">View Details</button>
+								</div>
+							</div>
+							<div class="featured-ACP-txt">
+								<div id="allen-details" class="speaker-details" style="display: none;">
+									<h4>About Allen Zhong</h4>
+									<div style="margin-top: 16px;">
+										<p><strong>Title and official affiliation: </strong>TBD
+										</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Topic: </strong>Hackathon</p>
+									</div>
+									<div style="margin-top: 16px;">
+										<p><strong>Bio: </strong>Allen Z. Zhong is a Lecturer in the Optimization Group
+											within the Faculty of Information
+											Technology at Monash University. Allen obtained his Ph.D. from the Chinese
+											University of Hong Kong in 2023,
+											under the supervision of Prof. Jimmy Lee. His research interests span the
+											domains of optimization and machine
+											learning integration in optimization methodologies. His research focuses on
+											model analysis techniques to detect
+											and exploit dominance in constraint optimization and satisfaction problems.
+											Additionally, he is interested in
+											the combination of machine learning and optimization algorithms. Through
+											interdisciplinary approaches, he aims
+											to develop robust and adaptive solutions capable of addressing real-world
+											optimization challenges. </p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 第二行详情展示区域 -->
+				<div class="row speaker-details-full-row" id="details-row-2" style="display: none; margin-top: 30px;">
+					<div class="col-12">
+						<div class="speaker-full-details"
+							style="padding: 20px; border: 1px solid #dadfe9; border-radius: 5px; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+							<button class="close-details-btn" data-row="2"
+								style="float: right; background: none; border: 1px solid #4e4ffa; color: #4e4ffa; padding: 5px 12px; border-radius: 3px; cursor: pointer;"
+								type="button">
+								Close Details
+							</button>
+							<div class="full-details-content"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 教师讲座结束 -->
+
+	<script>
+		// 获取所有详情按钮和元素
+		const detailButtons = document.querySelectorAll('.speaker-details-btn');
+		const closeButtons = document.querySelectorAll('.close-details-btn');
+		let currentRow = null;
+
+		// 隐藏所有详情行
+		function hideAllDetails() {
+			document.querySelectorAll('.speaker-details-full-row').forEach(row => {
+				row.style.display = 'none';
+			});
+		}
+
+		// 点击查看详情
+		detailButtons.forEach(button => {
+			button.addEventListener('click', function (e) {
+				// 阻止任何默认行为，包括可能的表单提交或页面跳转
+				e.preventDefault();
+				e.stopPropagation();
+
+				// 获取目标详情ID和所在行
+				const targetId = this.getAttribute('data-target');
+				currentRow = this.getAttribute('data-row');
+				const detailsElement = document.getElementById(targetId);
+				const detailsRow = document.getElementById(`details-row-${currentRow}`);
+
+				if (detailsElement && detailsRow) {
+					// 隐藏所有详情
+					hideAllDetails();
+
+					// 复制详情内容到对应行的容器
+					detailsRow.querySelector('.full-details-content').innerHTML = detailsElement.innerHTML;
+
+					// 显示对应行的详情
+					detailsRow.style.display = 'block';
+
+					// 滚动到详情区域，但保持在当前视图范围内
+					detailsRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+				}
+			});
+		});
+
+		// 关闭详情
+		closeButtons.forEach(button => {
+			button.addEventListener('click', function (e) {
+				// 阻止任何默认行为
+				e.preventDefault();
+				e.stopPropagation();
+
+				const row = this.getAttribute('data-row');
+				const detailsRow = document.getElementById(`details-row-${row}`);
+				const speakersRow = document.getElementById(`speakers-row-${row}`);
+
+				if (detailsRow) {
+					detailsRow.style.display = 'none';
+
+					// 滚动回对应的演讲者行，但保持在当前视图范围内
+					if (speakersRow) {
+						speakersRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+					}
+				}
+			});
+		});
+	</script>
+
+	<!-- 长春北湖鸿居悦榕酒店section -->
+	<section id="venue" class="venue-section" style="padding: 80px 0; background-color: #f9f9f9;">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2>Event Venue</h2>
+				<p>Homm Changchun Beihu Hotel (Banyan Tree Group)</p>
+			</div>
+
+			<div class="row">
+				<!-- 文字描述部分 -->
+				<div class="col-md-6">
+					<div class="venue-info">
+						<h3>Homm Changchun Beihu Hotel</h3>
+						<p>As Banyan Tree Group’s first high-end hotel in Northeast China, Homm Changchun Beihu Hotel
+							opened on December 24, 2024. Nestled in the national 4A-level Changchun Beihu National
+							Wetland Park, it features 32 independent villas spanning ~170,000㎡, blending Jiangnan water
+							town charm with new Chinese style.</p>
+						<p>The hotel offers 247 themed landscape villa rooms (some with private courtyards/terraces),
+							diverse restaurants, indoor-outdoor hot springs (including the unique "iron pot stew hot
+							spring pool"), parent-child facilities, and a 1,720㎡ independent conference building.</p>
+						<p>Unique experiences include boat check-in (summer) and horse-drawn sleigh check-in (winter),
+							plus the winter-only "Homm Ice Park" with ice camping and snowmobiling. Shuttle bus service
+							is available for easy access.</p>
+						<div class="contact-details" style="margin-top: 30px;">
+							<h4>Contact Information</h4>
+							<p><i class="fa fa-map-marker" style="margin-right: 10px; color: #4e4ffa;"></i> Address: No.
+								2051 Hupan Street, Beihu Science and Technology Development Zone, Changchun New Area,
+								Changchun City, Jilin Province, China</p>
+							<p><i class="fa fa-envelope" style="margin-right: 10px; color: #4e4ffa;"></i> Zip Code:
+								130102</p>
+							<p><i class="fa fa-phone" style="margin-right: 10px; color: #4e4ffa;"></i> Phone:
+								+86-431-87899999</p>
+							<h4 style="margin-top: 20px;">Transportation Info</h4>
+							<p><i class="fa fa-subway" style="margin-right: 10px; color: #4e4ffa;"></i> 950 meters from
+								Beihu Park Metro Station (14-minute walk)</p>
+							<p><i class="fa fa-car" style="margin-right: 10px; color: #4e4ffa;"></i> About 10.53 km from
+								the city center (straight-line distance)</p>
+							<p><i class="fa fa-train" style="margin-right: 10px; color: #4e4ffa;"></i> About 8 km from
+								Changchun Railway Station</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- 谷歌地图嵌入（长春北湖鸿居悦榕酒店） -->
+				<div class="col-md-6">
+					<div class="venue-map"
+						style="border-radius: 8px; overflow: hidden; box-shadow: 0 2px 15px rgba(0,0,0,0.1);">
+						<!-- <img src="assets/logo/favicon.png" alt=""> -->
+						<!-- 长春北湖鸿居悦榕酒店准确谷歌地图嵌入链接 -->
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2870.6805317206295!2d125.36958107571803!3d43.98665583080084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5e3863a8bccb016b%3A0x10cac20c1c428193!2sHomm%20Changchun%20Beihu!5e0!3m2!1szh-CN!2sus!4v1764317042025!5m2!1szh-CN!2sus"
+							width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Registration Details（注册详情） -->
+	<section id="registration-details" class="service" style="padding: 100px 0;">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2>Registration Details</h2>
+
+				<!-- 新增：问卷报名链接区域 -->
+				<div class="registration-survey"
+					style="margin: 30px 0; padding: 20px; background-color: #f0f8fb; border-radius: 8px;">
+					<h3 style="margin-bottom: 15px; color: #2d3748;">Pre-Registration Survey</h3>
+					<p style="margin-bottom: 20px;">Please complete the survey first before proceeding with registration
+						(required for all applicants)</p>
+
+					<!-- 未超时：显示报名链接按钮 -->
+					<div id="active-registration" style="display: block;">
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLScaX-raiGrqr1EuUKwbEh1xgknQJggCn2IIS5YIITj44jg_8w/viewform?usp=header"
+							target="_blank">
+							<button class="reg-btn">Complete Pre-Registration</button>
+						</a>
+						<p style="margin-top: 10px; font-size: 14px; color: #666;">Survey Deadline: May 31, 2026</p>
+					</div>
+
+					<!-- 超时：显示关闭提示（已注释，需启用时取消注释并隐藏上方active-registration） -->
+					<!--
+                <div id="closed-registration" style="display: block; padding: 20px; background-color: #fef7fb; border-radius: 6px;">
+                    <h4 style="color: #e53e3e; margin-bottom: 10px;">Registration is now closed!</h4>
+                    <p style="margin-bottom: 15px;">Thank you for your interest. Please go back to ACP Summer School for the next edition.</p>
+                    <a href="index.html" class="welcome-btn" style="background-color: #666; border-color: #666;">
+                        Back to Homepage
+                    </a>
+                </div>
+                -->
+				</div>
+
+				<p>Choose the registration type that fits your needs</p>
+				<p>Total available spots: 60 students (20 international students, 20 domestic students, and 20 students
+					from Jilin University)</p>
+			</div>
+
+			<!-- <div class="row">
+				<div class="col-md-6 col-sm-6"> 
+					<div class="single-service-item">
+						<div class="single-service-icon">
+							<i class="fa fa-user"></i>
+						</div>
+						<h2><a href="#">Basic</a></h2>
+						<p>€420</p>
+						<p>No accommodation included</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6"> 
+					<div class="single-service-item">
+						<div class="single-service-icon">
+							<i class="fa fa-users"></i>
+						</div>
+						<h2><a href="#">Shared</a></h2>
+						<p>€500</p>
+						<p>With shared accommodation (2 persons)</p>
+					</div>
+				</div>
+			</div> -->
+			<div class="row">
+				<div class="row">
+					<!-- 唯一选项：含共享住宿参会套餐 -->
+					<div class="col-md-12 col-sm-12">
+						<div class="single-service-item">
+							<div class="single-service-icon">
+								<i class="fa fa-users" style="color: #4e4ffa;"></i>
+							</div>
+							<h2><a href="#">Participation with Shared Accommodation</a></h2>
+							<p style="font-size: 18px; font-weight: 600;">€500.00</p>
+							<p>With shared accommodation (2 persons)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+
+	<!-- Included Services（费用包含）
+	<section id="included-services" class="schedule" style="padding: 100px 0;">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2>Registration Fee</h2>
+				<p>What's included in your registration fee</p>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 text-center">
+					<div style="font-size: 40px; margin-bottom: 20px;">🍽️</div>
+					<h3>Meals</h3>
+					<p>Breakfast, lunch and social dinners during the event</p>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center">
+					<div style="font-size: 40px; margin-bottom: 20px;">🚌</div>
+					<h3>Transportation</h3>
+					<p>Airport transfers (Changchun Longjia International Airport)</p>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center">
+					<div style="font-size: 40px; margin-bottom: 20px;">🏛️</div>
+					<h3>Cultural Tour</h3>
+					<p>Guided tour of Changchun historical sites</p>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center">
+					<div style="font-size: 40px; margin-bottom: 20px;">📚</div>
+					<h3>Materials</h3>
+					<p>Conference materials and exclusive (souvenirs)</p>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- Included Services（费用包含） -->
+	<section id="included-services" class="schedule" style="padding: 100px 0;">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2>Registration Fee</h2>
+				<p>What's included in your registration fee (€500 per participant)</p>
+			</div>
+			<div class="row">
+				<!-- 餐饮：严格匹配预算表餐饮权益 -->
+				<div class="col-md-3 col-sm-6 text-center">
+					<div style="font-size: 40px; margin-bottom: 20px;">🍽️</div>
+					<h3>Catering</h3>
+					<p>10 buffet meals + Banquet + 9 coffee breaks.Free daily breakfast (with accommodation)</p>
+				</div>
+				<!-- 住宿：补充核心权益（预算表明确包含） -->
+				<div class="col-md-3 col-sm-6 text-center">
+					<div style="font-size: 40px; margin-bottom: 20px;">🏨</div>
+					<h3>Accommodation</h3>
+					<p>6-day shared twin room, (23–28 August, hotel stay)</p>
+				</div>
+				<!-- 物料与纪念品：按预算表补充完整 -->
+				<div class="col-md-3 col-sm-6 text-center">
+					<div style="font-size: 40px; margin-bottom: 20px;">📦</div>
+					<h3>Materials & Souvenirs</h3>
+					<p>Conference manual + Name badge, Exclusive tote bag + Gift</p>
+				</div>
+				<!-- 社交活动：补充预算表明确包含的项目 -->
+				<div class="col-md-3 col-sm-6 text-center">
+					<div style="font-size: 40px; margin-bottom: 20px;">🎉</div>
+					<h3>Social Event</h3>
+					<p>Organized social gathering, (venue, activities & refreshments)</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Accommodation（住宿信息） -->
+	<section id="accommodation" class="service" style="padding: 100px 0;">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2>Accommodation</h2>
+				<p>Details about your stay during the summer school</p>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<img src="assets/images//accommodation/accommodation3.jpg" alt="Accommodation"
+						class="img-responsive" style="width: 100%; border-radius: 5px;">
+				</div>
+				<div class="col-md-6">
+					<h3>Stay Period</h3>
+					<p>August 23 – August 28, 2026 (6 nights)</p>
+
+					<h3 style="margin-top: 20px;">Accommodation Types & Allocation</h3>
+					<ul style="list-style-type: none; padding: 0;">
+						<li><i class="fa fa-check-circle" style="color: #4e4ffa;"></i> <strong>Single Room</strong> -
+							For international speakers & TAs (10 rooms total)</li>
+						<li><i class="fa fa-check-circle" style="color: #4e4ffa;"></i> <strong>Shared Room (2
+								persons)</strong> - For non-local students (20 twin rooms, 40 beds total)</li>
+						<li><i class="fa fa-check-circle" style="color: #4e4ffa;"></i> <strong>Contingency
+								Rooms</strong> - 5 rooms (for unexpected needs)</li>
+						<li><i class="fa fa-times-circle" style="color: #ff4e4f;"></i> No accommodation provided for
+							local students</li>
+						<li><i class="fa fa-wifi" style="color: #4e4ffa;"></i> All rooms include free Wi-Fi and
+							breakfast</li>
+					</ul>
+
+					<h3 style="margin-top: 20px;">Availability & Priority</h3>
+					<p>Total beds: 50 (10 single + 40 shared). Priority is given to international speakers, TAs, and
+						non-local students. Early registration is recommended.</p>
+
+					<h3 style="margin-top: 20px;">Location</h3>
+					<p>Address: No. 2051 Hupan Street, Beihu Science and Technology Development Zone, Changchun New
+						Area, Changchun City, Jilin Province, China</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- <section id="payment-policy" class="schedule" style="padding: 100px 0;">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2>Cancellation & Payment Policy</h2>
+				<p>Important information regarding refunds and payment methods</p>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Refund Policy</h3>
+					<div style="position: relative; padding-left: 30px; margin-bottom: 30px;">
+						<div
+							style="position: absolute; left: 0; top: 5px; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;">
+						</div>
+						<div>
+							<h4>Before July 10, 2026</h4>
+							<p>Full refund minus €25 administrative fee</p>
+						</div>
+					</div>
+					<div style="position: relative; padding-left: 30px; margin-bottom: 30px;">
+						<div
+							style="position: absolute; left: 0; top: 5px; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;">
+						</div>
+						<div>
+							<h4>July 11 – August 10, 2026</h4>
+							<p>50% refund of registration fee</p>
+						</div>
+					</div>
+					<div style="position: relative; padding-left: 30px; margin-bottom: 30px;">
+						<div
+							style="position: absolute; left: 0; top: 5px; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;">
+						</div>
+						<div>
+							<h4>After August 10, 2026</h4>
+							<p>No refund available</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<h3>Payment Instructions</h3>
+					<ul style="list-style-type: none; padding: 0;">
+						<li style="margin-bottom: 15px;">
+							<i class="fa fa-credit-card" style="color: #4e4ffa; margin-right: 10px;"></i>
+							<span>Accepted payment methods: Credit Card (Visa, Mastercard) and Bank Transfer</span>
+						</li>
+						<li style="margin-bottom: 15px;">
+							<i class="fa fa-money" style="color: #4e4ffa; margin-right: 10px;"></i>
+							<span>All payments must be made in Euro (€)</span>
+						</li>
+						<li style="margin-bottom: 15px;">
+							<i class="fa fa-percent" style="color: #4e4ffa; margin-right: 10px;"></i>
+							<span>No VAT applicable for this event</span>
+						</li>
+						<li style="margin-bottom: 15px;">
+							<i class="fa fa-file-text-o" style="color: #4e4ffa; margin-right: 10px;"></i>
+							<span>For invoices, please contact: <a
+									href="mailto:acpss2026@gmail.com">acpss2026@gmail.com</a></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- <section id="legal-precautions" class="schedule" style="padding: 100px 0;">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>Legal Precautions</h2>
+            <p>Important terms and conditions for participation</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Cancellation Policies</h3>
+                <div style="position: relative; padding-left: 30px; margin-bottom: 30px;">
+                    <div style="position: absolute; left: 0; top: 5px; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;"></div>
+                    <div>
+                        <h4>Registration Cancellation</h4>
+                        <p>Notification must be made in writing to the specified email. Full refund (minus cancellation fee) available until the Early Registration Date. No refunds for cancellations after this date or no-shows.</p>
+                    </div>
+                </div>
+                <div style="position: relative; padding-left: 30px; margin-bottom: 30px;">
+                    <div style="position: absolute; left: 0; top: 5px; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;"></div>
+                    <div>
+                        <h4>Hotel Reservation Cancellation</h4>
+                        <p>Notification must be made in writing to the specified email at least 14 days prior to arrival. Late cancellations or no-shows will result in full stay charges.</p>
+                    </div>
+                </div>
+                <div style="position: relative; padding-left: 30px; margin-bottom: 30px;">
+                    <div style="position: absolute; left: 0; top: 5px; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;"></div>
+                    <div>
+                        <h4>Name Change (Registered Participants)</h4>
+                        <p>Colleagues may attend in your place with prior written notification to the specified email. An administrative fee will apply.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Disclaimers & Requirements</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 15px;">
+                        <i class="fa fa-exclamation-triangle" style="color: #4e4ffa; margin-right: 10px;"></i>
+                        <span><strong>Force Majeure:</strong> Organisers are not liable for damages/losses if the conference is cancelled due to force majeure.</span>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <i class="fa fa-shield" style="color: #4e4ffa; margin-right: 10px;"></i>
+                        <span><strong>General Disclaimer:</strong> Organisers are not liable for any damages/losses incurred by delegates or accompanying persons during/while traveling to/from the event. Delegates are responsible for their own safety and belongings.</span>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <i class="fa fa-medkit" style="color: #4e4ffa; margin-right: 10px;"></i>
+                        <span><strong>Insurance & Vaccinations:</strong> Registration fee does not include insurance. Delegates are advised to purchase travel/medical insurance. No vaccinations required for entry to the host country.</span>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <i class="fa fa-credit-card" style="color: #4e4ffa; margin-right: 10px;"></i>
+                        <span><strong>Credit Card Note:</strong> North American delegates should ensure their Visa/MasterCard has a 4-digit PIN code for transactions in the host country.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="scholarships" class="schedule" style="padding: 100px 0; background-color: #f9f9f9;">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>Scholarship Awards</h2>
+            <p>Financial support for eligible participants (Total 20 awards available)</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 text-center" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <h3 style="color: #4e4ffa; margin-bottom: 20px;">Tier 1 Scholarship</h3>
+                <div style="font-size: 48px; font-weight: bold; color: #4e4ffa; margin-bottom: 15px;">€500</div>
+                <p style="margin-bottom: 20px;">Full support for selected students</p>
+                <h4>Eligibility:</h4>
+                <ul style="list-style-type: none; padding: 0; margin-top: 10px;">
+                    <li style="margin-bottom: 8px;">• 5 awards for International Students</li>
+                    <li style="margin-bottom: 8px;">• 10 additional Tier 1 awards (general)</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 text-center" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <h3 style="color: #ff6b6b; margin-bottom: 20px;">Tier 2 Scholarship</h3>
+                <div style="font-size: 48px; font-weight: bold; color: #ff6b6b; margin-bottom: 15px;">€200</div>
+                <p style="margin-bottom: 20px;">Partial support for selected students</p>
+                <h4>Eligibility:</h4>
+                <ul style="list-style-type: none; padding: 0; margin-top: 10px;">
+                    <li style="margin-bottom: 8px;">• 5 awards for Chinese Students</li>
+                    <li style="margin-bottom: 8px;">• 5 awards for International Students</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 40px;">
+            <p style="font-size: 16px;">Scholarships are awarded as financial support to assist with conference-related expenses.</p>
+        </div>
+    </div>
+</section> -->
+
+	<section id="legal-precautions" class="schedule" style="padding: 100px 0;">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2>Legal Precautions & Scholarships</h2>
+				<p>Important terms, conditions and financial support information</p>
+			</div>
+
+			<div class="row mb-100">
+				<div class="col-md-6">
+					<h3 style="margin-bottom: 15px;">Cancellation & Registration Policies</h3>
+					<div style="position: relative; padding-left: 30px; margin-bottom: 30px;">
+						<div
+							style="position: absolute; left: 0; top: 5px; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;">
+						</div>
+						<div>
+							<h4>Registration Cancellation</h4>
+							<p>Notification must be made in writing to <a
+									href="mailto:acpss2026@gmail.com">acpss2026@gmail.com</a>. Full refund (minus
+								cancellation fee) available until the Early Registration Date(TBD). No refunds for
+								cancellations after this date or no-shows.</p>
+						</div>
+					</div>
+					<div style="position: relative; padding-left: 30px; margin-bottom: 30px;">
+						<div
+							style="position: absolute; left: 0; top: 5px; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;">
+						</div>
+						<div>
+							<h4>Name Change (Registered Participants)</h4>
+							<p>Colleagues may attend in your place with prior written notification to <a
+									href="mailto:acpss2026@gmail.com">acpss2026@gmail.com</a>. An administrative fee
+								will apply.</p>
+						</div>
+					</div>
+					<div style="position: relative; padding-left: 30px; margin-bottom: 30px;">
+						<div
+							style="position: absolute; left: 0; top: 5px; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;">
+						</div>
+						<div>
+							<h4>Credit Card Requirements</h4>
+							<p>North American delegates should ensure their Visa/MasterCard has a 4-digit PIN code for
+								transactions in the host country.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<h3 style="margin-bottom: 15px;">Disclaimers & Requirements</h3>
+					<ul style="list-style-type: none; padding: 0;">
+						<li style="margin-bottom: 15px;">
+							<i class="fa fa-exclamation-triangle" style="color: #4e4ffa; margin-right: 10px;"></i>
+							<span><strong>Force Majeure:</strong> Organisers are not liable for damages/losses if the
+								conference is cancelled due to force majeure.</span>
+						</li>
+						<li style="margin-bottom: 15px;">
+							<i class="fa fa-shield" style="color: #4e4ffa; margin-right: 10px;"></i>
+							<span><strong>General Disclaimer:</strong> Organisers are not liable for any damages/losses
+								incurred by delegates or accompanying persons during/while traveling to/from the event.
+								Delegates are responsible for their own safety and belongings.</span>
+						</li>
+						<li style="margin-bottom: 15px;">
+							<i class="fa fa-medkit" style="color: #4e4ffa; margin-right: 10px;"></i>
+							<span><strong>Insurance & Vaccinations:</strong> Registration fee does not include
+								insurance. Delegates are advised to purchase travel/medical insurance. No vaccinations
+								required for entry to the host country.</span>
+						</li>
+						<li style="margin-bottom: 15px;">
+							<i class="fa fa-ban" style="color: #4e4ffa; margin-right: 10px;"></i>
+							<span><strong>Anti-harassment Policy:</strong> Contact information for the local
+								anti-harassment support organization is available on the conference website.</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center">
+						<p>Scholarship Awards</p>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6 text-center"
+							style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+							<h4 style="color: #4e4ffa; margin-bottom: 20px;">Tier 1 Scholarship</h4>
+							<div style="font-size: 48px; font-weight: bold; color: #4e4ffa; margin-bottom: 15px;">€500
+							</div>
+							<p style="margin-bottom: 20px;">Financial support for students in need (awarded as
+								stipends/awards)</p>
+							<h5>Eligibility:</h5>
+							<ul style="list-style-type: none; padding: 0; margin-top: 10px;">
+								<li style="margin-bottom: 8px;">• 5 awards dedicated to International Students</li>
+								<li style="margin-bottom: 8px;">• Additional awards available for eligible participants
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-md-6 text-center"
+							style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+							<h4 style="color: #ff6b6b; margin-bottom: 20px;">Tier 2 Scholarship</h4>
+							<div style="font-size: 48px; font-weight: bold; color: #ff6b6b; margin-bottom: 15px;">€200
+							</div>
+							<p style="margin-bottom: 20px;">Partial financial support for eligible students</p>
+							<h5>Eligibility:</h5>
+							<ul style="list-style-type: none; padding: 0; margin-top: 10px;">
+								<li style="margin-bottom: 8px;">• 5 awards for Chinese Students</li>
+								<li style="margin-bottom: 8px;">• 5 awards for International Students</li>
+							</ul>
+						</div>
+					</div>
+					<div class="text-center" style="margin-top: 40px;">
+						<p style="font-size: 16px;">Scholarships are funded through conference sponsorships. For more
+							information, contact <a href="mailto:acpss2026@gmail.com">acpss2026@gmail.com</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 赞助商展示 -->
+	<section id="sponsors" class="sponsors">
+		<div class="container">
+			<div class="section-header text-center"> <!-- 新增：添加区域标题 -->
+				<h2>Our Sponsors</h2>
+				<p>Thanks to our partners for supporting ACP Summer School 2026</p>
+			</div>
+			<div class="sponsors-area">
+				<div class="owl-carousel owl-theme brand-item">
+					<div class="item">
+						<a href="#">
+							<img src="assets/images/partners/acp.png" alt="brand-image" />
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="assets/images/partners/artint.jpg" alt="brand-image" />
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="assets/images/partners/JlU.png" alt="brand-image" />
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img src="assets/images/partners/zsgc.png" alt="brand-image" />
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+	<!-- 赞助商结束 -->
+
+
+	<!-- 页脚 / 联系信息 -->
+	<footer id="contact" class="contact">
+		<div class="container">
+
+			<div class="footer-copyright" style="align-items: center;">
+				<div class="row">
+					<div class="col-sm-6" style="align-items: center;">
+						<p>
+							&copy; ACP Summer School 2026, All rights reserved.</a>.
+						</p>
+					</div>
+					<div class="col-sm-6">
+						<div class="footer-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-pinterest-p"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title=""
+					data-original-title="Back to Top" aria-hidden="true"></i>
+			</div>
+
+		</div>
+
+	</footer>
+	<!-- 页脚结束 -->
+
+
+
+	<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+	<script src="assets/js/jquery.js"></script>
+
+	<!-- modernizr: 浏览器功能检测 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<!-- Bootstrap 脚本 -->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- 倒计时脚本 -->
+	<script src="assets/js/countdown.js"></script>
+
+	<!-- 导航脚本 (bootsnav) -->
+	<script src="assets/js/bootsnav.js"></script>
+
+	<!-- 轮播脚本 (owl.carousel) -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+	<!-- 自定义脚本 -->
+	<script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
