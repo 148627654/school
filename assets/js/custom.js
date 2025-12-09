@@ -100,7 +100,7 @@ $(document).ready(function(){
 		// iii. .brand-item (carousel)
 		
 			$('.brand-item').owlCarousel({
-				items:4,//6
+				items:4,
 				loop:true,
 				smartSpeed: 1000,
 				autoplay:true,
@@ -117,7 +117,7 @@ $(document).ready(function(){
 							items:3
 						},
 						1000:{
-							items:4//6
+							items:4
 						}
 					}
 				});
