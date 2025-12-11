@@ -711,8 +711,8 @@
 								<div id="guido-details" class="speaker-details" style="display: none;">
 									<h4>Guido Tack</h4>
 									<div style="margin-top: 16px;">
-										<p style="text-align: justify; text-justify: inter-word;"><strong>Title and official affiliation: </strong> Assoc Prof Guido Tack,
-											Department of Data Science and AI, Monash University, Australia
+										<p style="text-align: justify; text-justify: inter-word;"><strong>
+											Title and official affiliation: </strong> Associate Professor, Department of Data Science and AI, Monash University, Australia
 										</p>
 									</div>
 									<div style="margin-top: 16px;">
@@ -1197,7 +1197,7 @@
 				<div class="col-md-6">
 					<div class="venue-info">
 						<h3>Homm Changchun Beihu Hotel</h3>
-						<p style="text-align: justify; text-justify: inter-word;">As Banyan Tree Group’s first high-end hotel in Northeast China, Homm Changchun Beihu Hotel
+						<p style="text-align: justify; text-justify: inter-word; margin-top: 15px;">As Banyan Tree Group’s first high-end hotel in Northeast China, Homm Changchun Beihu Hotel
 							opened on December 24, 2024. Nestled in the national 4A-level Changchun Beihu National
 							Wetland Park, it features 32 independent villas spanning ~170,000㎡, blending Jiangnan water
 							town charm with new Chinese style.</p>
@@ -1209,7 +1209,7 @@
 							is available for easy access.</p>
 						<div class="contact-details" style="margin-top: 30px;">
 							<h4>Contact Information</h4>
-							<p style="text-align: justify; text-justify: inter-word;"><i class="fa fa-map-marker" style="margin-right: 10px; color: #4e4ffa;"></i> Address: No.
+							<p style="text-align: justify; text-justify: inter-word; margin-top: 15px;"><i class="fa fa-map-marker" style="margin-right: 10px; color: #4e4ffa;"></i> Address: No.
 								2051 Hupan Street, Beihu Science and Technology Development Zone, Changchun New Area,
 								Changchun City, Jilin Province, China</p>
 							<p><i class="fa fa-envelope" style="margin-right: 10px; color: #4e4ffa;"></i> Zip Code:
@@ -1217,7 +1217,7 @@
 							<p><i class="fa fa-phone" style="margin-right: 10px; color: #4e4ffa;"></i> Phone:
 								+86-431-87899999</p>
 							<h4 style="margin-top: 20px;">Transportation Info</h4>
-							<p><i class="fa fa-subway" style="margin-right: 10px; color: #4e4ffa;"></i> 950 meters from
+							<p style="margin-top: 15px;"><i class="fa fa-subway" style="margin-right: 10px; color: #4e4ffa;"></i> 950 meters from
 								Beihu Park Metro Station (14-minute walk)</p>
 							<p><i class="fa fa-car" style="margin-right: 10px; color: #4e4ffa;"></i> About 10.53 km from
 								the city center (straight-line distance)</p>
@@ -1415,7 +1415,7 @@
 				<h3 style="text-align: center; margin-bottom: 15px;">Accommodation</h3>
 				<div style="text-align: center; width: 100%;">
 					<ul style="list-style: none; padding: 0; margin: 0 auto; text-align: left; max-width: 100%; display: inline-block;">
-						<li>Shared twin room (23–28 August)</li>
+						<li>Shared twin room (23–28 Aug)</li>
 						<li>Free Wi-Fi</li>
 					</ul>
 				</div>
@@ -1448,8 +1448,8 @@
 				<h3 style="text-align: center; margin-bottom: 15px;">Local Transportation</h3>
 				<div style="text-align: center; width: 100%;">
 					<ul style="list-style: none; padding: 0; margin: 0 auto; text-align: left; max-width: 100%; display: inline-block;">
-						<li>23 Aug: from airport to the hotel</li>
-						<li>29 Aug: from hotel to the airport</li>
+						<li>23 Aug: Airport → Hotel</li>
+						<li>29 Aug: Hotel → Airport</li>
 					</ul>
 				</div>
 			</div>
@@ -1646,37 +1646,30 @@
                 </div>
             </div>
 
-            <!-- Disclaimers & Requirements 板块（2×2 网格） -->
+            <!-- Disclaimers & Requirements 板块（4行1列 + 两端对齐） -->
             <div class="col-md-12">
                 <h3 style="margin-bottom: 15px;">Disclaimers & Requirements</h3>
-                <!-- 2×2 网格容器 -->
-                <div class="row">
-                    <!-- 第一行第一列 -->
-                    <div class="col-md-6 mb-3">
-                        <div style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-                            <i class="fa fa-exclamation-triangle" style="color: #4e4ffa; margin-right: 10px; margin-top: 2px;"></i>
-                            <span><strong>Force Majeure:</strong> Organisers are not liable for damages/losses if the conference is cancelled due to force majeure.</span>
+                <!-- 4行1列 网格容器（增加最大宽度，避免内容过宽） -->
+                <div class="row" style="max-width: 100%;">
+                    <!-- 第一行：核心调整 justify-content: space-between -->
+                    <div class="col-md-12 mb-3">
+                        <div style="margin-bottom: 15px; display: flex; align-items: flex-start; justify-content: space-between; width: 100%;">
+                            <i class="fa fa-exclamation-triangle" style="color: #4e4ffa; margin-right: 10px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="flex: 1; text-align: left;"><strong>Force Majeure:</strong> Organisers are not liable for damages/losses if the conference is cancelled due to force majeure.</span>
                         </div>
                     </div>
-                    <!-- 第一行第二列 -->
-                    <div class="col-md-6 mb-3">
-                        <div style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-                            <i class="fa fa-shield" style="color: #4e4ffa; margin-right: 10px; margin-top: 2px;"></i>
-                            <span><strong>General Disclaimer:</strong> Organisers are not liable for any damages/losses incurred by delegates or accompanying persons during/while traveling to/from the event. Delegates are responsible for their own safety and belongings.</span>
+                    <!-- 第二行 -->
+                    <div class="col-md-12 mb-3">
+                        <div style="margin-bottom: 15px; display: flex; align-items: flex-start; justify-content: space-between; width: 100%;">
+                            <i class="fa fa-shield" style="color: #4e4ffa; margin-right: 10px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="flex: 1; text-align: left;"><strong>General Disclaimer:</strong> Organisers are not liable for any damages/losses incurred by delegates or accompanying persons during/while traveling to/from the event. Delegates are responsible for their own safety and belongings.</span>
                         </div>
                     </div>
-                    <!-- 第二行第一列 -->
-                    <div class="col-md-6 mb-3">
-                        <div style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-                            <i class="fa fa-medkit" style="color: #4e4ffa; margin-right: 10px; margin-top: 2px;"></i>
-                            <span><strong>Insurance & Vaccinations:</strong> Registration fee does not include insurance. Delegates are advised to purchase travel/medical insurance. No vaccinations required for entry to the host country.</span>
-                        </div>
-                    </div>
-                    <!-- 第二行第二列 -->
-                    <div class="col-md-6 mb-3">
-                        <div style="margin-bottom: 15px; display: flex; align-items: flex-start;">
-                            <i class="fa fa-credit-card" style="color: #4e4ffa; margin-right: 10px; margin-top: 2px;"></i>
-                            <span><strong>Credit Card Note:</strong> North American delegates should ensure their Visa/MasterCard has a 4-digit PIN code for transactions in the host country.</span>
+                    <!-- 第三行 -->
+                    <div class="col-md-12 mb-3">
+                        <div style="margin-bottom: 15px; display: flex; align-items: flex-start; justify-content: space-between; width: 100%;">
+                            <i class="fa fa-medkit" style="color: #4e4ffa; margin-right: 10px; margin-top: 2px; flex-shrink: 0;"></i>
+                            <span style="flex: 1; text-align: left;"><strong>Insurance & Vaccinations:</strong> Registration fee does not include insurance. Delegates are advised to purchase travel/medical insurance. No vaccinations required for entry to the host country.</span>
                         </div>
                     </div>
                 </div>
@@ -1692,51 +1685,53 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px;">
-                <h3 style="color: #4e4ffa; margin-bottom: 20px;">Weather</h3>
-                <p style="font-size: 16px; line-height: 1.6; margin-bottom: 15px;">
-                    In August, the average daily temperature in Changchun ranges from 19℃ to 28℃, with a day-night temperature difference of 8-10℃. Days are cool while nights are slightly chilly, so a light coat is recommended. 
-                    The weather is mainly sunny and cloudy, with about 13 rainy days (mostly showers) and occasional severe convective weather. It is advisable to carry rain gear with you. 
-                    The air quality is excellent, ideal for outdoor activities.
+            <!-- 核心容器：增加最大宽度+居中+两端对齐基础样式 -->
+            <div class="col-md-12" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px; max-width: 100%; margin-left: auto; margin-right: auto;">
+                <!-- Weather 板块：两端对齐 -->
+                <h3 style="color: #4e4ffa; margin-bottom: 20px; width: 100%;">Weather</h3>
+                <p style="font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%; text-align: justify; text-justify: inter-word;">
+                    In August, Changchun’s average daily temperature ranges from 19°C to 28°C, with a day–night difference of about 8–10°C. Days are generally mild, while nights can feel slightly cool, so bringing a light jacket is recommended. Participants are also advised to bring an umbrella depending on the weather. Air quality is consistently excellent, making it well suited for outdoor activities.
                 </p>
 
-                <h3 style="color: #4e4ffa; margin-bottom: 20px;">Transportation</h3>
-                <h4 style="color: #333; margin-bottom: 10px;">Airport Shuttle Service</h4>
-                <ul style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px;">
-                    <li><strong>Free Shuttle</strong>: Exclusive free shuttle service between Changchun Longjia International Airport and the venue is provided for all participants. The specific pick-up time and assembly point will be notified in advance.</li>
-                    <li><strong>Public Transportation</strong>: Intercity EMU trains (directly from the airport to Longjia Station, connecting to Changchun Station); Airport shuttle buses (Routes 1-3 cover core hubs, ¥25 per person, departing from downtown from 05:00 to 19:00); Taxis (approximately 40 minutes from the airport to downtown, costing ¥80-100).</li>
+                <!-- Transportation 板块：两端对齐 -->
+                <h3 style="color: #4e4ffa; margin-bottom: 20px; width: 100%;">Transportation</h3>
+                <h4 style="color: #333; margin-bottom: 10px; width: 100%;">Airport Shuttle Service</h4>
+                <ul style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
+                    <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;">
+                        <strong>Complimentary Shuttle</strong>: We provide shuttle service between Changchun Longjia International Airport and the venue will be available for all participants. Detailed pick-up times and meeting points will be announced in advance.
+                    </li>
+                    <li style="text-align: justify; text-justify: inter-word;">
+                        <strong>Public Transportation</strong>:
+                        <ul style="list-style-type: circle; padding-left: 30px; font-size: 16px; line-height: 1.6; margin-top: 8px; margin-bottom: 0;">
+                            <li style="text-align: justify; text-justify: inter-word;"><strong>Intercity EMU Trains</strong>: Direct service from the airport to Longjia Station, with transfers to Changchun Station.</li>
+                            <li style="text-align: justify; text-justify: inter-word;"><strong>Airport Shuttle Buses</strong>: Routes 1–3 operate between major city hubs and the airport; fare CNY 25 per person.</li>
+                            <li style="text-align: justify; text-justify: inter-word;"><strong>Taxis</strong>: Extensive routes, some directly reaching scenic spots, with fares CNY 1-2, and seamless transfers to the subway system. </li>
+                        </ul>
+                    </li>
                 </ul>
-                <h4 style="color: #333; margin-bottom: 10px;">Downtown Transportation</h4>
-                <ul style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px;">
-                    <li><strong>Subway/Light Rail</strong>: 6 lines cover the downtown area and scenic spots, operating from 05:15 to 22:35, with fares ranging from ¥2 to ¥4.</li>
-                    <li><strong>Bus</strong>: Extensive routes, some directly reaching scenic spots, with fares starting from ¥1-2, seamlessly connecting with the subway system.</li>
+                
+                <h4 style="color: #333; margin-bottom: 10px; width: 100%;">Downtown Transportation</h4>
+                <ul style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
+                    <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;"><strong>Subway/Light Rail</strong>: A network of six lines connects major districts and attractions, operating from 05:15 to 22:35, with fares of CNY 2–4. </li>
+                    <li style="text-align: justify; text-justify: inter-word;"><strong>Bus</strong>: Extensive routes, some directly reaching scenic spots, with fares starting from ¥1-2, seamlessly connecting with the subway system.</li>
                 </ul>
 
-                <h3 style="color: #4e4ffa; margin-bottom: 20px;">Currency</h3>
-                <ul style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 0;">
-                    <li><strong>Circulating Currency</strong>: The local legal tender is Chinese Yuan (CNY), with the basic unit being Yuan.</li>
-                    <li><strong>Payment Methods</strong>: WeChat Pay and Alipay are widely accepted in shopping malls, restaurants, scenic spots and transportation hubs. Overseas bank cards (with Visa, Mastercard or UnionPay logos) are accepted at some merchants. It is recommended to carry a small amount of cash in Chinese Yuan.</li>
-                    <li><strong>Foreign Currency Exchange</strong>: Currency exchange services are available at 520 bank branches in Changchun (including 25 qualified institutions such as Bank of China) and 34 foreign currency exchange agencies. Self-service currency exchange machines are located in Terminal 2 of Changchun Longjia International Airport, eliminating the need for exchange in your departure city in advance.</li>
-                    <li><strong>ATM Withdrawal</strong>: ATMs at Changchun Longjia International Airport and major downtown business districts support withdrawals with overseas bank cards (with Visa, Mastercard or UnionPay logos). Some machines offer English operation interfaces. Exchange rates are applied automatically during withdrawals, with handling fees charged according to the issuing bank's regulations.</li>
+                <!-- Currency 板块：两端对齐 -->
+                <h3 style="color: #4e4ffa; margin-bottom: 20px; width: 100%;">Currency</h3>
+                <ul style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
+                    <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;"><strong>Local Currency</strong>: The official currency is the Chinese Yuan (CNY).</li>
+                    <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;"><strong>Payment Methods</strong>: WeChat Pay and Alipay are widely accepted everywhere. Visa, Mastercard, and UnionPay are accepted at hotels and most local merchants. </li>
+                    <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;"><strong>Foreign Currency Exchange</strong>: Cash withdrawals using Visa, Mastercard, and UnionPay cards are available at the airport, and currency exchange services are provided at more than 520 bank branches across Changchun. </li>
+                    <li style="text-align: justify; text-justify: inter-word;"><strong>ATM Withdrawal</strong>: ATMs at the airport and in major business districts allow cash withdrawals with Visa, Mastercard, and UnionPay cards. Usually offer English interfaces, and withdrawals are processed at real-time exchange rates, with fees set by the issuing bank. </li>
                 </ul>
-            </div>
 
-            <div class="col-md-6" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px;">
-                <h3 style="color: #ff6b6b; margin-bottom: 20px;">Tourist Attractions</h3>
-                <ul style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.8; margin-bottom: 0;">
-                    <li><strong>Puppet Manchukuo Palace Museum</strong>: Once the palace of Puyi, the last emperor of China and the emperor of the puppet Manchukuo regime, it is a concentrated witness to the complete course of political and military conflicts in modern Northeast Asia, offering insights into that special historical period.</li>
-                    <li><strong>Jingyuetan National Forest Park</strong>: Known as the "Lung of the City", it boasts abundant vegetation and beautiful scenery, making it an ideal destination for leisure, vacation and sightseeing.</li>
-                    <li><strong>Changchun Film Studio Old Site Museum</strong>: Recording the glorious years of Changchun Film Studio, the "Hollywood of the East", it displays a large number of film-related cultural relics, historical materials and technologies, allowing visitors to experience the development history of Chinese cinema.</li>
-                    <li><strong>Changchun World Sculpture Park</strong>: Gathered with sculpture works from all over the world, it perfectly integrates art with natural landscapes, featuring high artistic appreciation value.</li>
-                </ul>
-            </div>
-
-            <div class="col-md-6" style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h3 style="color: #ff6b6b; margin-bottom: 20px;">Food Recommendations</h3>
-                <ul style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.8; margin-bottom: 0;">
-                    <li><strong>Guobaorou (Sweet and Sour Pork)</strong>: A classic representative of Northeast Chinese cuisine, crispy on the outside and tender on the inside, with a sweet and sour flavor.</li>
-                    <li><strong>Braised Pork Ribs in Soy Sauce</strong>: Tender meat with rich sauce aroma, extremely satisfying to gnaw on.</li>
-                    <li><strong>Korean-style Barbecue</strong>: Influenced by Korean ethnic culture, Korean-style barbecue is also very popular in Changchun. Various meats are grilled golden on the pan, and taste excellent when wrapped in lettuce with dipping sauce.</li>
+                <!-- Tourist Attractions 板块：两端对齐 -->
+                <h3 style="color: #4e4ffa; margin-bottom: 20px; width: 100%;">Tourist Attractions</h3>
+                <ul style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.8; margin-bottom: 0; width: 100%;">
+                    <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;"><strong>Puppet Manchukuo Palace Museum</strong>: Once the palace of Puyi, the last emperor of China and the emperor of the puppet Manchukuo regime. </li>
+                    <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;"><strong>Jingyuetan National Forest Park</strong>: Known as the "Lung of the City", it boasts abundant vegetation and beautiful scenery.</li>
+                    <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;"><strong>Changchun World Sculpture Park</strong>: Gathered with sculpture works from all over the world. </li>
+                    <li style="text-align: justify; text-justify: inter-word;"><strong>Changchun North Lake National Wetland Park</strong>: A comprehensive urban ecological park that takes wetland ecology as its core and integrates nature conservation and leisure functions. </li>
                 </ul>
             </div>
         </div>
