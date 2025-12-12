@@ -216,6 +216,87 @@ nav.navbar.bootsnav .navbar-toggle {
 nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 /*.navbar-toggle */
 
+/* 在 assets/css/style.css 中添加或修改以下样式 */
+
+
+nav.navbar.bootsnav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar-header {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-header a.navbar-brand {
+    padding: 30px 20px; 
+    white-space: nowrap; 
+}
+
+
+.navbar-collapse.collapse {
+    flex: 1 1 auto;
+    display: flex !important;
+    justify-content: flex-end;
+}
+
+nav.navbar.bootsnav ul.nav {
+    display: flex;
+    align-items: center;
+}
+
+nav.navbar.bootsnav ul.nav > li > a {
+    padding: 30px 15px; 
+    font-size: 15px; 
+}
+
+
+@media (max-width: 992px) {
+    nav.navbar.bootsnav .container {
+        flex-wrap: wrap;
+    }
+    
+    .navbar-header {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* 在 assets/css/style.css 中添加或修改以下样式 */
+
+/* 调整导航栏整体对齐方式 */
+nav.navbar.bootsnav .container {
+    align-items: center; /* 确保所有子元素垂直居中 */
+}
+
+/* 统一标题和菜单的垂直内边距 */
+.navbar-header a.navbar-brand {
+    padding: 30px 20px; /* 调整为与菜单一致的上下内边距 */
+    display: flex;
+    align-items: center; /* 确保标题文字与图片垂直居中 */
+}
+
+/* 调整菜单链接的垂直内边距 */
+nav.navbar.bootsnav ul.nav > li > a {
+    padding: 30px 15px; /* 与标题保持相同的上下内边距 */
+    display: flex;
+    align-items: center; /* 菜单文字垂直居中 */
+    height: 100%; /* 确保链接高度充满父元素 */
+}
+
+/* 修复滚动时的样式对齐 */
+.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand,
+.wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a {
+    padding: 20px 15px; /* 滚动时保持统一的内边距 */
+}
+
+
+
+
 /*-------------------------------------
         3.  Welcome-hero
 --------------------------------------*/
@@ -398,10 +479,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     line-height: 1.7; /* 增加行高，提升可读性 */
     color: #666; /* 段落文字色调整 */
 }
-.acp-intro .single-service-item p:before {
-    background: #4e4ffa; /* 下划线使用主题蓝 */
+/* .acp-intro .single-service-item p:before {
+    background: #4e4ffa; /* 下划线使用主题蓝 
     transition: background 0.4s ease;
-}
+} */
 
 /*  hover效果强化 */
 .acp-intro .single-service-item:hover {
@@ -448,7 +529,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 }
 .single-service-item h2 a span {text-transform:  lowercase;}
 .single-service-item p {padding-bottom: 20px;text-transform: initial;position: relative;}
-.single-service-item p:before {
+/* .single-service-item p:before {
     position: absolute;
     content: "";
     width: 40px;
@@ -457,7 +538,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     bottom: 0;
     left: 50%;
     margin-left: -10px;
-}
+} */
 
 .single-service-icon [class^="flaticon-"]:before,.single-service-icon[class*=" flaticon-"]:before,.single-service-icon [class^="flaticon-"]:after,.single-service-icon [class*=" flaticon-"]:after {font-size:60px;}
 .single-service-item:hover .single-service-icon [class^="flaticon-"]:before,.single-service-item:hover .single-service-icon [class*=" flaticon-"]:before,.single-service-item:hover .single-service-icon [class^="flaticon-"]:after,.single-service-item:hover .single-service-icon [class*=" flaticon-"]:after {color:#fff;}
