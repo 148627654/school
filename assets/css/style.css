@@ -151,7 +151,7 @@ nav.navbar.bootsnav {
 .wrap-sticky nav.navbar.bootsnav.sticked {background-color: #000;box-shadow: 0 2px 5px rgba(0,0,0,.2);}
 
 /*.navbar-brand*/
-.navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus{
+.navbar-header a.navbar-brand,.navbar-header a.navbar-brand:focus{
     display: inline-block;
     color: #fff;
     font-size: 24px;
@@ -160,6 +160,11 @@ nav.navbar.bootsnav {
     font-weight: 700;
     padding: 45px 0px;
     text-transform:uppercase;
+}
+
+.navbar-header a.navbar-brand:hover
+{
+    color: #fff;
 }
 .navbar-header a.navbar-brand span{display: inline-block;color:#4e4ffa;text-transform:capitalize;}
 
@@ -302,7 +307,7 @@ nav.navbar.bootsnav ul.nav > li > a {
 --------------------------------------*/
 .welcome-hero {
     position: relative;
-    background:url(../images/welcome-hero/ouidah.png)no-repeat;
+    background:url(../images/accommodation/accommodation5.jpg)no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 1;
