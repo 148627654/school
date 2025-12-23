@@ -1,66 +1,40 @@
-# ACP Summer School 2026 — Event Website (static template)
+# 12.19 change
 
-## Project overview
-This repository contains the static website files for the ACP Summer School 2026 event. It's a lightweight Bootstrap-based template with all required assets (HTML, CSS, JS, images) stored in the project — no build step is required.
+- [x] We have made the transparency of the cover image brighter
 
-The site is suitable for event information, schedule, speakers, venue and registration guidance.
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20251223101620489](readme.assets/image-20251223101620489.png) | ![image-20251223101646133](readme.assets/image-20251223101646133.png) |
 
-## What is in this folder
-Top-level files and folders included in this project:
+- [x] To highlight the hotel's features, we have revised the hotel's introduction.From "simple hotel promotion" to "highlighting the suitability for summer schools", it adds descriptions of academic conference facilities and the atmosphere combining learning and nature, precisely hitting the demand of the target users (international participants) for "learning scenarios + comfort level"
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| As Banyan Tree Group’s first high-end hotel in Northeast China, Homm Changchun Beihu Hotel opened on 24 December, 2024. Nestled in the national 4A-level Changchun Beihu National Wetland Park, it features 32 independent villas spanning ~170,000㎡, blending Jiangnan water town charm with new Chinese style. | Homm Changchun Beihu Hotel offers a truly distinctive setting for our Summer School in Changchun. As the first high-end hotel of Banyan Tree Group in Northeast China, it is located in the heart of the Changchun Beihu National Wetland Park, surrounded by water, greenery, and open skies—an inspiring environment for learning, discussion, and connection. |
+| The hotel offers 247 themed landscape villa rooms (some with private courtyards/terraces), diverse restaurants, indoor-outdoor hot springs (including the unique "iron pot stew hot spring pool"), parent-child facilities, and a 1,720㎡ independent conference building. | The hotel features 247 thoughtfully designed rooms, including elegant villa-style accommodations, many with private courtyards or terraces. Blending modern comfort with refined Chinese aesthetics inspired by traditional water towns, the space feels both luxurious and relaxed—ideal for long study days, informal conversations, and moments of quiet reflection. |
+| Unique experiences include boat check-in (summer) and horse-drawn sleigh check-in (winter), plus the winter-only "Homm Ice Park" with ice camping and snowmobiling. Shuttle bus service is available for easy access. | Designed with academic events in mind, Homm Changchun Beihu provides versatile meeting and lecture spaces equipped with modern audiovisual facilities. From focused lectures and hands-on sessions to evening discussions and social gatherings, the hotel comfortably supports the full rhythm of a Summer School. |
+|                                                              | Beyond the classrooms, participants can enjoy diverse dining options and step directly into the surrounding wetland park for a walk, a conversation, or a break between sessions. With accommodation, learning spaces, and nature seamlessly connected, Homm Changchun Beihu Hotel creates an atmosphere where intensive study and meaningful exchange feel both productive and enjoyable. |
 
-- `index.html` — main landing page (event overview, schedule, speakers, etc.)
-- `registration.html` — registration page and guidance
-- `assets/` — static assets used by the pages
-- `LICENSE` — MIT license file
-- `README.md` — this file
+- [x] Do not use Chinese for "sponsor". We have replaced the image of "sponsor".
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20251223103028083](readme.assets/image-20251223103028083.png) | ![image-20251223103047917](readme.assets/image-20251223103047917.png) |
 
-Inside `assets/` the main folders are:
 
-- `assets/css/` — stylesheets. Examples included:
-	- `animate.css`, `bootsnav.css`, `bootstrap.min.css`, `flaticon.css`, `font-awesome.min.css`,
-		`linearicons.css`, `owl.carousel.min.css`, `owl.theme.default.min.css`, `responsive.css`, `style.css`
-- `assets/js/` — client-side scripts. Examples included:
-	- `bootsnav.js`, `bootstrap.min.js`, `countdown.js`, `custom.js`, `feather.min.js`, `jquery.js`,
-		`owl.carousel.min.js`, `registration-status.js`
-- `assets/images/` — images grouped by purpose, for example `partners/`, `schedule/`, `speakers/`, `welcome-hero/`
-- `assets/fonts/` — any custom fonts (if present)
 
-Note: file names above reflect what is present in the repository root `assets/` folder. If you add or replace files, keep consistent paths so the HTML pages can find them.
+- [x] Financial support is substantial. It is clearly stated as "partral", based on the questions answered during registration, and a decision will be made within 14 days. "Serve" does not have "d". These two words should be in red font and given a title. We understand that many people are coming, and we appreciate everyone's efforts. Therefore, we will provide financial assistance. Those in need should provide detailed answers during registration. We will make a decision based on the answers (distance, academic background, etc.) within 14 days, and there will be an additional 14-day period for decision payment. If the payment is not made, the scholarship will be cancelled.And the format has been adjusted, with both ends aligned.
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20251223103340046](readme.assets/image-20251223103340046.png) | ![image-20251223103355374](readme.assets/image-20251223103355374.png) |
 
-## Local preview (quick)
-There is no build step. The simplest way to preview is to open `index.html` or `registration.html` directly in a browser. For some features (AJAX, form testing) it's better to run a local HTTP server.
+- [x] Registration Fee Include---Includes
+- [x] We replaced all the "host country" references with "China".
+- [x] position control，We have revised the unordered list under "Accommodation" and "Local Transportation"
 
-### Using Python (works in Windows PowerShell)
-1. Make sure Python 3 is installed: `python --version`.
-2. In PowerShell, change to the project directory (where `index.html` is):
+|                                                              |                                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20251223103542729](readme.assets/image-20251223103542729.png) | ![image-20251223103600541](readme.assets/image-20251223103600541.png) |
 
-```powershell
-Set-Location -Path 'D:\ACP\MyACP'
-python -m http.server 8000
-```
+- [x] We have also made adaptations for mobile devices.
+- [x] We have added a carousel style to the hotel, with the images changing automatically every 2.5 seconds.
 
-3. Open `http://localhost:8000` in your browser. To view the registration page, open `http://localhost:8000/registration.html`.
-
-## Customization tips
-
-- Replace images in `assets/images/` with event photos and logos. Keep backups of original files.
-- Edit `index.html` and `registration.html` to update dates, descriptions, speaker info and schedule entries.
-- Update or extend styles in `assets/css/style.css`.
-- Update behavior in `assets/js/custom.js` or `assets/js/countdown.js` (set correct target date/time).
-
-## Notes about repository contents
-
-- This is a static, zero-build template. Everything needed to serve the site is contained in the repo.
-- There are a few alternate/experimental folders in some workspaces (for historical/experimental pages). This README only documents the primary `index.html`, `registration.html` and `assets/` structure.
-- If you copy or publish the site, ensure the relative paths under `assets/` remain correct.
-
-## Contributing
-Small fixes or content updates can be done by editing the HTML/CSS/JS files directly. If you plan larger changes, keep a copy of the originals and maintain consistent asset paths.
-
-## License
-This project is licensed under the MIT License — see the `LICENSE` file for details.
-
----
-
-*Last updated: 2025-11-08*
-
+![image-20251223105433316](readme.assets/image-20251223105433316.png)
