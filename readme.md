@@ -1,3 +1,26 @@
+# 12.24 change
+
+我们针对细节问题进行了修改
+
+- [x] Make adjustments to the Financial Supports section
+
+| before                                                       | after                                                        |  
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20251223103355374](readme.assets/image-20251223103355374.png) | ![image-20251224140334108](readme.assets/image-20251224140334108.png) |
+
+- [x] Registration Cancellation→Registration Withdrawals
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Cancellations will be accepted in writing only ([acpss2026@gmail.com](mailto:acpss2026@gmail.com)) and must be received by the stated cancellation deadline. All refund requests must be made by the attendee or credit card holder. Refund requests must include the name of the attendee, the bank account number used during the transaction and/or the transaction number. | Withdrawals must be submitted to acpss2026@gmail.com. Refund requests must be submitted by the registered attendee or the credit card holder. Each refund request must include the attendee’s name, the bank account number used for the transaction and/or the transaction reference number. Refunds will be processed in accordance with the applicable cancellation deadlines and policies. |
+
+- [x] Name change
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Colleagues may attend in your place with prior written notification to [acpss2026@gmail.com](mailto:acpss2026@gmail.com). An administrative fee will apply. Any subsequent changes to the substitution request will incur an additional charge (€ 12) . | A colleague may attend in place of the registered participant, provided that prior written notification is submitted to acpss2026@gmail.com An administrative fee of **€12** will apply to all substitutions. |
+
+
 # 12.19 change
 
 - [x] We have made the transparency of the cover image brighter
@@ -42,27 +65,6 @@
 
 ![image-20251223105433316](readme.assets/image-20251223105433316.png)
 
-# 12.24 change
-
-我们针对细节问题进行了修改
-
-- [x] Make adjustments to the Financial Supports section
-
-| before                                                       | after                                                        |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image-20251223103355374](readme.assets/image-20251223103355374.png) | ![image-20251224140334108](readme.assets/image-20251224140334108.png) |
-
-- [x] Registration Cancellation→Registration Withdrawals
-
-| before                                                       | after                                                        |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Cancellations will be accepted in writing only ([acpss2026@gmail.com](mailto:acpss2026@gmail.com)) and must be received by the stated cancellation deadline. All refund requests must be made by the attendee or credit card holder. Refund requests must include the name of the attendee, the bank account number used during the transaction and/or the transaction number. | Withdrawals must be submitted to acpss2026@gmail.com. Refund requests must be submitted by the registered attendee or the credit card holder. Each refund request must include the attendee’s name, the bank account number used for the transaction and/or the transaction reference number. Refunds will be processed in accordance with the applicable cancellation deadlines and policies. |
-
-- [x] Name change
-
-| before                                                       | after                                                        |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Colleagues may attend in your place with prior written notification to [acpss2026@gmail.com](mailto:acpss2026@gmail.com). An administrative fee will apply. Any subsequent changes to the substitution request will incur an additional charge (€ 12) . | A colleague may attend in place of the registered participant, provided that prior written notification is submitted to acpss2026@gmail.com An administrative fee of **€12** will apply to all substitutions. |
 
 
 
