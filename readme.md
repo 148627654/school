@@ -1,5 +1,22 @@
 
 
+# 1.7 change
+
+- [x] We have removed the "Space for rent" item from the sponsor section. Since there are only two sponsors now, this will cause a loop situation. It might not look good, so we are currently using a static display to show the sponsors. When there are more sponsors, we will switch back to the carousel format.
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260108104036680](readme.assets/image-20260108104036680.png) | ![image-20260108111847989](readme.assets/image-20260108111847989.png) |
+
+- [x] I also corrected the mistakes in the "speaker" section.
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Cieran McCreesh                                              | Ciaran McCreesh                                              |
+| ![image-20260108105319230](readme.assets/image-20260108105319230.png) | ![image-20260108105305739](readme.assets/image-20260108105305739.png) |
+
+
+
 # 12.24 change
 
 我们针对细节问题进行了修改

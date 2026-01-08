@@ -76,14 +76,26 @@
 					<div class="container">
 
 						<!-- 头部导航 -->
-						<div class="navbar-header">
+						<!-- <div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse"
 								data-target="#navbar-menu">
 								<i class="fa fa-bars"></i>
 							</button>
 							<a class="navbar-brand" href="index.html">ACP Summer School 2026</a>
 
-						</div>
+						</div> -->
+						<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target="#navbar-menu">
+        <i class="fa fa-bars"></i>
+    </button>
+    <!-- 修改后的品牌区域，添加图片并设置样式 -->
+    <a class="navbar-brand" href="index.html" style="display: flex; align-items: center; gap: 8px;">
+        <!-- 这里替换成你的图片路径和属性 -->
+        <img src="assets\images\ACP_2.png" alt="ACP Logo" style="height: 30px; width: auto; vertical-align: middle;">
+        ACP Summer School 2026
+    </a>
+</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu" style="height: auto;">
@@ -817,16 +829,16 @@
 						</div>
 					</div>
 
-					<!-- Cieran McCreesh -->
+					<!-- Ciaran McCreesh -->
 					<div class="col-lg-3 col-md-4 col-sm-6">
 						<div class="single-featured-cars">
 							<div class="featured-img-box">
 								<div class="featured-cars-img">
-									<img src="assets/images/speakers/Cieran McCreesh.jpeg" alt="Cieran McCreesh" style="width: 100%;">
+									<img src="assets/images/speakers/Ciaran McCreesh.jpeg" alt="Ciaran McCreesh" style="width: 100%;">
 								</div>
 								<div class="featured-model-info">
 									<p>
-										Cieran McCreesh<br>
+										Ciaran McCreesh<br>
 										University of Glasgow<br>
 										UK
 									</p>
@@ -876,7 +888,7 @@
 									<p>
 										Helmut Simonis<br>
 										University College Cork<br>
-										UK
+										Ireland
 									</p>
 									<button class="speaker-details-btn" data-target="helmut-details" data-row="1"
 										type="button">View Details</button>
@@ -2382,25 +2394,17 @@
 	</section>
 	<!-- 吉林大学介绍 结束 -->
 
+
+	<!-- 之后要用的    赞助商变多 -->
 	<!-- 赞助商展示 -->
-	<section id="sponsors" class="service">
+	<!-- <section id="sponsors" class="service">
 		<div class="container">
-			<div class="section-header text-center"> <!-- 新增：添加区域标题 -->
+			<div class="section-header text-center">
 				<h2 style="margin-bottom: -20px;">Our Sponsors</h2>
 				<p style="margin-bottom: 25px;">Thanks to our partners for supporting ACP Summer School 2026</p>
 			</div>
 			<div class="sponsors-area">
 				<div class="owl-carousel owl-theme brand-item">
-					<div class="item">
-						<a href="#">
-							<img src="assets/images/partners/zhaozu.png" alt="brand-image" style="width: 150px;" />
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-							<img src="assets/images/partners/zhaozu.png" alt="brand-image" style="width: 150px;" />
-						</a>
-					</div>
 					<div class="item">
 						<a href="#">
 							<img src="assets/images/partners/JlU.png" alt="brand-image" style="width: 150px;" />
@@ -2416,9 +2420,51 @@
 
 		</div>
 
-	</section>
+	</section> -->
 	<!-- 赞助商结束 -->
 
+	<!-- 赞助商展示 -->
+	<section id="sponsors" class="service">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 style="margin-bottom: -20px;">Our Sponsors</h2>
+            <p style="margin-bottom: 25px;">Thanks to our partners for supporting ACP Summer School 2026</p>
+        </div>
+        <div class="sponsors-area">
+            <!-- 替换轮播组件为静态容器 -->
+            <div class="brand-item-static" style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 60px;
+                padding: 40px 0;
+            ">
+                <!-- 赞助商1 -->
+                <div class="brand-logo" style="display: inline-block;">
+                    <a href="#">
+                        <img src="assets/images/partners/JlU.png" alt="brand-image" style="width: 150px;" />
+                    </a>
+                </div>
+                <!-- 赞助商2 -->
+                <div class="brand-logo" style="display: inline-block;">
+                    <a href="#">
+                        <img src="assets/images/partners/zsgc.png" alt="brand-image" style="width: 150px;" />
+                    </a>
+                </div>
+                <!-- 如需添加更多赞助商，直接复制上面的div块即可 -->
+                <!-- 
+                <div class="brand-logo" style="display: inline-block;">
+                    <a href="#">
+                        <img src="assets/images/partners/xxx.png" alt="brand-image" style="width: 150px;" />
+                    </a>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</section>
+	<!-- 赞助商结束 -->
 
 	<!-- 页脚 / 联系信息 -->
 	<footer id="contact" class="contact">
