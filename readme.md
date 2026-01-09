@@ -1,5 +1,21 @@
 
 
+# 1.9 change
+
+- [x] 更新吉林大学符号计算与知识工程教育部重点实验室的logo
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260108111847989](readme.assets/image-20260108111847989.png) | ![image-20260109151754635](readme.assets/image-20260109151754635.png) |
+
+- [x] 删掉了不必要的facebook的logo
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260109151817230](readme.assets/image-20260109151817230.png) | ![image-20260109151829683](readme.assets/image-20260109151829683.png) |
+
+
+
 # 1.7 change
 
 - [x] We have removed the "Space for rent" item from the sponsor section. Since there are only two sponsors now, this will cause a loop situation. It might not look good, so we are currently using a static display to show the sponsors. When there are more sponsors, we will switch back to the carousel format.
