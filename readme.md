@@ -1,16 +1,42 @@
 
-# 1.10
+
+# 1.10 change
+
+- [x] 我们对网站的Name change section进行了修改
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260110100742813](readme.assets/image-20260110100742813.png) | ![image-20260110100755418](readme.assets/image-20260110100755418.png) |
+
+- [x] We reduced the frequency of the appearance of the email.
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260110100917299](readme.assets/image-20260110100917299.png) | ![image-20260110100927646](readme.assets/image-20260110100927646.png) |
+
 
 
 # 1.9 change
 
-- [x] Update the logo of the Key Laboratory of Symbolic Computing and Knowledge Engineering of the Ministry of Education at Jilin University
+- [x] We adjusted the line spacing between the paragraphs of the Event Venue section so that the spacing between the paragraphs is greater than the line spacing
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260109183235709](readme.assets/image-20260109183235709.png) | ![image-20260109183244270](readme.assets/image-20260109183244270.png) |
+
+- [x] We changed our intention form to expression of interest form
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260109183427079](readme.assets/image-20260109183427079.png) | ![image-20260109183352711](readme.assets/image-20260109183352711.png) |
+
+- [x] 更新吉林大学符号计算与知识工程教育部重点实验室的logo
 
 | before                                                       | after                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![image-20260108111847989](readme.assets/image-20260108111847989.png) | ![image-20260109151754635](readme.assets/image-20260109151754635.png) |
 
-- [x] Deleted the unnecessary Facebook logo
+- [x] 删掉了不必要的facebook的logo
 
 | before                                                       | after                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
