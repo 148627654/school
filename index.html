@@ -85,17 +85,19 @@
 
 						</div> -->
 						<div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse"
-        data-target="#navbar-menu">
-        <i class="fa fa-bars"></i>
-    </button>
-    <!-- 修改后的品牌区域，添加图片并设置样式 -->
-    <a class="navbar-brand" href="index.html" style="display: flex; align-items: center; gap: 8px;">
-        <!-- 这里替换成你的图片路径和属性 -->
-        <img src="assets\images\ACP_2.png" alt="ACP Logo" style="height: 30px; width: auto; vertical-align: middle;">
-        ACP Summer School 2026
-    </a>
-</div>
+							<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#navbar-menu">
+								<i class="fa fa-bars"></i>
+							</button>
+							<!-- 修改后的品牌区域，添加图片并设置样式 -->
+							<a class="navbar-brand" href="index.html"
+								style="display: flex; align-items: center; gap: 8px;">
+								<!-- 这里替换成你的图片路径和属性 -->
+								<img src="assets\images\ACP_2.png" alt="ACP Logo"
+									style="height: 30px; width: auto; vertical-align: middle;">
+								ACP Summer School 2026
+							</a>
+						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu" style="height: auto;">
@@ -120,7 +122,7 @@
 				<p>
 					CP: Explanation, Verification and Applications <br>
 					Changchun, China<br>
-					24 - 28 August, 2026<br>
+					24 - 28 August 2026<br>
 				</p>
 				<button class="welcome-btn"
 					onclick="window.location.href='index.html#registration-details'">Registration
@@ -211,7 +213,7 @@
                 Programming (CP) as a means to augment and complement university teaching of CP, and to
                 disseminate a core body of CP knowledge supporting the recognition of CP as a mature and
                 relevant technology for use in industry. ACP Summer School 2026 will be hosted by the
-                Jilin University and held in Changchun, China, during August 24-28, 2026.
+                Jilin University and held in Changchun, China, during August 24-28 2026.
             </p>
         </div>
     </div>
@@ -248,7 +250,7 @@
         </div>
     </div>
 </div> -->
-				<div class="row">
+				<div class="row equal-height-row">
 
 					<div class="col-md-4 col-sm-12">
 						<div class="single-service-item" style="padding-top: 20px; height: 100%;">
@@ -257,11 +259,14 @@
 							</div>
 							<h2><a href="#">series <span>overview</span></a></h2>
 							<p>
-								The ACP Summer School series was spearheaded by the Association for Constraint
-								Programming (CP) as a means to augment and complement university teaching of CP, and to
-								disseminate a core body of CP knowledge supporting the recognition of CP as a mature and
-								relevant technology for use in industry. ACP Summer School 2026 will be hosted by
-								Jilin University and held in Changchun, China, from 24-28 August, 2026.
+								The ACP Summer School is a series spearheaded by the Association for Constraint
+								Programming (CP) as a means
+								to augment and complement university teaching of CP, and to disseminate a core body of
+								CP knowledge
+								supporting the recognition of CP as a mature and relevant technology for use in
+								industry. ACP Summer School
+								2026 will be hosted by Jilin University and held in Changchun, China, from the 24th to
+								28th August 2026.
 							</p>
 						</div>
 					</div>
@@ -274,10 +279,14 @@
 							</div>
 							<h2><a href="#">2026 <span>program</span></a></h2>
 							<p>
-								The Summer School, themed “CP: Explanation, Verification and Applications,” will feature eight international experts
-								providing a general introduction to CP and applications, in addition to specialised topics. Learning activities
-								include lectures and hands-on sessions. A hackathon will also be organised, allowing learners to further practise
-								their skills. Teaching Assistants will be available to guide learners and enhance their learning experience.
+								The Summer School, themed “CP: Explanation, Verification and Applications,” will feature
+								eight international experts
+								providing a general introduction to CP and applications, in addition to specialised
+								topics. Learning activities
+								include lectures and hands-on sessions. A hackathon will also be organised, allowing
+								learners to further practise
+								their skills. Teaching Assistants will be available to guide learners and enhance their
+								learning experience.
 							</p>
 						</div>
 					</div>
@@ -303,13 +312,40 @@
 	</section>
 	<!-- ACP 介绍结束 -->
 
+	<style>
+		/* 强制父容器为 flex 布局，并让子元素等高 */
+		.equal-height-row {
+			display: flex;
+			flex-wrap: wrap;
+			/* 保留 col-sm-12 的响应式换行效果 */
+			margin: 0 -15px;
+			/* 还原 Bootstrap row 自带的左右外边距 */
+		}
 
+		/* 让每个列占比均匀（md及以上各1/3），且拉伸等高 */
+		.equal-height-row>.col-md-4 {
+			flex: 1 0 33.3333%;
+			/* 等价于 col-md-4 的宽度占比，禁止收缩、允许拉伸 */
+			display: flex;
+			/* 让列内部的 single-service-item 也能继承高度 */
+		}
+
+		/* 确保内容块 100% 填充父列高度，消除内边距/外边距影响 */
+		.single-service-item {
+			padding-top: 20px !important;
+			/* 替代行内样式，统一管理 */
+			height: 100% !important;
+			width: 100%;
+			box-sizing: border-box;
+			/* 内边距不影响元素总宽度/高度 */
+		}
+	</style>
 
 	<!-- 日程区 -->
 	<section id="schedule" class="service">
 		<div class="container">
 			<div class="section-header text-center">
-				<!-- <p>august 24-28, 2026</p> -->
+				<!-- <p>august 24-28 2026</p> -->
 				<h2>event schedule</h2>
 			</div>
 			<div class="new-cars-content">
@@ -319,7 +355,7 @@
 		</div>
 		<!-- <div class="container">
 			<div class="section-header text-center"> 
-				<p>august 24-28, 2026</p>
+				<p>august 24-28 2026</p>
 				<h2>event schedule TBD</h2>
 			</div>
 			<div class="new-cars-content">
@@ -570,16 +606,19 @@
 						<div class="single-featured-cars">
 							<div class="featured-img-box">
 								<div class="featured-cars-img">
-									<img src="assets\images\speakers\Peter Stuckey.jpeg" alt="Peter Stuckey" style="width: 100%;">
+									<img src="assets\images\speakers\Peter Stuckey.jpeg" alt="Peter Stuckey"
+										style="width: 100%;">
 								</div>
 								<div class="featured-model-info">
+									<p style="font-size: medium;">
+										<b>Peter J. Stuckey</b>
+									</p>
 									<p>
-										Peter J. Stuckey<br>
 										Monash University<br>
 										Australia
 									</p>
 									<button class="speaker-details-btn" data-target="peter-details" data-row="1"
-										type="button">View Details</button>
+										type="button" style=" text-decoration: underline;">View Details</button>
 								</div>
 							</div>
 							<div class="featured-ACP-txt">
@@ -629,16 +668,19 @@
 						<div class="single-featured-cars">
 							<div class="featured-img-box">
 								<div class="featured-cars-img">
-									<img src="assets/images/speakers/Guido Tack.jpeg" alt="Guido Tack" style="width: 100%;">
+									<img src="assets/images/speakers/Guido Tack.jpeg" alt="Guido Tack"
+										style="width: 100%;">
 								</div>
 								<div class="featured-model-info">
+									<p style="font-size: medium;">
+										<b>Guido Tack</b>
+									</p>
 									<p>
-										Guido Tack<br>
 										Monash University<br>
 										Australia
 									</p>
 									<button class="speaker-details-btn" data-target="guido-details" data-row="1"
-										type="button">View Details</button>
+										type="button" style=" text-decoration: underline;">View Details</button>
 								</div>
 							</div>
 							<div class="featured-ACP-txt">
@@ -675,16 +717,19 @@
 						<div class="single-featured-cars">
 							<div class="featured-img-box">
 								<div class="featured-cars-img">
-									<img src="assets/images/speakers/Alexey Ignatiev.jpeg" alt="Alexey Ignatiev" style="width: 100%;">
+									<img src="assets/images/speakers/Alexey Ignatiev.jpeg" alt="Alexey Ignatiev"
+										style="width: 100%;">
 								</div>
 								<div class="featured-model-info">
+									<p style="font-size: medium;">
+										<b>Alexey Ignatiev</b>
+									</p>
 									<p>
-										Alexey Ignatiev<br>
 										Monash University<br>
 										Australia
 									</p>
 									<button class="speaker-details-btn" data-target="alexey-details" data-row="1"
-										type="button">View Details</button>
+										type="button" style=" text-decoration: underline;">View Details</button>
 
 								</div>
 							</div>
@@ -732,15 +777,18 @@
 						<div class="single-featured-cars">
 							<div class="featured-img-box">
 								<div class="featured-cars-img">
-									<img src="assets/images/speakers/Emir Demirovic.jpg" alt="Emir Demirovic" style="width: 100%;">
+									<img src="assets/images/speakers/Emir Demirovic.jpg" alt="Emir Demirovic"
+										style="width: 100%;">
 								</div>
 								<div class="featured-model-info">
+									<p style="font-size: medium;">
+										<b>Emir Demirović</b>
+									</p>
 									<p>
-										Emir Demirović<br>
 										Delft University of Technology, Netherlands
 									</p>
 									<button class="speaker-details-btn" data-target="emir-details" data-row="1"
-										type="button">View Details</button>
+										type="button" style=" text-decoration: underline;">View Details</button>
 								</div>
 							</div>
 							<div class="featured-ACP-txt">
@@ -786,16 +834,19 @@
 						<div class="single-featured-cars">
 							<div class="featured-img-box">
 								<div class="featured-cars-img">
-									<img src="assets/images/speakers/Tias Guns.jpeg" alt="Tias Guns" style="width: 100%;">
+									<img src="assets/images/speakers/Tias Guns.jpeg" alt="Tias Guns"
+										style="width: 100%;">
 								</div>
 								<div class="featured-model-info">
+									<p style="font-size: medium;">
+										<b>Tias Guns</b>
+									</p>
 									<p>
-										Tias Guns<br>
 										KU Leuven<br>
 										Belgium
 									</p>
 									<button class="speaker-details-btn" data-target="tias-details" data-row="1"
-										type="button">View Details</button>
+										type="button" style=" text-decoration: underline;">View Details</button>
 								</div>
 							</div>
 							<div class="featured-ACP-txt">
@@ -832,16 +883,19 @@
 						<div class="single-featured-cars">
 							<div class="featured-img-box">
 								<div class="featured-cars-img">
-									<img src="assets/images/speakers/Ciaran McCreesh.jpeg" alt="Ciaran McCreesh" style="width: 100%;">
+									<img src="assets/images/speakers/Ciaran McCreesh.jpeg" alt="Ciaran McCreesh"
+										style="width: 100%;">
 								</div>
 								<div class="featured-model-info">
+									<p style="font-size: medium;">
+										<b>Ciaran McCreesh</b>
+									</p>
 									<p>
-										Ciaran McCreesh<br>
 										University of Glasgow<br>
 										UK
 									</p>
 									<button class="speaker-details-btn" data-target="cieran-details" data-row="1"
-										type="button">View Details</button>
+										type="button" style=" text-decoration: underline;">View Details</button>
 								</div>
 							</div>
 							<div class="featured-ACP-txt">
@@ -880,16 +934,19 @@
 						<div class="single-featured-cars">
 							<div class="featured-img-box">
 								<div class="featured-cars-img">
-									<img src="assets/images/speakers/Helmut Simonis.jpeg" alt="Helmut Simonis" style="width: 100%;">
+									<img src="assets/images/speakers/Helmut Simonis.jpeg" alt="Helmut Simonis"
+										style="width: 100%;">
 								</div>
 								<div class="featured-model-info">
+									<p style="font-size: medium;">
+										<b>Helmut Simonis</b>
+									</p>
 									<p>
-										Helmut Simonis<br>
 										University College Cork<br>
 										Ireland
 									</p>
 									<button class="speaker-details-btn" data-target="helmut-details" data-row="1"
-										type="button">View Details</button>
+										type="button" style=" text-decoration: underline;">View Details</button>
 								</div>
 							</div>
 							<div class="featured-ACP-txt">
@@ -928,16 +985,19 @@
 						<div class="single-featured-cars">
 							<div class="featured-img-box">
 								<div class="featured-cars-img">
-									<img src="assets/images/speakers/Allen Zhong.jpeg" alt="Allen Zhong" style="width: 100%;">
+									<img src="assets/images/speakers/Allen Zhong.jpeg" alt="Allen Zhong"
+										style="width: 100%;">
 								</div>
 								<div class="featured-model-info">
+									<p style="font-size: medium;">
+										<b>Allen Z. Zhong</b>
+									</p>
 									<p>
-										Allen Z. Zhong<br>
 										Monash University<br>
 										Australia
 									</p>
 									<button class="speaker-details-btn" data-target="allen-details" data-row="1"
-										type="button">View Details</button>
+										type="button" style=" text-decoration: underline;">View Details</button>
 								</div>
 							</div>
 							<div class="featured-ACP-txt">
@@ -1103,31 +1163,31 @@
 				<h2>Event Venue</h2>
 				<!-- <p>Homm Changchun Beihu Hotel (Banyan Tree Group)</p> -->
 			</div>
-	
+
 			<div class="row">
 				<!-- 文字描述部分 -->
 				<div class="col-md-6">
 					<div class="venue-info">
 						<h3>Homm Changchun Beihu Hotel</h3>
-						<p style="text-align: justify; text-justify: inter-word; margin-top: 15px;">Homm Changchun Beihu
-							Hotel offers a truly distinctive setting for our Summer School in Changchun. As the first
-							high-end hotel of Banyan Tree Group in Northeast China, it is located in the heart of the
-							Changchun Beihu National Wetland Park, surrounded by water, greenery, and open skies—an
-							inspiring environment for learning, discussion, and connection.</p>
-						<p style="text-align: justify; text-justify: inter-word; margin-top: 15px;">The hotel features 247 thoughtfully
-							designed rooms, including elegant villa-style accommodations, many with private courtyards or
-							terraces. Blending modern comfort with refined Chinese aesthetics inspired by traditional water
-							towns, the space feels both luxurious and relaxed—ideal for long study days, informal
-							conversations, and moments of quiet reflection.</p>
-						<p style="text-align: justify; text-justify: inter-word; margin-top: 15px;">Designed with academic events in mind,
-							Homm Changchun Beihu provides versatile meeting and lecture spaces equipped with modern
-							audiovisual facilities. From focused lectures and hands-on sessions to evening discussions and
-							social gatherings, the hotel comfortably supports the full rhythm of a Summer School.</p>
-						<p style="text-align: justify; text-justify: inter-word; margin-top: 15px;">Beyond the classrooms, participants can
-							enjoy diverse dining options and step directly into the surrounding wetland park for a walk, a
-							conversation, or a break between sessions. With accommodation, learning spaces, and nature
-							seamlessly connected, Homm Changchun Beihu Hotel creates an atmosphere where intensive study and
-							meaningful exchange feel both productive and enjoyable.</p>
+						<p style="text-align: justify; text-justify: inter-word; margin-top: 15px;">This year’s Summer
+							School will take place at
+							the Homm Changchun Beihu Hotel, located within the Changchun Beihu National Wetland Park.
+							Set amid water, greenery,
+							and open skies, the venue offers a calm and spacious environment that supports focused
+							learning, in-depth
+							discussion, and sustained intellectual engagement.</p>
+						<p style="text-align: justify; text-justify: inter-word; margin-top: 15px;">The hotel provides
+							comfortable on-site
+							accommodation together with a range of modern lecture halls and meeting rooms equipped with
+							professional audiovisual
+							facilities. Partipants may move between living spaces, classrooms, and informal discussion
+							areas, encouraging both
+							structured learning and spontaneous academic exchange.
+						</p>
+						<p style="text-align: justify; text-justify: inter-word; margin-top: 15px;">Beyond the
+							classrooms, participants may step
+							directly into the surrounding park for a short walk, a conversation, or a moment of
+							reflection between sessions.</p>
 						<div class="contact-details" style="margin-top: 30px;">
 							<!-- 统一样式：设置图标容器宽度，确保文字起始位置对齐 -->
 							<style>
@@ -1136,7 +1196,7 @@
 									align-items: flex-start;
 									margin-top: 15px;
 								}
-	
+
 								.contact-details .info-item i {
 									color: #4e4ffa;
 									width: 24px;
@@ -1145,12 +1205,12 @@
 									flex-shrink: 0;
 									/* 防止图标被压缩 */
 								}
-	
+
 								.contact-details .info-item span {
 									flex: 1;
 								}
 							</style>
-	
+
 							<h4 style="margin-top: 20px;">Contact Information</h4>
 							<div class="info-item">
 								<i class="fa fa-map-marker"></i>
@@ -1165,7 +1225,7 @@
 								<i class="fa fa-phone"></i>
 								<span>Phone: +86-431-87899999</span>
 							</div>
-	
+
 							<h4 style="margin-top: 20px;">Transportation Info</h4>
 							<div class="info-item">
 								<i class="fa fa-subway"></i>
@@ -1182,7 +1242,7 @@
 						</div>
 					</div>
 				</div>
-	
+
 				<!-- 视频 + 谷歌地图嵌入（长春北湖鸿居悦榕酒店） -->
 				<div class="col-md-6">
 					<!-- 酒店视频 -->
@@ -1203,69 +1263,77 @@
 							width="600" height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
-<!-- Accommodation Image Carousel -->
-<div class="row" style="margin-top: 60px;">
-	<div class="col-md-12">
-		<h3 class="text-center" style="margin-bottom: 25px;">
-			Accommodation & Surroundings
-		</h3>
+					<!-- Accommodation Image Carousel -->
+					<div class="row" style="margin-top: 60px;">
+						<div class="col-md-12">
+							<h3 class="text-center" style="margin-bottom: 25px;">
+								Accommodation & Surroundings
+							</h3>
 
-		<div id="accommodationCarousel" class="carousel slide"
-			 data-ride="carousel" data-interval="2500">
+							<div id="accommodationCarousel" class="carousel slide" data-ride="carousel"
+								data-interval="2500">
 
-			<!-- 指示器 -->
-			<ol class="carousel-indicators">
-				<li data-target="#accommodationCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#accommodationCarousel" data-slide-to="1"></li>
-				<li data-target="#accommodationCarousel" data-slide-to="2"></li>
-				<li data-target="#accommodationCarousel" data-slide-to="3"></li>
-				<li data-target="#accommodationCarousel" data-slide-to="4"></li>
-				<li data-target="#accommodationCarousel" data-slide-to="5"></li>
-				<li data-target="#accommodationCarousel" data-slide-to="6"></li>
-				<li data-target="#accommodationCarousel" data-slide-to="7"></li>
-			</ol>
+								<!-- 指示器 -->
+								<ol class="carousel-indicators">
+									<li data-target="#accommodationCarousel" data-slide-to="0" class="active"></li>
+									<li data-target="#accommodationCarousel" data-slide-to="1"></li>
+									<li data-target="#accommodationCarousel" data-slide-to="2"></li>
+									<li data-target="#accommodationCarousel" data-slide-to="3"></li>
+									<li data-target="#accommodationCarousel" data-slide-to="4"></li>
+									<li data-target="#accommodationCarousel" data-slide-to="5"></li>
+									<li data-target="#accommodationCarousel" data-slide-to="6"></li>
+									<li data-target="#accommodationCarousel" data-slide-to="7"></li>
+								</ol>
 
-			<!-- 图片内容（Bootstrap 3 用 item） -->
-			<div class="carousel-inner"
-				 style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.12);">
+								<!-- 图片内容（Bootstrap 3 用 item） -->
+								<div class="carousel-inner"
+									style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.12);">
 
-				<div class="item active">
-					<img src="assets/images/accommodation/accommodation1.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="item">
-					<img src="assets/images/accommodation/accommodation2.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="item">
-					<img src="assets/images/accommodation/accommodation3.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="item">
-					<img src="assets/images/accommodation/accommodation4.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="item">
-					<img src="assets/images/accommodation/accommodation6.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="item">
-					<img src="assets/images/accommodation/accommodation7.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="item">
-					<img src="assets/images/accommodation/accommodation8.jpg" class="img-responsive" alt="">
-				</div>
-				<div class="item">
-					<img src="assets/images/accommodation/accommodation9.jpg" class="img-responsive" alt="">
-				</div>
-			</div>
+									<div class="item active">
+										<img src="assets/images/accommodation/accommodation1.jpg" class="img-responsive"
+											alt="">
+									</div>
+									<div class="item">
+										<img src="assets/images/accommodation/accommodation2.jpg" class="img-responsive"
+											alt="">
+									</div>
+									<div class="item">
+										<img src="assets/images/accommodation/accommodation3.jpg" class="img-responsive"
+											alt="">
+									</div>
+									<div class="item">
+										<img src="assets/images/accommodation/accommodation4.jpg" class="img-responsive"
+											alt="">
+									</div>
+									<div class="item">
+										<img src="assets/images/accommodation/accommodation6.jpg" class="img-responsive"
+											alt="">
+									</div>
+									<div class="item">
+										<img src="assets/images/accommodation/accommodation7.jpg" class="img-responsive"
+											alt="">
+									</div>
+									<div class="item">
+										<img src="assets/images/accommodation/accommodation8.jpg" class="img-responsive"
+											alt="">
+									</div>
+									<div class="item">
+										<img src="assets/images/accommodation/accommodation9.jpg" class="img-responsive"
+											alt="">
+									</div>
+								</div>
 
-			<!-- 左右切换 -->
-			<a class="left carousel-control" href="#accommodationCarousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-			<a class="right carousel-control" href="#accommodationCarousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
+								<!-- 左右切换 -->
+								<a class="left carousel-control" href="#accommodationCarousel" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								</a>
+								<a class="right carousel-control" href="#accommodationCarousel" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								</a>
 
-		</div>
-	</div>
-</div>
+							</div>
+						</div>
+					</div>
 
 
 				</div>
@@ -1275,33 +1343,33 @@
 
 	<!-- Registration Details（注册详情） -->
 
-<section id="registration-details" class="schedule" style="padding: 100px 0;">
-	<div class="container">
-		<div class="section-header text-center">
-			<h2>Registration Details</h2>
+	<section id="registration-details" class="schedule" style="padding: 100px 0;">
+		<div class="container">
+			<div class="section-header text-center">
+				<h2>Registration Details</h2>
 
-			<!-- 新增：问卷报名链接区域 -->
-			<div class="registration-survey"
-				style="margin: 30px 0; padding: 20px; background-color: #f0f8fb; border-radius: 8px;">
-				<h3 style="margin-bottom: 15px; color: #2d3748;">Pre-Registration Survey</h3>
-				<p style="margin-bottom: 20px;  line-height: 1.6;">Please complete the survey first before
-					proceeding with registration
-					(required for all applicants)</p>
+				<!-- 新增：问卷报名链接区域 -->
+				<div class="registration-survey"
+					style="margin: 30px 0; padding: 20px; background-color: #f0f8fb; border-radius: 8px;">
+					<h3 style="margin-bottom: 15px; color: #2d3748;">Pre-Registration Survey</h3>
+					<p style="margin-bottom: 20px;  line-height: 1.6;">Please complete the survey first before
+						proceeding with registration
+						(required for all applicants)</p>
 
-				<!-- 未超时：显示报名链接按钮 -->
-				<div id="active-registration" style="display: flex; flex-direction: column; align-items: center;">
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLScaX-raiGrqr1EuUKwbEh1xgknQJggCn2IIS5YIITj44jg_8w/viewform?usp=header"
-					   target="_blank">
-						<button class="reg-btn">Complete Pre-Registration</button>
-					</a>
+					<!-- 未超时：显示报名链接按钮 -->
+					<div id="active-registration" style="display: flex; flex-direction: column; align-items: center;">
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLScaX-raiGrqr1EuUKwbEh1xgknQJggCn2IIS5YIITj44jg_8w/viewform?usp=header"
+							target="_blank">
+							<button class="reg-btn">Complete Pre-Registration</button>
+						</a>
 
-					<p style="margin-top: 10px; font-size: 14px; color: #666;">
-						Registration deadline: 7 July, 2026
-					</p>
-				</div>
+						<p style="margin-top: 10px; font-size: 14px; color: #666;">
+							Registration deadline: 7 July 2026
+						</p>
+					</div>
 
-				<!-- 超时：显示关闭提示（已注释，需启用时取消注释并隐藏上方active-registration） -->
-				<!--
+					<!-- 超时：显示关闭提示（已注释，需启用时取消注释并隐藏上方active-registration） -->
+					<!--
                 <div id="closed-registration" style="display: block; padding: 20px; background-color: #fef7fb; border-radius: 6px;">
                     <h4 style="color: #e53e3e; margin-bottom: 10px;">Registration is now closed!</h4>
                     <p style="margin-bottom: 15px; text-align: justify; text-align-last: left;">Thank you for your interest. Please go back to ACP Summer School for the next edition.</p>
@@ -1310,93 +1378,101 @@
                     </a>
                 </div>
                 -->
-			</div>
+				</div>
 
-			<!-- 新增的注册流程说明文本（完全匹配Legal Precautions样式） -->
-			<div class="registration-instructions" style="margin: 40px 0; padding-left: 5px; max-width: 100%;">
-				<p
-					style="color: inherit; margin: 0 0 10px 0; padding-left: 5px; text-align: justify; text-align-last: left; line-height: 1.6;">
-					To register, please complete the expression of interest
-					form (including whether you require a visa for entry into China).
-				</p>
-				<p
-					style="color: inherit; margin: 0 0 10px 0; padding-left: 5px; text-align: justify; text-align-last: left; line-height: 1.6;">
-					The registration process consists of 3 steps:
-				</p>
-				<ul
-					style="margin: 0 0 10px 20px; padding-left: 5px; list-style: disc; color: inherit; text-align: justify; text-align-last: left; line-height: 1.6;">
-					<li style="margin-bottom: 5px; color: inherit;"><strong>Step 1 - Complete the intention
-							form:</strong>
-						Please fill in the intention form and provide relevant information, including whether you
-						require a visa for entry into China.
-					</li>
-					<li style="margin-bottom: 5px; color: inherit;"><strong>Step 2 - Receive the first confirmation
-							email:</strong>
-						<!-- You will receive a confirmation email that the registration has been received, which
-						contains all payment details. -->
-						You will receive a confirmation email acknowledging your registration, which will include all necessary payment details.
-					</li>
-					<li style="margin-bottom: 5px; color: inherit;"><strong>Step 3 - Make payment and receive the second
-							email:</strong>
-						All payments should be made in advance in Euro (EUR, €) within 14 days of your registration.
-						After successful payment, you will receive a second email confirming that we have received your
-						payment.
-					</li>
-				</ul>
-				<p style="color: inherit; margin: 0; padding-left: 5px; text-align: justify; text-align-last: left; line-height: 1.6;">
-					<b>Official Communication Notice</b>
-					For any questions about the Summer School, please contact us at <a href="mailto:acpss2026@gmail.com"
-						style="font-size: inherit; text-decoration: none; text-decoration: underline;">acpss2026@gmail.com</a>.
-					This is the sole official email address used for communication with participants.
-				</p>
-			</div>
+				<!-- 新增的注册流程说明文本（完全匹配Legal Precautions样式） -->
+				<div class="registration-instructions" style="margin: 40px 0; padding-left: 5px; max-width: 100%;">
+					<p
+						style="color: inherit; margin: 0 0 10px 0; padding-left: 5px; text-align: justify; text-align-last: left; line-height: 1.6;">
+						Participation will require a payment of €500. To register, please complete the expression of
+						interest form
+						(including whether you require a visa to enter China).
+					</p>
+					<p
+						style="color: inherit; margin: 0 0 10px 0; padding-left: 5px; text-align: justify; text-align-last: left; line-height: 1.6;">
+						Registration is a two-step process:
+					</p>
+					<ul
+						style="margin: 0 0 10px 20px; padding-left: 5px; list-style: disc; color: inherit; text-align: justify; text-align-last: left; line-height: 1.6;">
+						<li style="margin-bottom: 5px; color: inherit;"><strong>Step 1 - Complete the intention
+								form:</strong>Please fill in the expression of interest form and provide relevant
+							information, including
+							whether you require a visa for entry into China. You will receive a confirmation email
+							acknowledging your
+							registration. It'll also include payment instructions.
+						</li>
+						<li style="margin-bottom: 5px; color: inherit;"><strong>Step 2 - Complete payment:</strong>
+							<!-- You will receive a confirmation email that the registration has been received, which
+										contains all payment details. -->
+							All payments should be made in advance in Euro (EUR, €) within 14 days of your registration.
+							After
+							successful payment, you will receive a second email confirming that we have received your
+							payment.
+						</li>
+					</ul>
+					<p
+						style="color: inherit; margin: 0; padding-left: 5px; text-align: justify; text-align-last: left; line-height: 1.6;">
+						<b>Official Communication Notice</b>
+						For any questions about the Summer School, please contact us at <a
+							href="mailto:acpss2026@gmail.com"
+							style="font-size: inherit; text-decoration: none; text-decoration: underline;">acpss2026@gmail.com</a>.
+						This is the sole official email address used for communication with participants.
+					</p>
+				</div>
 
-			<div class="row">
 				<div class="row">
-					<!-- 唯一选项：含共享住宿参会套餐 -->
-					<div class="col-md-12 col-sm-12">
-						<div class="single-service-item">
-							<div class="single-service-icon">
-								<i class="fa fa-users" style="color: #4e4ffa;"></i>
+					<div class="row">
+						<!-- 唯一选项：含共享住宿参会套餐 -->
+						<div class="col-md-12 col-sm-12">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="fa fa-users" style="color: #4e4ffa;"></i>
+								</div>
+								<h2><a href="#">Participation with Shared Accommodation</a></h2>
+								<p style="font-size: 18px; font-weight: 600;">€500.00</p>
+								<p style="line-height: 1.6;">With shared accommodation (2 persons)</p>
 							</div>
-							<h2><a href="#">Participation with Shared Accommodation</a></h2>
-							<p style="font-size: 18px; font-weight: 600;">€500.00</p>
-							<p style="line-height: 1.6;">With shared accommodation (2 persons)</p>
 						</div>
 					</div>
 				</div>
-			</div>
 
-<!-- Financial Support / Scholarships -->
-<div class="section-header text-center" style="margin-top: 50px;">
-	<h2>Financial Supports</h2>
-	<p
-		style="font-size: 16px; line-height: 1.7; max-width: 900px; margin: 0 auto 15px; text-align: justify; color: inherit;">
-		We offer <span style="color: #e53e3e; font-weight: 600;">partial financial support</span> to a <span style="color: #e53e3e; font-weight: 600;">limited number</span> of applicants to assist Summer School participants with
-		demonstrated financial need, particularly those traveling long distances. Financial support is awarded on a
-		<span style="color: #e53e3e; font-weight: 600;">first-come, first-served</span> basis, subject to availability.
-	</p>
-	<p
-		style="font-size: 16px; line-height: 1.7; max-width: 900px; margin: 0 auto 15px;text-align: justify; color: inherit;">
-		If you wish to be considered for financial support, you must <span style="color: #e53e3e; font-weight: 600;">complete the
-			relevant sections of the registration form fully and accurately</span>, as all decisions are based solely
-		on the information provided during registration. Evaluation criteria may include, but are not limited to, <span
-			style="color: #e53e3e; font-weight: 600;text-transform: none;">travel distance, research direction and output, background, career
-			stage, and motivation for attending the Summer School</span>.</p>
-	<p
-		style="font-size: 16px; line-height: 1.7; max-width: 900px; margin: 0 auto 15px;text-align: justify; color: inherit;">
-		You will be notified of the financial support decision <span style="color: #e53e3e; font-weight: 600;">within 14
-			days after completing registration</span>.</p>
-	<p style="font-size: 16px; line-height: 1.7; max-width: 900px; margin: 0 auto;text-align: justify; color: inherit;">
-		If financial support is granted, recipients will be given an <span
-			style="color: #e53e3e; font-weight: 600;">additional 14-day period</span> to complete the registration
-		payment. Failure to do so will result in the <span style="color: #e53e3e; font-weight: 600;">automatic
-			withdrawal of the financial support offer</span>.</p>
-</div>
+				<!-- Financial Support / Scholarships -->
+				<div class="section-header text-center" style="margin-top: 50px;">
+					<h2>Financial Support</h2>
+					<p style="font-size: 16px; line-height: 1.7; text-align: justify; color: inherit;">
+						We offer <span style="color: #e53e3e; font-weight: 600;">partial financial support</span> to a
+						<span style="color: #e53e3e; font-weight: 600;">limited number</span> of applicants to assist
+						Summer School participants with
+						demonstrated financial need, particularly those traveling long distances. Financial support is
+						awarded on a
+						<span style="color: #e53e3e; font-weight: 600;">first-come, first-served</span> basis, subject
+						to availability.
+					</p>
+					<p style="font-size: 16px; line-height: 1.7; text-align: justify; color: inherit;">
+						If you wish to be considered for financial support, you must <span
+							style="color: #e53e3e; font-weight: 600;">complete the
+							relevant sections of the registration form fully and accurately</span>, as all decisions are
+						based solely
+						on the information provided during registration. Evaluation criteria may include, but are not
+						limited to, <span style="color: #e53e3e; font-weight: 600;text-transform: none;">travel
+							distance, research direction and output, background, career
+							stage, and motivation for attending the Summer School</span>.</p>
+					<p style="font-size: 16px; line-height: 1.7; text-align: justify; color: inherit;">
+						You will be notified of the financial support decision <span
+							style="color: #e53e3e; font-weight: 600;">within 14
+							days after completing registration</span>.</p>
+					<p style="font-size: 16px; line-height: 1.7; text-align: justify; color: inherit;">
+						If financial support is granted, recipients will be given an <span
+							style="color: #e53e3e; font-weight: 600;">additional 14-day period</span> to complete the
+						registration
+						payment. Failure to do so will result in the <span
+							style="color: #e53e3e; font-weight: 600;">automatic
+							withdrawal of the financial support offer</span>.</p>
+				</div>
 
 			</div>
 		</div>
-</section>
+	</section>
 
 
 	<!-- Included Services（费用包含）
@@ -1463,254 +1539,272 @@
 			</div>
 		</div>
 	</section> -->
-<section id="included-services" class="service" style="padding: 100px 0;">
-	<div class="container">
-		<div class="section-header text-center mb-5">
-			<h2>Registration Fee Includes</h2>
-			<p>What's included in your registration fee (€500 per participant)</p>
+	<section id="included-services" class="service" style="padding: 100px 0;">
+		<div class="container">
+			<div class="section-header text-center mb-5">
+				<h2>Registration Fee Includes</h2>
+				<p>What's included in your registration fee (€500 per participant)</p>
+			</div>
+
+			<!-- 核心：服务项网格 - 每个项包含图标+标题+列表 -->
+			<div class="row service-grid">
+				<!-- 餐饮服务项 -->
+				<div class="service-item">
+					<div class="icon-wrapper">
+						<span style="font-size: 40px;">🍽️</span>
+					</div>
+					<div class="title-wrapper text-center mb-3">
+						<h3 style="margin: 0; font-size: 1.1em;">Catering</h3>
+					</div>
+					<div class="list-wrapper">
+						<ul class="main-list centered-list">
+							<li>Breakfast</li>
+							<li>Lunch</li>
+							<li>Dinner</li>
+							<li>Banquet</li>
+							<li>Coffee breaks</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 住宿服务项 -->
+				<div class="service-item">
+					<div class="icon-wrapper">
+						<span style="font-size: 40px;">🏨</span>
+					</div>
+					<div class="title-wrapper text-center mb-3">
+						<h3 style="margin: 0; font-size: 1.1em;">Accommodation</h3>
+					</div>
+					<div class="list-wrapper">
+						<ul class="main-list centered-list">
+							<li class="has-sub">Shared twin room
+								<ul class="sub-list">
+									<li>23 check in</li>
+									<li>29 check out</li>
+								</ul>
+							</li>
+							<li>Free Wi-Fi</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 物料服务项 -->
+				<div class="service-item">
+					<div class="icon-wrapper">
+						<span style="font-size: 40px;">📦</span>
+					</div>
+					<div class="title-wrapper text-center mb-3">
+						<h3 style="margin: 0; font-size: 1.1em;">Materials & Souvenirs</h3>
+					</div>
+					<div class="list-wrapper">
+						<ul class="main-list centered-list">
+							<li>Name badge</li>
+							<li>Gift</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 社交活动服务项 -->
+				<div class="service-item">
+					<div class="icon-wrapper">
+						<span style="font-size: 40px;">🎉</span>
+					</div>
+					<div class="title-wrapper text-center mb-3">
+						<h3 style="margin: 0; font-size: 1.1em;  text-transform: none;">Social event</h3>
+					</div>
+					<div class="list-wrapper">
+						<ul class="main-list centered-list">
+							<li>Venue</li>
+							<li>Activities</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 交通服务项 -->
+				<div class="service-item">
+					<div class="icon-wrapper">
+						<span style="font-size: 40px;">🚗</span>
+					</div>
+					<div class="title-wrapper text-center mb-3">
+						<h3 style="margin: 0; font-size: 1.1em;  text-transform: none;">Local transportation</h3>
+					</div>
+					<div class="list-wrapper">
+						<ul class="main-list centered-list">
+							<li>23 Aug: Airport → Hotel</li>
+							<li>29 Aug: Hotel → Airport</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
+	</section>
 
-		<!-- 核心：服务项网格 - 每个项包含图标+标题+列表 -->
-		<div class="row service-grid">
-			<!-- 餐饮服务项 -->
-			<div class="service-item">
-				<div class="icon-wrapper">
-					<span style="font-size: 40px;">🍽️</span>
-				</div>
-				<div class="title-wrapper text-center mb-3">
-					<h3 style="margin: 0; font-size: 1.1em;">Catering</h3>
-				</div>
-				<div class="list-wrapper">
-					<ul class="main-list centered-list">
-						<li>Breakfast</li>
-						<li>Lunch</li>
-						<li>Dinner</li>
-						<li>Banquet</li>
-						<li>Coffee breaks</li>
-					</ul>
-				</div>
-			</div>
-
-			<!-- 住宿服务项 -->
-			<div class="service-item">
-				<div class="icon-wrapper">
-					<span style="font-size: 40px;">🏨</span>
-				</div>
-				<div class="title-wrapper text-center mb-3">
-					<h3 style="margin: 0; font-size: 1.1em;">Accommodation</h3>
-				</div>
-				<div class="list-wrapper">
-					<ul class="main-list centered-list">
-						<li class="has-sub">Shared twin room
-							<ul class="sub-list">
-								<li>23 check in</li>
-								<li>29 check out</li>
-							</ul>
-						</li>
-						<li>Free Wi-Fi</li>
-					</ul>
-				</div>
-			</div>
-
-			<!-- 物料服务项 -->
-			<div class="service-item">
-				<div class="icon-wrapper">
-					<span style="font-size: 40px;">📦</span>
-				</div>
-				<div class="title-wrapper text-center mb-3">
-					<h3 style="margin: 0; font-size: 1.1em;">Materials & Souvenirs</h3>
-				</div>
-				<div class="list-wrapper">
-					<ul class="main-list centered-list">
-						<li>Name badge</li>
-						<li>Gift</li>
-					</ul>
-				</div>
-			</div>
-
-			<!-- 社交活动服务项 -->
-			<div class="service-item">
-				<div class="icon-wrapper">
-					<span style="font-size: 40px;">🎉</span>
-				</div>
-				<div class="title-wrapper text-center mb-3">
-					<h3 style="margin: 0; font-size: 1.1em;  text-transform: none;">Social event</h3>
-				</div>
-				<div class="list-wrapper">
-					<ul class="main-list centered-list">
-						<li>Venue</li>
-						<li>Activities</li>
-					</ul>
-				</div>
-			</div>
-
-			<!-- 交通服务项 -->
-			<div class="service-item">
-				<div class="icon-wrapper">
-					<span style="font-size: 40px;">🚗</span>
-				</div>
-				<div class="title-wrapper text-center mb-3">
-					<h3 style="margin: 0; font-size: 1.1em;  text-transform: none;">Local transportation</h3>
-				</div>
-				<div class="list-wrapper">
-					<ul class="main-list centered-list">
-						<li>23 Aug: Airport → Hotel</li>
-						<li>29 Aug: Hotel → Airport</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<style>
-	/* 服务项网格容器 */
-	.service-grid {
-		display: flex;
-		flex-wrap: wrap; /* 允许换行 */
-		justify-content: space-between;
-		width: 100%;
-		margin: 0;
-		gap: 15px; /* 项之间的间距 */
-	}
-
-	/* 单个服务项样式 */
-	.service-item {
-		flex: 1 1 calc(20% - 15px); /* 桌面端5列均分，减去间距 */
-		min-width: 180px; /* 最小宽度，防止挤压 */
-		/* padding: 15px; */
-		box-sizing: border-box;
-	}
-
-	/* 图标容器样式 - 确保图标完全居中 */
-	.icon-wrapper {
-		display: flex;
-		justify-content: center; /* 水平居中 */
-		align-items: center;     /* 垂直居中 */
-		height: 80px;            /* 固定图标高度，保持所有项对齐 */
-		width: 100%;             /* 宽度100%，确保水平居中生效 */
-		margin-bottom: 10px;
-		text-align: center;      /* 兜底居中 */
-	}
-
-	/* 图标本身样式强化 */
-	.icon-wrapper span {
-		display: inline-block;
-		margin: 0 auto; /* 双重保障居中 */
-	}
-
-	/* 列表容器样式 */
-	.list-wrapper {
-		margin-top: 15px;
-		text-align: center; /* 让列表整体居中 */
-		width: 100%;
-	}
-
-	/* 居中列表样式 - 核心修改 */
-	.centered-list {
-		display: inline-block; /* 让列表根据内容宽度居中 */
-		text-align: left; /* 列表项文字左对齐，保持自然阅读体验 */
-		padding-left: 20px; /* 保留项目符号的缩进 */
-		margin: 0;
-		box-sizing: border-box;
-		list-style: none; /* 统一去掉默认列表符号 */
-	}
-
-	/* 主列表项样式 */
-	.centered-list > li {
-		position: relative;
-		padding: 3px 0;
-		box-sizing: border-box;
-	}
-
-	/* 给有子列表的项特殊样式 */
-	.centered-list > li.has-sub {
-		padding-bottom: 5px;
-	}
-
-	/* 二级列表样式 */
-	.sub-list {
-		list-style: none; 
-		padding-left: 20px; /* 缩进二级列表 */
-		margin: 5px 0 0 0; 
-		display: block;
-	}
-
-	/* 二级列表项样式 */
-	.sub-list li {
-		margin-top: 3px;
-		font-size: 0.9em;
-		padding: 2px 0;
-	}
-
-	/* 为餐饮和社交活动项恢复项目符号 */
-	.service-item:nth-child(1) .centered-list,
-	.service-item:nth-child(4) .centered-list {
-		list-style: disc;
-		padding-left: 25px;
-	}
-
-	/* 桌面端响应式：当宽度不足时自动调整 */
-	@media (max-width: 1200px) {
-		.service-item {
-			flex: 1 1 calc(25% - 15px); /* 4列 */
-		}
-	}
-
-	/* 平板端：3列 */
-	@media (max-width: 992px) {
-		.service-item {
-			flex: 1 1 calc(33.333% - 15px);
-		}
-	}
-
-	/* 移动端：2列 */
-	@media (max-width: 768px) {
-		.service-item {
-			flex: 1 1 calc(50% - 15px);
+	<style>
+		/* 服务项网格容器 */
+		.service-grid {
+			display: flex;
+			flex-wrap: wrap;
+			/* 允许换行 */
+			justify-content: space-between;
+			width: 100%;
+			margin: 0;
+			gap: 15px;
+			/* 项之间的间距 */
 		}
 
-		/* 图标大小适配 */
+		/* 单个服务项样式 */
+		.service-item {
+			flex: 1 1 calc(20% - 15px);
+			/* 桌面端5列均分，减去间距 */
+			min-width: 180px;
+			/* 最小宽度，防止挤压 */
+			/* padding: 15px; */
+			box-sizing: border-box;
+		}
+
+		/* 图标容器样式 - 确保图标完全居中 */
+		.icon-wrapper {
+			display: flex;
+			justify-content: center;
+			/* 水平居中 */
+			align-items: center;
+			/* 垂直居中 */
+			height: 80px;
+			/* 固定图标高度，保持所有项对齐 */
+			width: 100%;
+			/* 宽度100%，确保水平居中生效 */
+			margin-bottom: 10px;
+			text-align: center;
+			/* 兜底居中 */
+		}
+
+		/* 图标本身样式强化 */
 		.icon-wrapper span {
-			font-size: 35px !important;
+			display: inline-block;
+			margin: 0 auto;
+			/* 双重保障居中 */
 		}
 
-		/* 标题字体适配 */
-		.title-wrapper h3 {
-			font-size: 1em !important;
+		/* 列表容器样式 */
+		.list-wrapper {
+			margin-top: 15px;
+			text-align: center;
+			/* 让列表整体居中 */
+			width: 100%;
 		}
 
-		/* 列表字体适配 */
-		.centered-list li {
-			font-size: 0.9em;
-		}
-	}
-
-	/* 手机端：1列 */
-	@media (max-width: 480px) {
-		.service-item {
-			flex: 1 1 100%;
-			max-width: 100%;
-		}
-
-		.icon-wrapper span {
-			font-size: 30px !important;
-		}
-
-		/* 移动端优化列表缩进 */
+		/* 居中列表样式 - 核心修改 */
 		.centered-list {
-			padding-left: 15px;
+			display: inline-block;
+			/* 让列表根据内容宽度居中 */
+			text-align: left;
+			/* 列表项文字左对齐，保持自然阅读体验 */
+			padding-left: 20px;
+			/* 保留项目符号的缩进 */
+			margin: 0;
+			box-sizing: border-box;
+			list-style: none;
+			/* 统一去掉默认列表符号 */
 		}
-		.sub-list {
-			padding-left: 15px;
-		}
-	}
 
-	/* 统一列表盒模型 */
-	.main-list {
-		box-sizing: border-box;
-	}
-</style>
+		/* 主列表项样式 */
+		.centered-list>li {
+			position: relative;
+			padding: 3px 0;
+			box-sizing: border-box;
+		}
+
+		/* 给有子列表的项特殊样式 */
+		.centered-list>li.has-sub {
+			padding-bottom: 5px;
+		}
+
+		/* 二级列表样式 */
+		.sub-list {
+			list-style: none;
+			padding-left: 20px;
+			/* 缩进二级列表 */
+			margin: 5px 0 0 0;
+			display: block;
+		}
+
+		/* 二级列表项样式 */
+		.sub-list li {
+			margin-top: 3px;
+			font-size: 0.9em;
+			padding: 2px 0;
+		}
+
+		/* 为餐饮和社交活动项恢复项目符号 */
+		.service-item:nth-child(1) .centered-list,
+		.service-item:nth-child(4) .centered-list {
+			list-style: disc;
+			padding-left: 25px;
+		}
+
+		/* 桌面端响应式：当宽度不足时自动调整 */
+		@media (max-width: 1200px) {
+			.service-item {
+				flex: 1 1 calc(25% - 15px);
+				/* 4列 */
+			}
+		}
+
+		/* 平板端：3列 */
+		@media (max-width: 992px) {
+			.service-item {
+				flex: 1 1 calc(33.333% - 15px);
+			}
+		}
+
+		/* 移动端：2列 */
+		@media (max-width: 768px) {
+			.service-item {
+				flex: 1 1 calc(50% - 15px);
+			}
+
+			/* 图标大小适配 */
+			.icon-wrapper span {
+				font-size: 35px !important;
+			}
+
+			/* 标题字体适配 */
+			.title-wrapper h3 {
+				font-size: 1em !important;
+			}
+
+			/* 列表字体适配 */
+			.centered-list li {
+				font-size: 0.9em;
+			}
+		}
+
+		/* 手机端：1列 */
+		@media (max-width: 480px) {
+			.service-item {
+				flex: 1 1 100%;
+				max-width: 100%;
+			}
+
+			.icon-wrapper span {
+				font-size: 30px !important;
+			}
+
+			/* 移动端优化列表缩进 */
+			.centered-list {
+				padding-left: 15px;
+			}
+
+			.sub-list {
+				padding-left: 15px;
+			}
+		}
+
+		/* 统一列表盒模型 */
+		.main-list {
+			box-sizing: border-box;
+		}
+	</style>
 
 	<!-- Accommodation（住宿信息） -->
 	<!-- <section id="accommodation" class="service" style="padding: 100px 0;">
@@ -1726,7 +1820,7 @@
 				</div>
 				<div class="col-md-6">
 					<h3>Stay Period</h3>
-					<p>August 23 – August 28, 2026 (6 nights)</p>
+					<p>August 23 – August 28 2026 (6 nights)</p>
 
 					<h3 style="margin-top: 20px;">Accommodation Types & Allocation</h3>
 					<ul style="list-style-type: none; padding: 0;">
@@ -1770,7 +1864,7 @@
 							style="position: absolute; left: 0; top: 5px; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;">
 						</div>
 						<div>
-							<h4>Before July 10, 2026</h4>
+							<h4>Before July 10 2026</h4>
 							<p>Full refund minus €25 administrative fee</p>
 						</div>
 					</div>
@@ -1779,7 +1873,7 @@
 							style="position: absolute; left: 0; top: 5px; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;">
 						</div>
 						<div>
-							<h4>July 11 – August 10, 2026</h4>
+							<h4>July 11 – August 10 2026</h4>
 							<p>50% refund of registration fee</p>
 						</div>
 					</div>
@@ -1788,7 +1882,7 @@
 							style="position: absolute; left: 0; top: 5px; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;">
 						</div>
 						<div>
-							<h4>After August 10, 2026</h4>
+							<h4>After August 10 2026</h4>
 							<p>No refund available</p>
 						</div>
 					</div>
@@ -1889,7 +1983,8 @@
 							style="position: absolute; left: 0; top: 0; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;">
 						</div>
 						<div>
-							<h4 style="margin: 0; line-height: 20px; margin-bottom: 10px; text-transform: none;">Registration withdrawals 
+							<h4 style="margin: 0; line-height: 20px; margin-bottom: 10px; text-transform: none;">
+								Registration withdrawals
 							</h4>
 							<!-- 第一段普通文本 -->
 							<p style="margin: 0; padding-left: 5px;">
@@ -1897,13 +1992,18 @@
 							</p>
 							<!-- 退款时间节点无序列表（颜色与段落一致） -->
 							<ul style="margin: 0 0 10px 20px; padding-left: 5px; list-style: disc; color: inherit;">
-								<li style="margin-bottom: 5px; color: inherit;">Until 24 June 2026: Full refund of the registration fee. </li>
+								<li style="margin-bottom: 5px; color: inherit;">Until 24 June 2026: Full refund of the
+									registration fee. </li>
 								<li style="margin-bottom: 5px; color: inherit;">From 25 June 2026 until 10 July 2026:
 									50% refund of the registration fee.</li>
-								<li style="margin-bottom: 5px; color: inherit;">From 11 July 2026: No refund will be issued.</li>
+								<li style="margin-bottom: 5px; color: inherit;">From 11 July 2026: No refund will be
+									issued.</li>
 							</ul>
 							<p style="margin: 0; padding-left: 5px; text-align: justify;">
-								Refund requests must be submitted by the registered attendee or the credit card holder. Each refund request must include the attendee’s name, the bank account number used for the transaction and/or the transaction reference number. Refunds will be processed in accordance with the applicable cancellation deadlines and policies.
+								Refund requests must be submitted by the registered attendee or the credit card holder.
+								Each refund request must include the attendee’s name, the bank account number used for
+								the transaction and/or the transaction reference number. Refunds will be processed in
+								accordance with the applicable cancellation deadlines and policies.
 							</p>
 						</div>
 					</div>
@@ -1913,11 +2013,18 @@
 							style="position: absolute; left: 0; top: 0; width: 20px; height: 20px; background: #4e4ffa; border-radius: 50%;">
 						</div>
 						<div>
-							<h4 style="margin: 0; line-height: 20px; margin-bottom: 10px;text-transform: none;">Name change (Registered
-								participants)</h4>
-							<p style="margin: 0; padding-left: 5px; text-align: justify;">A colleague may attend in place of the registered participant, provided that prior written notification is submitted to <a
-									href="mailto:acpss2026@gmail.com" style="font-size: inherit; text-decoration: none; text-decoration: underline;">acpss2026@gmail.com</a>. An administrative fee of <b>€12</b> will apply to all substitutions. </p>
-							<p style="margin: 0; padding-left: 5px; text-align: justify;"><b>Note:</b> If a financially supported participant transfers their place, the transferee will not receive financial support and is required to pay the difference between the amount already paid and the full registration fee.</p>
+							<h4 style="margin: 0; line-height: 20px; margin-bottom: 10px;text-transform: none;">
+								Registration transfer
+							</h4>
+							<p style="margin: 0; padding-left: 5px; text-align: justify;">A colleague may attend in
+								place of the registered participant, provided that prior written notification is
+								submitted to <a href="mailto:acpss2026@gmail.com"
+									style="font-size: inherit; text-decoration: none; text-decoration: underline;">acpss2026@gmail.com</a>.
+								An administrative fee of <b>€12</b> will apply to all substitutions. </p>
+							<p style="margin: 0; padding-left: 5px; text-align: justify;"><b>Note:</b> If a financially
+								supported participant transfers their place, the transferee will not receive financial
+								support and is required to pay the difference between the amount already paid and the
+								full registration fee.</p>
 						</div>
 					</div>
 				</div>
@@ -1932,14 +2039,19 @@
 							<div style="width: 24px; text-align: center; margin-right: 10px; flex-shrink: 0;">
 								<i class="fa fa-exclamation-triangle" style="color: #4e4ffa;"></i>
 							</div>
-							<span style="flex: 1;text-align: justify;"><strong>Force Majeure:</strong> The organizers are not liable for any damages or losses in the event that the conference is canceled due to force majeure.</span>
+							<span style="flex: 1;text-align: justify;"><strong>Force Majeure:</strong> The organizers
+								are not liable for any damages or losses in the event that the conference is canceled
+								due to force majeure.</span>
 						</div>
 						<!-- 第二行 -->
 						<div style="display: flex; align-items: flex-start; margin-bottom: 15px; width: 100%;">
 							<div style="width: 24px; text-align: center; margin-right: 10px; flex-shrink: 0;">
 								<i class="fa fa-shield" style="color: #4e4ffa;"></i>
 							</div>
-							<span style="flex: 1;text-align: justify;"><strong>General Disclaimer:</strong> The organizers are not liable for any damages or losses incurred by delegates or accompanying persons during the event or while traveling to and from the venue. Delegates are responsible for their own personal safety and belongings.</span>
+							<span style="flex: 1;text-align: justify;"><strong>General Disclaimer:</strong> The
+								organizers are not liable for any damages or losses incurred by delegates or
+								accompanying persons during the event or while traveling to and from the venue.
+								Delegates are responsible for their own personal safety and belongings.</span>
 						</div>
 						<!-- 第三行 -->
 						<div style="display: flex; align-items: flex-start; margin-bottom: 15px; width: 100%;">
@@ -1947,7 +2059,9 @@
 								<i class="fa fa-medkit" style="color: #4e4ffa;"></i>
 							</div>
 							<span style="flex: 1;text-align: justify;"><strong>Insurance & Vaccinations:</strong>
-								The registration fee does not include insurance. Delegates are strongly advised to purchase their own travel and medical insurance. At present, no specific vaccinations are required for entry into China.</span>
+								The registration fee does not include insurance. Delegates are strongly advised to
+								purchase their own travel and medical insurance. At present, no specific vaccinations
+								are required for entry into China.</span>
 						</div>
 						<!-- 第四行：Visa要求 -->
 						<div style="display: flex; align-items: flex-start; margin-bottom: 15px; width: 100%;">
@@ -1955,7 +2069,10 @@
 								<i class="fa fa-vcard" style="color: #4e4ffa;"></i>
 							</div>
 							<span style="flex: 1;text-align: justify;"><strong>Visa Requirements:</strong>
-								Delegates are solely responsible for verifying and obtaining any necessary visas for entry into China. The organizers do not provide individual visa assistance or take responsibility for visa application denials or delays. Please check the official immigration requirements of China based on your nationality before traveling.</span>
+								Delegates are solely responsible for obtaining any necessary visas for entry into China.
+								The organizers do not provide individual visa assistance or take responsibility for visa
+								application denials or delays. Please check the official immigration requirements of
+								China based on your nationality before traveling.</span>
 						</div>
 					</div>
 				</div>
@@ -1977,93 +2094,128 @@
 				<p
 					style="font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%; text-align: justify; text-justify: inter-word;">
 					In August, Changchun’s average daily temperature ranges from 19°C to 28°C, with a day–night
-					difference of about 8–10°C. Days are generally mild, while nights can feel slightly cool, so
-					bringing a light jacket is recommended. Participants are also advised to bring an umbrella depending
-					on the weather. Air quality is consistently excellent, making it well suited for outdoor activities.
+					difference of about 10°C. We recommend participants to bring a light jacket as well as an umbrella
+					in case of wet weather.
 				</p>
 
 				<!-- 替换后的国际交通信息 -->
-				<h3 style="color: #4e4ffa; margin-bottom: 20px; width: 100%; text-transform: none;">How to get to China (Changchun)</h3>
+				<h3 style="color: #4e4ffa; margin-bottom: 20px; width: 100%; text-transform: none;">
+					Travelling to Changchun, China
+				</h3>
 
-<!-- 1. International Travel to China -->
-<h4 style="color: #333; margin-bottom: 10px; width: 100%; text-transform: none; ">International travel to China</h4>
-<p
-    style="font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%; text-align: justify; text-justify: inter-word;">
-    Most international participants from <strong>Australia, Canada, the United States, the United
-        Kingdom, Belgium, Spain</strong>, and other regions will first arrive at a <strong>major
-        international gateway city in China</strong>, such as <strong>Beijing</strong>, <strong>Shanghai</strong>, <strong>Guangzhou</strong>, <strong>Shenzhen</strong>, <strong>Xiamen</strong>, or <strong>Chengdu</strong>. From there, travelers will take a <strong>domestic flight</strong> to <strong>Changchun Longjia International Airport (CGQ, Changchun’s main international airport)</strong>.
-</p>
-<ul
-    style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.8; margin-bottom: 15px; width: 100%;">
-    <li style="text-align: justify; text-justify: inter-word;">Major international hubs include:<br>
-        <strong>Beijing Capital International Airport (PEK)</strong> / <strong>Beijing Daxing International Airport (PKX)</strong><br>
-        <strong>Shanghai Pudong International Airport (PVG)</strong> / <strong>Shanghai Hongqiao International Airport (SHA)</strong><br>
-        <strong>Guangzhou Baiyun International Airport (CAN)</strong><br>
-        <strong>Shenzhen Bao’an International Airport (SZX)</strong><br>
-        <strong>Xiamen Gaoqi International Airport (XMN)</strong><br>
-        <strong>Chengdu Tianfu International Airport (TFU)</strong> / <strong>Chengdu Shuangliu International Airport (CTU)</strong>
-    </li>
-    <li style="text-align: justify; text-justify: inter-word;"><strong>Changchun (CGQ)</strong> has frequent domestic flight connections from all major Chinese hubs</li>
-</ul>
-
-
-<!-- 2. Typical Travel Routes -->
-<h4 style="color: #333; margin-bottom: 10px; width: 100%; text-transform: none; ">Typical travel routes</h4>
-<p
-    style="font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%; text-align: justify; text-justify: inter-word;">
-    Common travel routes include:
-</p>
-<ul
-    style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
-    <li style="text-align: justify; text-justify: inter-word;"><strong>North America / Europe → Beijing, Shanghai, or Guangzhou → Changchun (CGQ)</strong></li>
-    <li style="text-align: justify; text-justify: inter-word;"><strong>Australia → Beijing / Shanghai / Guangzhou / Shenzhen → Changchun (CGQ)</strong></li>
-</ul>
-<p
-    style="font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%; text-align: justify; text-justify: inter-word;">
-    Most routes involve <strong>one international flight</strong> followed by <strong>one domestic transfer</strong> within China.
-</p>
+				<!-- 1. International Travel to China -->
+				<h4 style="color: #333; margin-bottom: 10px; width: 100%; text-transform: none; ">International travel
+					to China</h4>
+				<p
+					style="font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%; text-align: justify; text-justify: inter-word;">
+					Most international participants from <strong>Australia, Canada, the United States, the United
+						Kingdom, Belgium, Spain</strong>, and other regions will first arrive at a <strong>major
+						international gateway city in China</strong>, such as <strong>Beijing</strong>,
+					<strong>Shanghai</strong>, <strong>Guangzhou</strong>, <strong>Shenzhen</strong>,
+					<strong>Xiamen</strong>, or <strong>Chengdu</strong>. From there, travelers will take a
+					<strong>domestic flight</strong> to <strong>Changchun Longjia International Airport (CGQ,
+						Changchun’s main international airport)</strong>.
+				</p>
+				<ul
+					style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.8; margin-bottom: 15px; width: 100%;">
+					<li style="text-align: justify; text-justify: inter-word;">Major international hubs include:<br>
+						<strong>Beijing Capital International Airport (PEK)</strong> / <strong>Beijing Daxing
+							International Airport (PKX)</strong>.<br>
+						<strong>Shanghai Pudong International Airport (PVG)</strong> / <strong>Shanghai Hongqiao
+							International Airport (SHA)</strong>.<br>
+						<strong>Guangzhou Baiyun International Airport (CAN)</strong>.<br>
+						<strong>Shenzhen Bao’an International Airport (SZX)</strong>.<br>
+						<strong>Xiamen Gaoqi International Airport (XMN)</strong>.<br>
+						<strong>Chengdu Tianfu International Airport (TFU)</strong> / <strong>Chengdu Shuangliu
+							International Airport (CTU)</strong>.<br>
+					</li>
+					<li style="text-align: justify; text-justify: inter-word;"><strong>Changchun (CGQ)</strong> has
+						frequent domestic flight connections from all major Chinese hubs.</li>
+				</ul>
 
 
-<!-- 3. Transfer Tips (Within China) -->
-<h4 style="color: #333; margin-bottom: 10px; width: 100%; text-transform: none; ">Transfer tips (within China)</h4>
-<p
-    style="font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%; text-align: justify; text-justify: inter-word;">
-    When transferring from an international flight to a domestic flight within China, travelers should allow sufficient time for arrival and transfer procedures.
-</p>
-<ul
-    style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
-    <li style="text-align: justify; text-justify: inter-word;"><strong>Recommended transfer time:</strong> <strong>2–3 hours</strong></li>
-    <li style="text-align: justify; text-justify: inter-word;">If checked baggage is <strong>through-checked to Changchun</strong>, a <strong>2-hour transfer</strong> is usually sufficient</li>
-    <li style="text-align: justify; text-justify: inter-word;">If baggage must be <strong>claimed and re-checked</strong>, additional time may be required</li>
-    <li style="text-align: justify; text-justify: inter-word;">Large hub airports may involve long walking distances or terminal changes</li>
-</ul>
+				<!-- 2. Typical Travel Routes -->
+				<h4 style="color: #333; margin-bottom: 10px; width: 100%; text-transform: none; ">Typical travel routes
+				</h4>
+				<p
+					style="font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%; text-align: justify; text-justify: inter-word;">
+					Common travel routes include:
+				</p>
+				<ul
+					style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
+					<li style="text-align: justify; text-justify: inter-word;"><strong>North America / Europe → Beijing,
+							Shanghai, or Guangzhou → Changchun (CGQ)</strong>.</li>
+					<li style="text-align: justify; text-justify: inter-word;"><strong>Australia → Beijing / Shanghai /
+							Guangzhou / Shenzhen → Changchun (CGQ)</strong>.</li>
+				</ul>
+				<p
+					style="font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%; text-align: justify; text-justify: inter-word;">
+					Most routes involve <strong>one international flight</strong> followed by <strong>one domestic
+						transfer</strong> within China.
+				</p>
 
 
-<!-- 4. Arrival in Changchun -->
-<h4 style="color: #333; margin-bottom: 10px; width: 100%; text-transform: none; ">Arrival in Changchun</h4>
-<p
-    style="font-size: 16px; line-height: 1.6; margin-bottom: 10px; width: 100%; text-align: justify; text-justify: inter-word;">
-    <strong>Changchun Longjia International Airport (CGQ)</strong> is the main airport serving Changchun city.
-</p>
-<ul
-    style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
-    <li style="text-align: justify; text-justify: inter-word;">Flight time from Beijing: approximately <strong>2 hours</strong></li>
-    <li style="text-align: justify; text-justify: inter-word;">Flight time from Shanghai: approximately <strong>3 hours</strong></li>
-    <li style="text-align: justify; text-justify: inter-word;">Airport to city center: approximately <strong>30–45 minutes</strong> by taxi or airport shuttle</li>
-</ul>
+				<!-- 3. Transfer Tips (Within China) -->
+				<h4 style="color: #333; margin-bottom: 10px; width: 100%; text-transform: none; ">Transfer tips (within
+					China)</h4>
+				<p
+					style="font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%; text-align: justify; text-justify: inter-word;">
+					When transferring from an international flight to a domestic flight within China, travelers should
+					allow sufficient time for arrival and transfer procedures.
+				</p>
+				<ul
+					style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
+					<li style="text-align: justify; text-justify: inter-word;"><strong>Recommended transfer
+							time:</strong> <strong>2–3 hours</strong>.</li>
+					<li style="text-align: justify; text-justify: inter-word;">If checked baggage is
+						<strong>through-checked to Changchun</strong>, a <strong>2-hour transfer</strong> is usually
+						sufficient.
+					</li>
+					<li style="text-align: justify; text-justify: inter-word;">If baggage must be <strong>claimed and
+							re-checked</strong>, additional time may be required.</li>
+					<li style="text-align: justify; text-justify: inter-word;">Large hub airports may involve long
+						walking distances or terminal changes.</li>
+				</ul>
 
 
-<!-- 5. Visa & Entry Notice -->
-<h4 style="color: #333; margin-bottom: 10px; width: 100%; text-transform: none;">Visa & Entry notice</h4>
-<p
-    style="font-size: 16px; line-height: 1.6; margin-bottom: 10px; width: 100%; text-align: justify; text-justify: inter-word;">
-    Participants should check the <strong>latest Chinese visa and transit policies</strong> applicable to their nationality before departure.
-</p>
-<ul
-    style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
-    <li style="text-align: justify; text-justify: inter-word;">Some nationalities may qualify for <strong>visa-free transit</strong> under specific conditions</li>
-    <li style="text-align: justify; text-justify: inter-word;">Entry requirements may change; please consult the nearest <strong>Chinese embassy or official government sources</strong></li>
-</ul>
+				<!-- 4. Arrival in Changchun -->
+				<h4 style="color: #333; margin-bottom: 10px; width: 100%; text-transform: none; ">Arrival in Changchun
+				</h4>
+				<p
+					style="font-size: 16px; line-height: 1.6; margin-bottom: 10px; width: 100%; text-align: justify; text-justify: inter-word;">
+					<strong>Changchun Longjia International Airport (CGQ)</strong> is the main airport serving Changchun
+					city.
+				</p>
+				<ul
+					style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
+					<li style="text-align: justify; text-justify: inter-word;">Flight time from Beijing: approximately
+						<strong>2 hours</strong>.
+					</li>
+					<li style="text-align: justify; text-justify: inter-word;">Flight time from Shanghai: approximately
+						<strong>3 hours</strong>.
+					</li>
+					<li style="text-align: justify; text-justify: inter-word;">Airport to city center: approximately
+						<strong>30–45 minutes</strong> by taxi or airport shuttle.
+					</li>
+				</ul>
+
+
+				<!-- 5. Visa & Entry Notice -->
+				<h4 style="color: #333; margin-bottom: 10px; width: 100%; text-transform: none;">Visa & Entry notice
+				</h4>
+				<p
+					style="font-size: 16px; line-height: 1.6; margin-bottom: 10px; width: 100%; text-align: justify; text-justify: inter-word;">
+					Participants should check the <strong>latest Chinese visa and transit policies</strong> applicable
+					to their nationality before departure.
+				</p>
+				<ul
+					style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
+					<li style="text-align: justify; text-justify: inter-word;">Some nationalities may qualify for
+						<strong>visa-free transit</strong> under specific conditions.
+					</li>
+					<li style="text-align: justify; text-justify: inter-word;">Entry requirements may change; please
+						consult the nearest <strong>Chinese embassy or official government sources</strong>.</li>
+				</ul>
 
 				<!-- 原有的Transportation板块内容 -->
 				<!-- <h3 style="color: #4e4ffa; margin-bottom: 20px; width: 100%;">Transportation</h3>
@@ -2109,9 +2261,8 @@
 				<ul
 					style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
 					<li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;">
-						<strong>Complimentary Shuttle</strong>: We provide shuttle service between Changchun Longjia
-						International Airport and the venue will be available for all participants. Detailed pick-up
-						times and meeting points will be announced in advance.
+						<strong>Complimentary Shuttle</strong>: We provide a shuttle service between Changchun Longjia
+						International Airport. Detailed pick-up times and meeting points will be announced in advance.
 					</li>
 					<li style="text-align: justify; text-justify: inter-word;">
 						<strong>Public Transportation</strong>:
@@ -2121,9 +2272,11 @@
 									Trains</strong>: Direct service from the airport to Longjia Station, with transfers
 								to Changchun Station.</li>
 							<li style="text-align: justify; text-justify: inter-word;"><strong>Airport Shuttle
-									Buses</strong>: Routes 1–3 operate between major city hubs and the airport; fare CNY
-								25 per person.</li>
-							<li style="text-align: justify; text-justify: inter-word;"><strong>Taxis</strong>: Taxis are readily available at the airport. The fare to the city center typically ranges from CNY 80 to CNY 120, depending on distance and traffic conditions. </li>
+									Buses</strong>: Routes 1–3 operate between major city hubs and the airport; fares
+								are CNY 25 per person.</li>
+							<li style="text-align: justify; text-justify: inter-word;"><strong>Taxis</strong>: Taxis are
+								readily available at the airport. The fare to the city center typically ranges from CNY
+								80 to CNY 120, depending on distance and traffic conditions. </li>
 						</ul>
 					</li>
 				</ul>
@@ -2133,9 +2286,10 @@
 					style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.6; margin-bottom: 15px; width: 100%;">
 					<li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;"><strong>Subway/Light
 							Rail</strong>: A network of six lines connects major districts and attractions, operating
-						from 05:15 to 22:35, with fares of CNY 2–4. </li>
+						from 05:15 to 22:35, with fares ranging CNY 2–4. </li>
 					<li style="text-align: justify; text-justify: inter-word;"><strong>Bus</strong>: Extensive routes,
-						some directly reaching scenic spots, with fares starting from ¥1-2, seamlessly connecting with
+						some directly reaching scenic spots, with fares starting from CNY 1-2, seamlessly connecting
+						with
 						the subway system.</li>
 				</ul>
 
@@ -2146,49 +2300,54 @@
 					<li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;"><strong>Local
 							Currency</strong>: The official currency is the Chinese Yuan (CNY).</li>
 					<li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;"><strong>Payment
-							Methods</strong>: WeChat Pay and Alipay are widely accepted everywhere. Visa, Mastercard,
-						and UnionPay are accepted at hotels and most local merchants. You may link an international
-						credit card (e.g., Visa or Mastercard) to a supported payment app before arrival for direct payment via WeChat
-						Pay or Alipay. </li>
-					<li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;"><strong>Foreign
-							Currency Exchange</strong>: You can obtain some cash at Changchun Longjia International
-						Airport. Cash withdrawals using Visa, Mastercard, and UnionPay cards are
-						available at the airport, and currency exchange services are provided at more than 520 bank
-						branches across Changchun. </li>
-					<li style="text-align: justify; text-justify: inter-word;"><strong>ATM Withdrawal</strong>: ATMs at
-						the airport and in major business districts allow cash withdrawals with Visa, Mastercard, and
-						UnionPay cards. Usually offer English interfaces, and withdrawals are processed at real-time
-						exchange rates, with fees set by the issuing bank. </li>
+							Methods</strong>: WeChat Pay and Alipay are widely accepted and are preferred payment
+						methods. Visa, Mastercard, and UnionPay are accepted at hotels and most local merchants. For
+						easy payment, we recommend that you link an international credit card (e.g., Visa or Mastercard)
+						to WeChat Pay or Alipay before arrival.</li>
+					<li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;"><strong>Cash
+							Withdrawals and Currency Exchange</strong>: You may withdraw cash at Changchun Longjia
+						International Airport. Currency exchange services are available at more than 500 locations
+						across Changchun. </li>
+					<li style="text-align: justify; text-justify: inter-word;"><strong>ATM Withdrawal</strong>: You may
+						use ATMs at the airport or in major business districts to make cash withdrawals with Visa,
+						Mastercard, and UnionPay cards. ATMs generally support English interfaces, and withdrawals are
+						processed at real-time exchange rates, with fees set by the issuing bank. </li>
 				</ul>
 
 				<!-- Tourist Attractions 板块：两端对齐 -->
-<h3 style="color: #4e4ffa; margin-bottom: 20px; width: 100%;">Tourist attractions</h3>
-<ul style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.8; margin-bottom: 0; width: 100%;">
-    <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;">
-        <strong>Changchun North Lake National Wetland Park(Hotel Location)</strong>: A comprehensive urban ecological park that takes wetland ecology as its core and integrates nature conservation and leisure functions. During breaks from schoolwork, you can come here for a walk and enjoy happy moments.
-    </li>
-    <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;">
-        <strong>Recommended to visit post-Summer School</strong>
-        <ul style="list-style-type: disc; padding-left: 30px; margin-top: 8px; margin-bottom: 0;">
-            <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;">
-                <strong>Puppet Manchukuo Palace Museum</strong>: Once the palace of Puyi, the last emperor of China and the emperor of the puppet Manchukuo regime.
-            </li>
-            <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;">
-                <strong>Jingyuetan National Forest Park</strong>: Known as the "Lung of the City", it boasts abundant vegetation and beautiful scenery.
-            </li>
-            <li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;">
-                <strong>Changchun World Sculpture park</strong>: Gathers sculptural works from all around the world. 
-            </li>
-        </ul>
-    </li>
-</ul>
-			<!-- </div> -->
+				<h3 style="color: #4e4ffa; margin-bottom: 20px; width: 100%;">Tourist attractions</h3>
+				<ul
+					style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.8; margin-bottom: 0; width: 100%;">
+					<li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;">
+						<strong>Changchun North Lake National Wetland Park(Hotel Location)</strong>: A comprehensive
+						urban ecological park that takes wetland ecology as its core and integrates nature conservation
+						and leisure functions. Come here for a walk during breaks.
+					</li>
+					<li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;">
+						<strong>Recommended to visit post-Summer School</strong>
+						<ul style="list-style-type: disc; padding-left: 30px; margin-top: 8px; margin-bottom: 0;">
+							<li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;">
+								<strong>Puppet Manchukuo Palace Museum</strong>: Once the palace of Puyi, the last
+								emperor of China and the emperor of the puppet Manchukuo regime.
+							</li>
+							<li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;">
+								<strong>Jingyuetan National Forest Park</strong>: Known as the "Lung of the City", it
+								boasts abundant vegetation and beautiful scenery.
+							</li>
+							<li style="text-align: justify; text-justify: inter-word; margin-bottom: 8px;">
+								<strong>Changchun World Sculpture park</strong>: Gathers sculptural works from all
+								around the world.
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- </div> -->
 
-			<!-- <div class="text-center" style="margin-top: 40px;">
+				<!-- <div class="text-center" style="margin-top: 40px;">
             <p style="font-size: 16px;">Scholarships are funded through conference sponsorships. For more
                 information, contact <a href="mailto:acpss2026@gmail.com" style="font-size: inherit;">acpss2026@gmail.com</a></p>
         </div> -->
-		</div>
+			</div>
 	</section>
 
 	<!-- <section id="legal-precautions" class="schedule" style="padding: 100px 0;">
@@ -2414,14 +2573,14 @@
 
 	<!-- 赞助商展示 -->
 	<section id="sponsors" class="service">
-    <div class="container">
-        <div class="section-header text-center">
-            <h2 style="margin-bottom: -20px;">Our Sponsors</h2>
-            <p style="margin-bottom: 25px;">Thanks to our partners for supporting ACP Summer School 2026</p>
-        </div>
-        <div class="sponsors-area">
-            <!-- 替换轮播组件为静态容器 -->
-            <div class="brand-item-static" style="
+		<div class="container">
+			<div class="section-header text-center">
+				<h2 style="margin-bottom: -20px;">Our Sponsors</h2>
+				<p style="margin-bottom: 25px;">Thanks to our partners for supporting ACP Summer School 2026</p>
+			</div>
+			<div class="sponsors-area">
+				<!-- 替换轮播组件为静态容器 -->
+				<div class="brand-item-static" style="
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -2429,30 +2588,30 @@
                 gap: 60px;
                 padding: 40px 0;
             ">
-                <!-- 赞助商1 -->
-                <div class="brand-logo" style="display: inline-block;">
-                    <a href="#">
-                        <img src="assets/images/partners/JlU.png" alt="brand-image" style="width: 150px;" />
-                    </a>
-                </div>
-                <!-- 赞助商2 -->
-                <div class="brand-logo" style="display: inline-block;">
-                    <a href="#">
-                        <img src="assets/images/partners/zsgc.png" alt="brand-image" style="width: 150px;" />
-                    </a>
-                </div>
-                <!-- 如需添加更多赞助商，直接复制上面的div块即可 -->
-                <!-- 
+					<!-- 赞助商1 -->
+					<div class="brand-logo" style="display: inline-block;">
+						<a href="#">
+							<img src="assets/images/partners/JlU.png" alt="brand-image" style="width: 150px;" />
+						</a>
+					</div>
+					<!-- 赞助商2 -->
+					<div class="brand-logo" style="display: inline-block;">
+						<a href="#">
+							<img src="assets/images/partners/zsgc.png" alt="brand-image" style="width: 150px;" />
+						</a>
+					</div>
+					<!-- 如需添加更多赞助商，直接复制上面的div块即可 -->
+					<!-- 
                 <div class="brand-logo" style="display: inline-block;">
                     <a href="#">
                         <img src="assets/images/partners/xxx.png" alt="brand-image" style="width: 150px;" />
                     </a>
                 </div>
                 -->
-            </div>
-        </div>
-    </div>
-</section>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- 赞助商结束 -->
 
 	<!-- 页脚 / 联系信息 -->
@@ -2517,14 +2676,14 @@
 	<script src="assets/js/custom.js"></script>
 
 	<script>
-	$(document).ready(function () {
-		$('#accommodationCarousel').carousel({
-			interval: 2500,   // 1 秒
-			pause: false,     // 关键：禁用 hover 暂停
-			wrap: true
+		$(document).ready(function () {
+			$('#accommodationCarousel').carousel({
+				interval: 2500,   // 1 秒
+				pause: false,     // 关键：禁用 hover 暂停
+				wrap: true
+			});
 		});
-	});
-</script>
+	</script>
 
 
 </body>

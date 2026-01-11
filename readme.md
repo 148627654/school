@@ -2,48 +2,77 @@
 
 # 1.11 change
 
-- [x] Regarding time, we uniformly designate it as "day - month - year".check grammar
-
-## in the Summer School section
+- [x] Adjusted the sizes of the three boxes to make them all the same size.
 
 | before                                                       | after                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| in series overview                                           |                                                              |
-| spear-headed                                                 | spearheaded                                                  |
-| the Jilin University                                         | Jilin University                                             |
-| during August 24-28                                          | from 24–28 August                                            |
-| ![image-20260111113242991](readme.assets/image-20260111113242991.png) | ![image-20260111113253054](readme.assets/image-20260111113253054.png) |
-| 2026 program                                                 |                                                              |
-| will have eight... to provide                                | will feature... providing                                    |
-| There will also be Teaching Assistants                       | Teaching Assistants will be available                        |
-| ![image-20260111113959620](readme.assets/image-20260111113959620.png) | ![image-20260111114010757](readme.assets/image-20260111114010757.png) |
-| target audience                                              |                                                              |
-| PhD and Masters students                                     | PhD and Master’s students                                    |
+| ![image-20260111170326353](readme.assets/image-20260111170326353.png) | ![image-20260111170348382](readme.assets/image-20260111170348382.png) |
 
-## in Registration Details section
-
-- [x] Removed "the" before China
-- [x] adjust a/an
+- [x] The name should be larger than other information
 
 | before                                                       | after                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| entry into the China                                         | entry into China                                             |
-| You will receive an confirmation email                       | You will receive a confirmation email                        |
-| within 14 days after                                         | within 14 days of                                            |
-| You will receive an confirmation email that the registration has been received, which contains all payment details. | You will receive a confirmation email acknowledging your registration, which will include all necessary payment details. |
-| ![image-20260111120512293](readme.assets/image-20260111120512293.png) | ![image-20260111120522925](readme.assets/image-20260111120522925.png) |
+| ![image-20260111172053741](readme.assets/image-20260111172053741.png) | ![image-20260111172040837](readme.assets/image-20260111172040837.png) |
 
-- [x] 统一了所有的Summer School
-- [x]  Organisers are not liable for damages/losses if the conference is cancelled due to force majeure.→The organizers are not liable for any damages or losses in the event that the conference is canceled due to force majeure.
-- [x] China's previous "the" has all been removed.
+- [x] Under "View Detail", you can add an underline or something similar to make it clear that this is a button.
 
 | before                                                       | after                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image-20260111135235272](readme.assets/image-20260111135235272.png ) | ![image-20260111135245300](readme.assets/image-20260111135245300.png) |
-| **Taxis**: Extensive routes, some directly reaching scenic spots, with fares CNY 1-2, and seamless transfers to the subway system. | Taxis are readily available at the airport. The fare to the city center typically ranges from CNY 80 to CNY 120, depending on distance and traffic conditions. |
-| **Payment Methods**: WeChat Pay and Alipay are widely accepted everywhere. Visa, Mastercard, and UnionPay are accepted at hotels and most local merchants. | **Payment Methods**: WeChat Pay and Alipay are widely accepted everywhere. Visa, Mastercard, and UnionPay are accepted at hotels and most local merchants. You may link an international credit card (e.g., Visa or Mastercard) to a supported payment app before arrival for direct payment via WeChat Pay or Alipay. |
+| ![image-20260111173133763](readme.assets/image-20260111173133763.png) | ![image-20260111173143790](readme.assets/image-20260111173143790.png) |
+
+- [x] The words "day", "month", "year", "month", "year" are not separated by commas.
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260111174409030](readme.assets/image-20260111174409030.png) | ![](readme.assets/image-20260111174357741.png)               |
+| ![image-20260111174535850](readme.assets/image-20260111174535850.png) | ![image-20260111174550955](readme.assets/image-20260111174550955.png) |
+| ![image-20260111174608049](readme.assets/image-20260111174608049.png) | ![image-20260111174619229](readme.assets/image-20260111174619229.png) |
+
+- [x] Content adjustment
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| series overview                                              |                                                              |
+| The ACP Summer School series was spearheaded by the Association for Constraint Programming (CP) as a means to augment and complement university teaching of CP, and to disseminate a core body of CP knowledge supporting the recognition of CP as a mature and relevant technology for use in industry. ACP Summer School 2026 will be hosted by Jilin University and held in Changchun, China, from 24-28 August, 2026. | The ACP Summer School is a series spearheaded by the Association for Constraint Programming (CP) as a means to augment and complement university teaching of CP, and to disseminate a core body of CP knowledge supporting the recognition of CP as a mature and relevant technology for use in industry. ACP Summer School 2026 will be hosted by Jilin University and held in Changchun, China, from the 24th to 28th August, 2026. |
+| Event Venue                                                  |                                                              |
+| Homm Changchun Beihu Hotel offers a truly distinctive setting for our Summer School in Changchun. As the first high-end hotel of Banyan Tree Group in Northeast China, it is located in the heart of the Changchun Beihu National Wetland Park, surrounded by water, greenery, and open skies—an inspiring environment for learning, discussion, and connection.<br>The hotel features 247 thoughtfully designed rooms, including elegant villa-style accommodations, many with private courtyards or terraces. Blending modern comfort with refined Chinese aesthetics inspired by traditional water towns, the space feels both luxurious and relaxed—ideal for long study days, informal conversations, and moments of quiet reflection.<br>Designed with academic events in mind, Homm Changchun Beihu provides versatile meeting and lecture spaces equipped with modern audiovisual facilities. From focused lectures and hands-on sessions to evening discussions and social gatherings, the hotel comfortably supports the full rhythm of a Summer School.<br>Beyond the classrooms, participants can enjoy diverse dining options and step directly into the surrounding wetland park for a walk, a conversation, or a break between sessions. With accommodation, learning spaces, and nature seamlessly connected, Homm Changchun Beihu Hotel creates an atmosphere where intensive study and meaningful exchange feel both productive and enjoyable. | This year’s Summer School will take place at the Homm Changchun Beihu Hotel, located within the Changchun Beihu National Wetland Park. Set amid water, greenery, and open skies, the venue offers a calm and spacious environment that supports focused learning, in-depth discussion, and sustained intellectual engagement.<br>The hotel provides comfortable on-site accommodation together with a range of modern lecture halls and meeting rooms equipped with professional audiovisual facilities. Partipants may move between living spaces, classrooms, and informal discussion areas, encouraging both structured learning and spontaneous academic exchange.<br>Beyond the classrooms, participants may step directly into the surrounding park for a short walk, a conversation, or a moment of reflection between sessions. |
+| Delegates are solely responsible for verifying and obtaining any necessary visas for entry into China. The organizers do not provide individual visa assistance or take responsibility for visa application denials or delays. Please check the official immigration requirements of China based on your nationality before traveling. | Delegates are solely responsible for obtaining any necessary visas for entry into China. The organizers do not provide individual visa assistance or take responsibility for visa application denials or delays. Please check the official immigration requirements of China based on your nationality before traveling. |
+| In August, Changchun’s average daily temperature ranges from 19°C to 28°C, with a day–night difference of about 8–10°C. Days are generally mild, while nights can feel slightly cool, so bringing a light jacket is recommended. Participants are also advised to bring an umbrella depending on the weather. Air quality is consistently excellent, making it well suited for outdoor activities. | In August, Changchun’s average daily temperature ranges from 19°C to 28°C, with a day–night difference of about 10°C. We recommend participants to bring a light jacket as well as an umbrella in case of wet weather. |
+| We provide shuttle service between Changchun Longjia International Airport and the venue will be available for all participants. Detailed pick-up times and meeting points will be announced in advance. | We provide a shuttle service between Changchun Longjia International Airport. Detailed pick-up times and meeting points will be announced in advance. |
+| Routes 1–3 operate between major city hubs and the airport; fare CNY 25 per person. | Routes 1–3 operate between major city hubs and the airport; fares are CNY 25 per person. |
+| A network of six lines connects major districts and attractions, operating from 05:15 to 22:35, with fares of CNY 2–4. | A network of six lines connects major districts and attractions, operating from 05:15 to 22:35, with fares ranging CNY 2–4. |
+| WeChat Pay and Alipay are widely accepted everywhere. Visa, Mastercard, and UnionPay are accepted at hotels and most local merchants. You may link an international credit card (e.g., Visa or Mastercard) to a supported payment app before arrival for direct payment via WeChat Pay or Alipay. | WeChat Pay and Alipay are widely accepted and are preferred payment methods. Visa, Mastercard, and UnionPay are accepted at hotels and most local merchants. For easy payment, we recommend that you link an international credit card (e.g., Visa or Mastercard) to WeChat Pay or Alipay before arrival. |
+| **Foreign Currency Exchange**:You can obtain some cash at Changchun Longjia International Airport. Cash withdrawals using Visa, Mastercard, and UnionPay cards are available at the airport, and currency exchange services are provided at more than 520 bank branches across Changchun. | **Cash Withdrawals and Currency Exchange**：You may withdraw cash at Changchun Longjia International Airport. Currency exchange services are available at more than 500 locations across Changchun. |
+| ATMs at the airport and in major business districts allow cash withdrawals with Visa, Mastercard, and UnionPay cards. Usually offer English interfaces, and withdrawals are processed at real-time exchange rates, with fees set by the issuing bank. | You may use ATMs at the airport or in major business districts to make cash withdrawals with Visa, Mastercard, and UnionPay cards. ATMs generally support English interfaces, and withdrawals are processed at real-time exchange rates, with fees set by the issuing bank. |
+| During breaks from schoolwork, you can come here for a walk and enjoy happy moments. | Come here for a walk during breaks.                          |
+
+- [x] The "Financial Support" section has been widened to be consistent with the others.
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260111182924555](readme.assets/image-20260111182924555.png) | ![image-20260111182934493](readme.assets/image-20260111182934493.png) |
+
+- [x] Name change (Registered participants) -> Registration transfer
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260111183038700](readme.assets/image-20260111183038700.png) | ![image-20260111183155976](readme.assets/image-20260111183155976.png) |
+
+- [x] How to get to China (Changchun) -> Travelling to Changchun, China
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260111183417227](readme.assets/image-20260111183417227.png) | ![image-20260111183451126](readme.assets/image-20260111183451126.png) |
+
+- [x]  ¥→CNY
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260111184642420](readme.assets/image-20260111184642420.png) | ![image-20260111184650487](readme.assets/image-20260111184650487.png) |
 
 
+
+- [ ] 1
 
 # 1.10 change
 
