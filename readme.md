@@ -1,5 +1,50 @@
 
 
+# 1.11 change
+
+- [x] Regarding time, we uniformly designate it as "day - month - year".check grammar
+
+## in the Summer School section
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| in series overview                                           |                                                              |
+| spear-headed                                                 | spearheaded                                                  |
+| the Jilin University                                         | Jilin University                                             |
+| during August 24-28                                          | fron 24–28 August                                            |
+| ![image-20260111113242991](readme.assets/image-20260111113242991.png) | ![image-20260111113253054](readme.assets/image-20260111113253054.png) |
+| 2026 program                                                 |                                                              |
+| will have eight... to provide                                | will feature... providing                                    |
+| There will also be Teaching Assistants                       | Teaching Assistants will be available                        |
+| ![image-20260111113959620](readme.assets/image-20260111113959620.png) | ![image-20260111114010757](readme.assets/image-20260111114010757.png) |
+| target audience                                              |                                                              |
+| PhD and Masters students                                     | PhD and Master’s students                                    |
+
+## in Registration Details section
+
+- [x] Removed "the" before China
+- [x] adjust a/an
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| entry into the China                                         | entry into China                                             |
+| You will receive an confirmation email                       | You will receive a confirmation email                        |
+| within 14 days after                                         | within 14 days of                                            |
+| You will receive an confirmation email that the registration has been received, which contains all payment details. | You will receive a confirmation email acknowledging that your registration has been received. This email will contain all necessary payment details. |
+| ![image-20260111120512293](readme.assets/image-20260111120512293.png) | ![image-20260111120522925](readme.assets/image-20260111120522925.png) |
+
+- [x] 统一了所有的Summer School
+- [x]  Organisers are not liable for damages/losses if the conference is cancelled due to force majeure.→The organizers are not liable for any damages or losses should the conference be canceled due to force majeure.
+- [x] China's previous "the" has all been removed.
+
+| before                                                       | after                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image-20260111135235272](readme.assets/image-20260111135235272.png ) | ![image-20260111135245300](readme.assets/image-20260111135245300.png) |
+| **Taxis**: Extensive routes, some directly reaching scenic spots, with fares CNY 1-2, and seamless transfers to the subway system. | **Taxis**: Taxis are readily available at the airport. The fare to the city center is typically between CNY 80–120, depending on the distance and traffic. |
+| **Payment Methods**: WeChat Pay and Alipay are widely accepted everywhere. Visa, Mastercard, and UnionPay are accepted at hotels and most local merchants. | **Payment Methods**: WeChat Pay and Alipay are widely accepted everywhere. Visa, Mastercard, and UnionPay are accepted at hotels and most local merchants. <br/>&#9;**Tip**: You may link an international credit card (e.g., Visa or Mastercard) to a supported payment app before arrival for direct payment via WeChat Pay or Alipay. |
+
+
+
 # 1.10 change
 
 - [x] 我们对网站的Name change section进行了修改
