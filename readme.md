@@ -34,14 +34,14 @@
 | ![image-20260111120512293](readme.assets/image-20260111120512293.png) | ![image-20260111120522925](readme.assets/image-20260111120522925.png) |
 
 - [x] 统一了所有的Summer School
-- [x]  Organisers are not liable for damages/losses if the conference is cancelled due to force majeure.→The organizers are not liable for any damages or losses should the conference be canceled due to force majeure.
+- [x]  Organisers are not liable for damages/losses if the conference is cancelled due to force majeure.→The organizers are not liable for any damages or losses in the event that the conference is canceled due to force majeure.
 - [x] China's previous "the" has all been removed.
 
 | before                                                       | after                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![image-20260111135235272](readme.assets/image-20260111135235272.png ) | ![image-20260111135245300](readme.assets/image-20260111135245300.png) |
-| **Taxis**: Extensive routes, some directly reaching scenic spots, with fares CNY 1-2, and seamless transfers to the subway system. | **Taxis**: Taxis are readily available at the airport. The fare to the city center is typically between CNY 80–120, depending on the distance and traffic. |
-| **Payment Methods**: WeChat Pay and Alipay are widely accepted everywhere. Visa, Mastercard, and UnionPay are accepted at hotels and most local merchants. | **Payment Methods**: WeChat Pay and Alipay are widely accepted everywhere. Visa, Mastercard, and UnionPay are accepted at hotels and most local merchants. <br/>&#9;**Tip**: You may link an international credit card (e.g., Visa or Mastercard) to a supported payment app before arrival for direct payment via WeChat Pay or Alipay. |
+| **Taxis**: Extensive routes, some directly reaching scenic spots, with fares CNY 1-2, and seamless transfers to the subway system. | Taxis are readily available at the airport. The fare to the city center typically ranges from CNY 80 to CNY 120, depending on distance and traffic conditions. |
+| **Payment Methods**: WeChat Pay and Alipay are widely accepted everywhere. Visa, Mastercard, and UnionPay are accepted at hotels and most local merchants. | **Payment Methods**: WeChat Pay and Alipay are widely accepted everywhere. Visa, Mastercard, and UnionPay are accepted at hotels and most local merchants. You may link an international credit card (e.g., Visa or Mastercard) to a supported payment app before arrival for direct payment via WeChat Pay or Alipay. |
 
 
 
