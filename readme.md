@@ -11,7 +11,7 @@
 | in series overview                                           |                                                              |
 | spear-headed                                                 | spearheaded                                                  |
 | the Jilin University                                         | Jilin University                                             |
-| during August 24-28                                          | fron 24–28 August                                            |
+| during August 24-28                                          | from 24–28 August                                            |
 | ![image-20260111113242991](readme.assets/image-20260111113242991.png) | ![image-20260111113253054](readme.assets/image-20260111113253054.png) |
 | 2026 program                                                 |                                                              |
 | will have eight... to provide                                | will feature... providing                                    |
