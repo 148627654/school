@@ -30,7 +30,7 @@
 | entry into the China                                         | entry into China                                             |
 | You will receive an confirmation email                       | You will receive a confirmation email                        |
 | within 14 days after                                         | within 14 days of                                            |
-| You will receive an confirmation email that the registration has been received, which contains all payment details. | You will receive a confirmation email acknowledging that your registration has been received. This email will contain all necessary payment details. |
+| You will receive an confirmation email that the registration has been received, which contains all payment details. | You will receive a confirmation email acknowledging your registration, which will include all necessary payment details. |
 | ![image-20260111120512293](readme.assets/image-20260111120512293.png) | ![image-20260111120522925](readme.assets/image-20260111120522925.png) |
 
 - [x] 统一了所有的Summer School
