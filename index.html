@@ -2469,77 +2469,151 @@
 	</section> -->
 
 	<!-- 吉林大学介绍 区 -->
-	<section id="service" class="schedule">
-		<div class="container">
-			<div class="section-header">
-				<h2 style="text-transform: none;">About the Organizer</h2>
-			</div><!-- 结束：section-header -->
+<section id="service" class="schedule about-organizer">
+  <div class="container">
 
-			<!-- 2x2四宫格布局：左上角图片（完全居中），其余三个区域放内容 -->
-			<div class="row g-4 mb-5">
-				<!-- 2. 右上角：内容区域1 -->
-				<div class="col-md-6 col-sm-12">
-					<div class="h-100 p-4 bg-light rounded-5 shadow-sm">
-						<div class="single-service-img">
-							<img src="assets\images\JLU.jpg" alt="JLU" width="70%" height="70%">
-						</div>
-					</div>
-				</div>
-				<!-- 2. 右上角：内容区域1 -->
-				<div class="col-md-6 col-sm-12">
-					<div class="h-100 p-4 bg-light rounded-5 shadow-sm">
-						<div class="single-service-item">
-							<div class="single-service-icon">
-								<i class="flaticon-graduation-cap"></i>
-							</div>
-							<h2><a href="#">Rich <span>history</span></a></h2>
-							<p style="text-align: justify; text-justify: inter-word;">
-								Founded in 1946, Jilin University (JLU) is one of China's key comprehensive universities
-								under the direct administration of the Ministry of Education. It has developed a
-								multidisciplinary system covering 13 major fields including philosophy, economics, law,
-								science, engineering, medicine, and management.
-							</p>
-						</div>
-					</div>
-				</div>
+    <div class="section-header text-center mb-5">
+      <h2 style="text-transform: none;">About the Organizer</h2>
+    </div>
 
-				<!-- 3. 左下角：内容区域2 -->
-				<div class="col-md-6 col-sm-12">
-					<div class="h-100 p-4 bg-light rounded-5 shadow-sm">
-						<div class="single-service-item">
-							<div class="single-service-icon">
-								<i class="flaticon-graduation-cap"></i>
-							</div>
-							<h2><a href="#">academic <span>excellence</span></a></h2>
-							<p style="text-align: justify; text-justify: inter-word;">
-								Jilin University boasts a team of distinguished faculty members, including academicians
-								of the Chinese Academy of Sciences and Engineering. It has state-of-the-art research
-								facilities and fosters a vibrant academic community that promotes innovation and
-								collaboration.
-							</p>
-						</div>
-					</div>
-				</div>
+    <div class="about-grid">
 
-				<!-- 4. 右下角：内容区域3 -->
-				<div class="col-md-6 col-sm-12">
-					<div class="h-100 p-4 bg-light rounded-5 shadow-sm">
-						<div class="single-service-item">
-							<div class="single-service-icon">
-								<i class="flaticon-globe"></i>
-							</div>
-							<h2><a href="#">international <span>cooperation</span></a></h2>
-							<p style="text-align: justify; text-justify: inter-word;">
-								JLU has established cooperative relationships with over 300 universities and research
-								institutions worldwide. It promotes student exchange programs, joint research projects,
-								and academic seminars, fostering a global perspective among students and faculty.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+      <!-- 左上：图片（语义固定） -->
+      <div class="about-card about-image">
+        <img src="assets/images/JLU.jpg" alt="Jilin University">
+      </div>
+
+      <!-- 右上 -->
+      <div class="about-card">
+        <div class="about-icon">
+          <i class="flaticon-graduation-cap"></i>
+        </div>
+        <h3>Rich <span>history</span></h3>
+        <p>
+          Founded in 1946, Jilin University (JLU) is one of China's key comprehensive
+          universities under the direct administration of the Ministry of Education.
+          It covers 13 major disciplines including science, engineering, medicine,
+          and humanities.
+        </p>
+      </div>
+
+      <!-- 左下 -->
+      <div class="about-card">
+        <div class="about-icon">
+          <i class="flaticon-graduation-cap"></i>
+        </div>
+        <h3>Academic <span>excellence</span></h3>
+        <p>
+          JLU brings together distinguished scholars, including academicians of the
+          Chinese Academy of Sciences and Engineering, supported by advanced research
+          platforms and a collaborative academic environment.
+        </p>
+      </div>
+
+      <!-- 右下 -->
+      <div class="about-card">
+        <div class="about-icon">
+          <i class="flaticon-globe"></i>
+        </div>
+        <h3>International <span>cooperation</span></h3>
+        <p>
+          With partnerships across more than 300 universities worldwide, JLU actively
+          promotes global academic exchange, joint research initiatives, and student
+          mobility programs.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<style>
+	/* ===============================
+   About Organizer – Grid Layout
+   =============================== */
+
+.about-organizer {
+  padding: 100px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+/* 通用卡片样式 */
+.about-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 24px;
+  height: 100%;
+  /* box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease; */
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* 左上角图片卡片（语义锁死） */
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 75%;
+  height: auto;
+}
+
+/* 图标 */
+.about-icon {
+  font-size: 36px;
+  color: #1b4fd8;
+  margin-bottom: 16px;
+}
+
+/* 标题 */
+.about-card h3 {
+  text-align: center;
+  /* font-size: 22px; */
+  margin-bottom: 12px;
+}
+
+.about-card h3 span {
+  /* color: #1b4fd8; */
+  text-transform: none;
+}
+
+/* 正文 */
+.about-card p {
+  color: rgb(129, 137, 152);
+  font-size: 16px;
+  line-height: 1.8;
+  /* font-size: 15px; */
+  /* line-height: 1.7; */
+  color: #818998;
+  text-align: justify;
+}
+
+/* ===============================
+   Responsive
+   =============================== */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image img {
+    max-width: 60%;
+  }
+}
+
+</style>
+
+
 	<!-- 吉林大学介绍 结束 -->
 
 
