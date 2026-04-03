@@ -341,9 +341,9 @@
 		}
 	</style>
 
-	<!-- 日程区 -->
+	<!-- 日程区
 	<section id="schedule" class="service">
-		<!-- <div class="container">
+		<div class="container">
 			<div class="section-header text-center">
 				 <p>august 24-28 2026</p>
 				<h2>event schedule</h2>
@@ -352,10 +352,10 @@
 				<h2 style="text-align: center;">TBD</h2>
 			</div>
 
-		</div> -->
+		</div>
 		<div class="container">
 			<div class="section-header text-center"> 
-				<!-- <p>august 24-28 2026</p> -->
+				 <p>august 24-28 2026</p>
 				<h2>event schedule</h2>
 			</div>
 			<div class="new-cars-content">
@@ -597,8 +597,678 @@
 				</div>
 			</div>
 		</div>
+	</section> -->
+	<!-- 日程区 -->
+	<!-- <section id="schedule" class="service">
+    <div class="container">
+        <div class="section-header text-center"> 
+            <h2>event schedule</h2>
+            <div style="margin: 30px 0; text-align: center;">
+                <button class="schedule-btn active" onclick="showDay(1)">Day 1</button>
+                <button class="schedule-btn" onclick="showDay(2)">Day 2</button>
+                <button class="schedule-btn" onclick="showDay(3)">Day 3</button>
+                <button class="schedule-btn" onclick="showDay(4)">Day 4</button>
+                <button class="schedule-btn" onclick="showDay(5)">Day 5</button>
+                <button class="schedule-btn" onclick="showDay(6)">Day 6</button>
+                <button class="schedule-btn" onclick="showDay(7)">Day 7</button>
+            </div>
+        </div>
+
+        <div class="new-cars-content">
+            <div class="schedule-day" id="day1" style="display:block;">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+                        <div class="new-cars-txt">
+                            <h2><a href="#"><span>24 August </span>day 1</a></h2>
+                            <table class="schedule-table">
+                                <tr>
+                                    <td class="time-col">08:30 - 09:00</td>
+                                    <td>Opening</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Alexey Ignatiev</b><br><b>(SAT)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">10:30 - 11:00</td>
+                                    <td>Coffee Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Alexey Ignatiev</b><br><b>(MaxSAT)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">12:30 - 14:00</td>
+                                    <td>Lunch Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">14:00 - 15:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Peter J. Stuckey</b><br><b>(CP Modelling I)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">15:30 - 16:00</td>
+                                    <td>Coffee Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">16:00 - 17:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Peter J. Stuckey</b><br><b>(CP Modelling II)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">17:30 - 18:30</td>
+                                    <td>Group Photo Session</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">18:30 - 20:30</td>
+                                    <td>Welcome Dinner</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-day" id="day2" style="display:none;">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+                        <div class="new-cars-txt">
+                            <h2><a href="#"><span>25 August</span> day 2</a></h2>
+                            <table class="schedule-table">
+                                <tr class="alt-row">
+                                    <td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Guido Tack</b><br><b>(CP Solvers I)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">10:30 - 11:00</td>
+                                    <td>Coffee Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Guido Tack</b><br><b>(CP Solvers II)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">12:30 - 14:00</td>
+                                    <td>Lunch Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">14:00 - 15:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Emir Demirović</b><br><b>(LCG I)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">15:30 - 16:00</td>
+                                    <td>Coffee Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">16:00 - 17:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Emir Demirović</b><br><b>(LCG II)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">17:30 - 18:30</td>
+                                    <td>Hackathon</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">18:30 - 20:30</td>
+                                    <td>Dinner(Buffet)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-day" id="day3" style="display:none;">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+                        <div class="new-cars-txt">
+                            <h2><a href="#"><span>26 August</span> day 3</a></h2>
+                            <table class="schedule-table">
+                                <tr class="alt-row">
+                                    <td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Tias Guns</b><br><b>(Explanations I)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">10:30 - 11:00</td>
+                                    <td>Coffee Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Tias Guns</b><br><b>(Explanations II)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">12:30 - 14:00</td>
+                                    <td>Lunch Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">14:00 - 15:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Jakob Nordström</b><br><b>(PB Proof Logging I)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">15:30 - 16:00</td>
+                                    <td>Coffee Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">16:00 - 17:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Jakob Nordström</b><br><b>(PB Proof Logging II)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">17:30 - 18:30</td>
+                                    <td>Hackathon</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">18:30 - 20:30</td>
+                                    <td>Dinner(Buffet)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-day" id="day4" style="display:none;">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+                        <div class="new-cars-txt">
+                            <h2><a href="#"><span>27 August</span> day 4</a></h2>
+                            <table class="schedule-table">
+                                <tr class="alt-row">
+                                    <td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Ciaran McCreesh</b><br><b>(CP Proof Logging I)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">10:30 - 11:00</td>
+                                    <td>Coffee Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Ciaran McCreesh</b><br><b>(CP Proof Logging II)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">12:30 - 14:00</td>
+                                    <td>Lunch Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">14:00 - 18:30</td>
+                                    <td>Excursion</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">18:30 - 20:30</td>
+                                    <td>Banquet</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-day" id="day5" style="display:none;">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+                        <div class="new-cars-txt">
+                            <h2><a href="#"><span>28 August</span> day 5</a></h2>
+                            <table class="schedule-table">
+                                <tr class="alt-row">
+                                    <td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Helmut Simonis</b><br><b>(Applications I)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">10:30 - 11:00</td>
+                                    <td>Coffee Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i> Invited talk</small></td>
+                                    <td><b>Helmut Simonis</b><br><b>(Applications II)</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">12:30 - 14:00</td>
+                                    <td>Lunch Break</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">14:00 - 16:30</td>
+                                    <td>Hackathon workshop</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">16:30 - 17:30</td>
+                                    <td>Closing</td>
+                                </tr>
+                                <tr class="alt-row">
+                                    <td class="time-col">18:00 - 20:00</td>
+                                    <td>Dinner(Buffet)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-day" id="day6" style="display:none;">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+                        <div class="new-cars-txt" style="text-align:center; padding:50px 0;">
+                            <h2>Day 6 Schedule</h2>
+                            <p>Coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-day" id="day7" style="display:none;">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+                        <div class="new-cars-txt" style="text-align:center; padding:50px 0;">
+                            <h2>Day 7 Schedule</h2>
+                            <p>Coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+function showDay(day) {
+    document.querySelectorAll('.schedule-day').forEach(el => {
+        el.style.display = 'none';
+    });
+    document.getElementById('day' + day).style.display = 'block';
+    
+    // 按钮高亮
+    document.querySelectorAll('.schedule-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+}
+</script>
+
+<style>
+.schedule-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.schedule-btn.active {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+</style> -->
+	<!-- 日程区 -->
+	<section id="schedule" class="schedule">
+		<div class="container">
+			<div style="margin: 30px 0; text-align: center;">
+				<style>
+					/* 基础按钮样式 - 白底适配+醒目简洁 */
+					.schedule-btn {
+						margin: 0 5px;
+						padding: 8px 16px;
+						border: none;
+						background: #2563eb;
+						/* 主色深一点，白底更醒目 */
+						color: #fff;
+						font-size: 14px;
+						font-weight: 600;
+						/* 加粗字体，提升识别度 */
+						cursor: pointer;
+						border-radius: 4px;
+						letter-spacing: 0.5px;
+						/* 轻微字间距，不拥挤 */
+						box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+						/* 轻阴影，脱离白底更立体 */
+						transition: all 0.2s ease;
+						/* 过渡顺滑，无突兀感 */
+					}
+
+					/* 激活态 - 高对比色，一眼识别 */
+					.schedule-btn.active {
+						background: #dc2626;
+						/* 正红，白底对比强烈 */
+						box-shadow: 0 3px 6px rgba(220, 38, 38, 0.2);
+						/* 激活态阴影随主色变化 */
+					}
+
+					/* 悬浮态 - 微抬+深一点，交互反馈明显 */
+					.schedule-btn:hover {
+						background: #1d4ed8;
+						transform: translateY(-2px);
+						/* 向上微抬，比放大更自然 */
+						box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+					}
+
+					/* 点击态 - 按下效果，符合交互习惯 */
+					.schedule-btn:active {
+						transform: translateY(0);
+						box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+					}
+				</style>
+				<button class="schedule-btn active" onclick="showDay(0)">23 August</button>
+				<button class="schedule-btn" onclick="showDay(1)">24 August Day 1</button>
+				<button class="schedule-btn" onclick="showDay(2)">25 August Day 2</button>
+				<button class="schedule-btn" onclick="showDay(3)">26 August Day 3</button>
+				<button class="schedule-btn" onclick="showDay(4)">27 August Day 4</button>
+				<button class="schedule-btn" onclick="showDay(5)">28 August Day 5</button>
+				<button class="schedule-btn" onclick="showDay(6)">29 August</button>
+			</div>
+		</div>
+
+		<div class="new-cars-content">
+			<!-- 直接展示所有日程，默认只显示第一天 -->
+			<div class="schedule-day" id="day0" style="display:block;">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="new-cars-txt">
+							<h2><a href="#"><span>24 August </span>day 1</a></h2>
+							<table class="schedule-table">
+								<tbody> <!-- 表格主体（语义必须） -->
+									<tr>
+										<td style="color: black;">All day Register & Check-in</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="schedule-day" id="day1" style="display:none;">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="new-cars-txt">
+							<h2><a href="#"><span>24 August </span>day 1</a></h2>
+							<table class="schedule-table">
+								<tr>
+									<td class="time-col">08:30 - 09:00</td>
+									<td>Opening</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Alexey Ignatiev</b><br><b>(SAT)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">10:30 - 11:00</td>
+									<td>Coffee Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Alexey Ignatiev</b><br><b>(MaxSAT)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">12:30 - 14:00</td>
+									<td>Lunch Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">14:00 - 15:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Peter J. Stuckey</b><br><b>(CP Modelling I)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">15:30 - 16:00</td>
+									<td>Coffee Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">16:00 - 17:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Peter J. Stuckey</b><br><b>(CP Modelling II)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">17:30 - 18:30</td>
+									<td>Group Photo Session</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">18:30 - 20:30</td>
+									<td>Welcome Dinner</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="schedule-day" id="day2" style="display:none;">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="new-cars-txt">
+							<h2><a href="#"><span>25 August</span> day 2</a></h2>
+							<table class="schedule-table">
+								<tr class="alt-row">
+									<td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Guido Tack</b><br><b>(CP Solvers I)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">10:30 - 11:00</td>
+									<td>Coffee Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Guido Tack</b><br><b>(CP Solvers II)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">12:30 - 14:00</td>
+									<td>Lunch Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">14:00 - 15:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Emir Demirović</b><br><b>(LCG I)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">15:30 - 16:00</td>
+									<td>Coffee Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">16:00 - 17:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Emir Demirović</b><br><b>(LCG II)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">17:30 - 18:30</td>
+									<td><b>Allen Z. Zhong</b><br><b>(Hackathon)</b></td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">18:30 - 20:30</td>
+									<td>Dinner(Buffet)</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="schedule-day" id="day3" style="display:none;">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="new-cars-txt">
+							<h2><a href="#"><span>26 August</span> day 3</a></h2>
+							<table class="schedule-table">
+								<tr class="alt-row">
+									<td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Tias Guns</b><br><b>(Explanations I)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">10:30 - 11:00</td>
+									<td>Coffee Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Tias Guns</b><br><b>(Explanations II)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">12:30 - 14:00</td>
+									<td>Lunch Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">14:00 - 15:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Jakob Nordström</b><br><b>(PB Proof Logging I)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">15:30 - 16:00</td>
+									<td>Coffee Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">16:00 - 17:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Jakob Nordström</b><br><b>(PB Proof Logging II)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">17:30 - 18:30</td>
+									<td><b>Allen Z. Zhong</b><br><b>(Hackathon)</b></td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">18:30 - 20:30</td>
+									<td>Dinner(Buffet)</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="schedule-day" id="day4" style="display:none;">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="new-cars-txt">
+							<h2><a href="#"><span>27 August</span> day 4</a></h2>
+							<table class="schedule-table">
+								<tr class="alt-row">
+									<td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Ciaran McCreesh</b><br><b>(CP Proof Logging I)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">10:30 - 11:00</td>
+									<td>Coffee Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Ciaran McCreesh</b><br><b>(CP Proof Logging II)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">12:30 - 14:00</td>
+									<td>Lunch Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">14:00 - 18:30</td>
+									<td>Excursion</td>
+								</tr>
+								<tr>
+									<td class="time-col">18:30 - 20:30</td>
+									<td>Banquet</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="schedule-day" id="day5" style="display:none;">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="new-cars-txt">
+							<h2><a href="#"><span>28 August</span> day 5</a></h2>
+							<table class="schedule-table">
+								<tr class="alt-row">
+									<td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Helmut Simonis</b><br><b>(Applications I)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">10:30 - 11:00</td>
+									<td>Coffee Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i>
+											Invited talk</small></td>
+									<td><b>Helmut Simonis</b><br><b>(Applications II)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">12:30 - 14:00</td>
+									<td>Lunch Break</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">14:00 - 16:30</td>
+									<td><b>Allen Z. Zhong</b><br><b>(Hackathon workshop)</b></td>
+								</tr>
+								<tr>
+									<td class="time-col">16:30 - 17:30</td>
+									<td>Closing</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="time-col">18:00 - 20:00</td>
+									<td>Dinner(Buffet)</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 预留 Day6、Day7 空白面板 -->
+			<div class="schedule-day" id="day6" style="display:none;">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<div class="new-cars-txt">
+							<h2><a href="#"><span>29 August </span></a></h2>
+							<table class="schedule-table">
+								<tbody> <!-- 表格主体（语义必须） -->
+									<tr>
+										<td style="color: black;">All day Check-out & Departure</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
 	</section>
 
+	<!-- 日程切换JS -->
+	<script>
+		function showDay(day) {
+			// 隐藏所有天数
+			document.querySelectorAll('.schedule-day').forEach(el => {
+				el.style.display = 'none';
+			});
+			// 显示选中天数
+			document.getElementById('day' + day).style.display = 'block';
+
+			// 按钮高亮
+			document.querySelectorAll('.schedule-btn').forEach(btn => {
+				btn.classList.remove('active');
+			});
+			event.target.classList.add('active');
+		}
+	</script>
+
+	<!-- 按钮样式 -->
+	<style>
+		.schedule-btn {
+			padding: 8px 16px;
+			margin: 0 5px;
+			border: 1px solid #ddd;
+			background: #fff;
+			cursor: pointer;
+			border-radius: 4px;
+			color: black;
+
+		}
+
+		.schedule-btn.active {
+			background: #007bff;
+			color: #fff;
+			border-color: #007bff;
+		}
+	</style>
 
 	<!-- 教师讲座与留言 -->
 	<section id="speakers" class="schedule">
@@ -1006,7 +1676,8 @@
 						<div class="single-featured-cars">
 							<div class="featured-img-box">
 								<div class="featured-cars-img">
-									<img src="assets/images/speakers/Guido Tack.jpeg" alt="Guido Tack" style="width: 100%;">
+									<img src="assets/images/speakers/Guido Tack.jpeg" alt="Guido Tack"
+										style="width: 100%;">
 								</div>
 								<div class="featured-model-info">
 									<p style="font-size: medium;">
@@ -1016,8 +1687,8 @@
 										Monash University<br>
 										Australia
 									</p>
-									<button class="speaker-details-btn" data-target="guido-details" data-row="1" type="button"
-										style=" text-decoration: underline;">View Details</button>
+									<button class="speaker-details-btn" data-target="guido-details" data-row="1"
+										type="button" style=" text-decoration: underline;">View Details</button>
 								</div>
 							</div>
 							<div class="featured-ACP-txt">
@@ -1042,7 +1713,7 @@
 											language and toolchain, and is one of the main developers of the Gecode
 											constraint programming library. His broader research interests include
 											programming languages and computational logic. </p>
-					
+
 									</div>
 								</div>
 							</div>
@@ -1506,46 +2177,46 @@
 				</div>
 
 				<!-- Financial Support / Scholarships -->
-<div class="section-header text-center" style="margin-top: 50px;">
-	<h2>Financial Support</h2>
+				<div class="section-header text-center" style="margin-top: 50px;">
+					<h2>Financial Support</h2>
 
-	<p style="font-size: 16px; line-height: 1.7; text-align: justify; color: inherit;">
-		We offer <strong>partial financial support</strong> to a
-		<strong>limited number</strong> of applicants to assist
-		Summer School participants with demonstrated financial need,
-		particularly those traveling long distances.
-		Financial support is awarded on a
-		<strong>first-come, first-served basis</strong>, subject to availability.
-	</p>
+					<p style="font-size: 16px; line-height: 1.7; text-align: justify; color: inherit;">
+						We offer <strong>partial financial support</strong> to a
+						<strong>limited number</strong> of applicants to assist
+						Summer School participants with demonstrated financial need,
+						particularly those traveling long distances.
+						Financial support is awarded on a
+						<strong>first-come, first-served basis</strong>, subject to availability.
+					</p>
 
-	<p style="font-size: 16px; line-height: 1.7; text-align: justify; color: inherit;">
-		If you wish to be considered for financial support, you must
-		complete the relevant sections of the registration form fully and accurately,
-		as all decisions are based solely on the information provided during registration.
-		Evaluation may consider factors such as travel distance, academic background,
-		career stage, and motivation for attending the Summer School.
-	</p>
+					<p style="font-size: 16px; line-height: 1.7; text-align: justify; color: inherit;">
+						If you wish to be considered for financial support, you must
+						complete the relevant sections of the registration form fully and accurately,
+						as all decisions are based solely on the information provided during registration.
+						Evaluation may consider factors such as travel distance, academic background,
+						career stage, and motivation for attending the Summer School.
+					</p>
 
-	<p style="font-size: 16px; line-height: 1.7; text-align: justify; color: inherit;">
-		You will be notified of the financial support decision
-		<strong>within 14 days after completing registration</strong>.
-	</p>
+					<p style="font-size: 16px; line-height: 1.7; text-align: justify; color: inherit;">
+						You will be notified of the financial support decision
+						<strong>within 14 days after completing registration</strong>.
+					</p>
 
-	<p style="font-size: 16px; line-height: 1.7; text-align: justify; color: inherit;">
-		If financial support is granted, it will be provided
-		<strong>in the form of reimbursement </strong>upon on-site registration at the Summer School.
-		Recipients must complete the registration payment in advance
-		and will be granted an
-		<strong>additional 14-day payment period</strong>.
-		<span style="color: #e53e3e; font-weight: 600;text-transform: none;">
-			Failure to do so
-		</span>
-		will result in the
-		<span style="color: #e53e3e; font-weight: 600;">
-			automatic withdrawal of the financial support offer
-		</span>.
-	</p>
-</div>
+					<p style="font-size: 16px; line-height: 1.7; text-align: justify; color: inherit;">
+						If financial support is granted, it will be provided
+						<strong>in the form of reimbursement </strong>upon on-site registration at the Summer School.
+						Recipients must complete the registration payment in advance
+						and will be granted an
+						<strong>additional 14-day payment period</strong>.
+						<span style="color: #e53e3e; font-weight: 600;text-transform: none;">
+							Failure to do so
+						</span>
+						will result in the
+						<span style="color: #e53e3e; font-weight: 600;">
+							automatic withdrawal of the financial support offer
+						</span>.
+					</p>
+				</div>
 
 
 			</div>
