@@ -898,74 +898,65 @@ function showDay(day) {
 	<!-- 日程区 -->
 	<section id="schedule" class="schedule">
 		<div class="container">
-			<div style="margin: 30px 0; text-align: center;">
-				<style>
-					/* 基础按钮样式 - 白底适配+醒目简洁 */
-					.schedule-btn {
-						margin: 0 5px;
-						padding: 8px 16px;
-						border: none;
-						background: #2563eb;
-						/* 主色深一点，白底更醒目 */
-						color: #fff;
-						font-size: 14px;
-						font-weight: 600;
-						/* 加粗字体，提升识别度 */
-						cursor: pointer;
-						border-radius: 4px;
-						letter-spacing: 0.5px;
-						/* 轻微字间距，不拥挤 */
-						box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-						/* 轻阴影，脱离白底更立体 */
-						transition: all 0.2s ease;
-						/* 过渡顺滑，无突兀感 */
-					}
+			<div style="margin: 30px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; align-items: center;">
+    <style>
+        /* 基础按钮样式 - 白底适配+醒目简洁 */
+        .schedule-btn {
+            padding: 8px 6px;
+            border: none;
+            background: #2563eb;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+            white-space: nowrap; /* 防止按钮内文字换行 */
+        }
 
-					/* 激活态 - 高对比色，一眼识别 */
-					.schedule-btn.active {
-						background: #dc2626;
-						/* 正红，白底对比强烈 */
-						box-shadow: 0 3px 6px rgba(220, 38, 38, 0.2);
-						/* 激活态阴影随主色变化 */
-					}
+        /* 激活态 - 高对比色，一眼识别 */
+        .schedule-btn.active {
+            background: #dc2626;
+            box-shadow: 0 3px 6px rgba(220, 38, 38, 0.2);
+        }
 
-					/* 悬浮态 - 微抬+深一点，交互反馈明显 */
-					.schedule-btn:hover {
-						background: #1d4ed8;
-						transform: translateY(-2px);
-						/* 向上微抬，比放大更自然 */
-						box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-					}
+        /* 悬浮态 - 微抬+深一点，交互反馈明显 */
+        .schedule-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
 
-					/* 点击态 - 按下效果，符合交互习惯 */
-					.schedule-btn:active {
-						transform: translateY(0);
-						box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-					}
-				</style>
-				<button class="schedule-btn active" onclick="showDay(0)">23 August</button>
-				<button class="schedule-btn" onclick="showDay(1)">24 August Day 1</button>
-				<button class="schedule-btn" onclick="showDay(2)">25 August Day 2</button>
-				<button class="schedule-btn" onclick="showDay(3)">26 August Day 3</button>
-				<button class="schedule-btn" onclick="showDay(4)">27 August Day 4</button>
-				<button class="schedule-btn" onclick="showDay(5)">28 August Day 5</button>
-				<button class="schedule-btn" onclick="showDay(6)">29 August</button>
-			</div>
+        /* 点击态 - 按下效果，符合交互习惯 */
+        .schedule-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <button class="schedule-btn active" onclick="showDay(0)">23 Aug.</button>
+    <button class="schedule-btn" onclick="showDay(1)">24 Aug. Day 1</button>
+    <button class="schedule-btn" onclick="showDay(2)">25 Aug. Day 2</button>
+    <button class="schedule-btn" onclick="showDay(3)">26 Aug. Day 3</button>
+    <button class="schedule-btn" onclick="showDay(4)">27 Aug. Day 4</button>
+    <button class="schedule-btn" onclick="showDay(5)">28 Aug. Day 5</button>
+    <button class="schedule-btn" onclick="showDay(6)">29 Aug.</button>
+</div>
 		</div>
 
 		<div class="new-cars-content">
 			<!-- 直接展示所有日程，默认只显示第一天 -->
 			<div class="schedule-day" id="day0" style="display:block;">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="col-md-6 col-md-offset-3 col-sm-12">
 						<div class="new-cars-txt">
-							<h2><a href="#"><span>24 August </span>day 1</a></h2>
+							<h2><a href="#"><span>23 August </span></a></h2>
 							<table class="schedule-table">
-								<tbody> <!-- 表格主体（语义必须） -->
-									<tr>
-										<td style="color: black;">All day Register & Check-in</td>
-									</tr>
-								</tbody>
+								<tr>
+										<td class="time-col">TBD</td>
+										<td>Register & Check-in</td>
+								</tr>
 							</table>
 						</div>
 					</div>
@@ -973,7 +964,7 @@ function showDay(day) {
 			</div>
 			<div class="schedule-day" id="day1" style="display:none;">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="col-md-6 col-md-offset-3 col-sm-12">
 						<div class="new-cars-txt">
 							<h2><a href="#"><span>24 August </span>day 1</a></h2>
 							<table class="schedule-table">
@@ -982,9 +973,9 @@ function showDay(day) {
 									<td>Opening</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i>
+									<td class="time-col" style="color: #4b5563;">09:00 - 10:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>Alexey Ignatiev</b><br><b>(SAT)</b></td>
+									<td><b style="color: #111827;">Efficient Computing with SAT I</b><br><b><p style="color: #2563eb !important;">Alexey Ignatiev</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">10:30 - 11:00</td>
@@ -993,7 +984,7 @@ function showDay(day) {
 								<tr class="alt-row">
 									<td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Alexey Ignatiev</b><br><b>(MaxSAT)</b></td>
+									<td><b style="color: #111827;">Efficient Computing with SAT II</b><br><b><p style="color: #2563eb !important;">Alexey Ignatiev</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">12:30 - 14:00</td>
@@ -1002,7 +993,7 @@ function showDay(day) {
 								<tr class="alt-row">
 									<td class="time-col">14:00 - 15:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Peter J. Stuckey</b><br><b>(CP Modelling I)</b></td>
+									<td><b>Modelling Discrete Optimisation Problems I</b><br><b><p style="color: #2563eb !important;">Peter J. Stuckey</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">15:30 - 16:00</td>
@@ -1011,7 +1002,7 @@ function showDay(day) {
 								<tr class="alt-row">
 									<td class="time-col">16:00 - 17:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Peter J. Stuckey</b><br><b>(CP Modelling II)</b></td>
+									<td><b>Modelling Discrete Optimisation Problems II</b><br><b><p style="color: #2563eb !important;">Peter J. Stuckey</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">17:30 - 18:30</td>
@@ -1029,14 +1020,14 @@ function showDay(day) {
 
 			<div class="schedule-day" id="day2" style="display:none;">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="col-md-6 col-md-offset-3 col-sm-12">
 						<div class="new-cars-txt">
 							<h2><a href="#"><span>25 August</span> day 2</a></h2>
 							<table class="schedule-table">
 								<tr class="alt-row">
 									<td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Guido Tack</b><br><b>(CP Solvers I)</b></td>
+									<td><b>Fundamentals of Constraint Programming Solvers I</b><br><b><p style="color: #2563eb !important;">Guido Tack</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">10:30 - 11:00</td>
@@ -1045,7 +1036,7 @@ function showDay(day) {
 								<tr class="alt-row">
 									<td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Guido Tack</b><br><b>(CP Solvers II)</b></td>
+									<td><b>Fundamentals of Constraint Programming Solvers II</b><br><b><p style="color: #2563eb !important;">Guido Tack</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">12:30 - 14:00</td>
@@ -1054,7 +1045,7 @@ function showDay(day) {
 								<tr class="alt-row">
 									<td class="time-col">14:00 - 15:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Emir Demirović</b><br><b>(LCG I)</b></td>
+									<td><b>LCG Solving I</b><br><b><p style="color: #2563eb !important;">Emir Demirović</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">15:30 - 16:00</td>
@@ -1063,11 +1054,11 @@ function showDay(day) {
 								<tr class="alt-row">
 									<td class="time-col">16:00 - 17:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Emir Demirović</b><br><b>(LCG II)</b></td>
+									<td><b>LCG Solving II</b><br><b><p style="color: #2563eb !important;">Emir Demirović</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">17:30 - 18:30</td>
-									<td><b>Allen Z. Zhong</b><br><b>(Hackathon)</b></td>
+									<td><b>Hackathon</b><br><b><p style="color: #2563eb !important;">Allen Z. Zhong</p></b></td>
 								</tr>
 								<tr class="alt-row">
 									<td class="time-col">18:30 - 20:30</td>
@@ -1081,14 +1072,14 @@ function showDay(day) {
 
 			<div class="schedule-day" id="day3" style="display:none;">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="col-md-6 col-md-offset-3 col-sm-12">
 						<div class="new-cars-txt">
 							<h2><a href="#"><span>26 August</span> day 3</a></h2>
 							<table class="schedule-table">
 								<tr class="alt-row">
 									<td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Tias Guns</b><br><b>(Explanations I)</b></td>
+									<td><b>Explainable Constraint Programming I</b><br><b><p style="color: #2563eb !important;">Tias Guns</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">10:30 - 11:00</td>
@@ -1097,7 +1088,7 @@ function showDay(day) {
 								<tr class="alt-row">
 									<td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Tias Guns</b><br><b>(Explanations II)</b></td>
+									<td><b>Explainable Constraint Programming II</b><br><b><p style="color: #2563eb !important;">Tias Guns</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">12:30 - 14:00</td>
@@ -1106,7 +1097,7 @@ function showDay(day) {
 								<tr class="alt-row">
 									<td class="time-col">14:00 - 15:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Jakob Nordström</b><br><b>(PB Proof Logging I)</b></td>
+									<td><b>The Joy of Pseudo-Boolean Proof Logging I</b><br><b><p style="color: #2563eb !important;">Jakob Nordström</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">15:30 - 16:00</td>
@@ -1115,11 +1106,11 @@ function showDay(day) {
 								<tr class="alt-row">
 									<td class="time-col">16:00 - 17:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Jakob Nordström</b><br><b>(PB Proof Logging II)</b></td>
+									<td><b>The Joy of Pseudo-Boolean Proof Logging II</b><br><b><p style="color: #2563eb !important;">Jakob Nordström</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">17:30 - 18:30</td>
-									<td><b>Allen Z. Zhong</b><br><b>(Hackathon)</b></td>
+									<td><b>Hackathon</b><br><b><p style="color: #2563eb !important;">Allen Z. Zhong</p></b></td>
 								</tr>
 								<tr class="alt-row">
 									<td class="time-col">18:30 - 20:30</td>
@@ -1133,14 +1124,14 @@ function showDay(day) {
 
 			<div class="schedule-day" id="day4" style="display:none;">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="col-md-6 col-md-offset-3 col-sm-12">
 						<div class="new-cars-txt">
 							<h2><a href="#"><span>27 August</span> day 4</a></h2>
 							<table class="schedule-table">
 								<tr class="alt-row">
 									<td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Ciaran McCreesh</b><br><b>(CP Proof Logging I)</b></td>
+									<td><b>Proof Logging for Constraint Programming I</b><br><b><p style="color: #2563eb !important;">Ciaran McCreesh</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">10:30 - 11:00</td>
@@ -1149,7 +1140,7 @@ function showDay(day) {
 								<tr class="alt-row">
 									<td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Ciaran McCreesh</b><br><b>(CP Proof Logging II)</b></td>
+									<td><b>Proof Logging for Constraint Programming II</b><br><b><p style="color: #2563eb !important;">Ciaran McCreesh</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">12:30 - 14:00</td>
@@ -1171,14 +1162,14 @@ function showDay(day) {
 
 			<div class="schedule-day" id="day5" style="display:none;">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="col-md-6 col-md-offset-3 col-sm-12">
 						<div class="new-cars-txt">
 							<h2><a href="#"><span>28 August</span> day 5</a></h2>
 							<table class="schedule-table">
 								<tr class="alt-row">
 									<td class="time-col">09:00 - 10:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Helmut Simonis</b><br><b>(Applications I)</b></td>
+									<td><b>Applications, Real-world Examples and Success Stories I</b><br><b><p style="color: #2563eb !important;">Helmut Simonis</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">10:30 - 11:00</td>
@@ -1187,7 +1178,7 @@ function showDay(day) {
 								<tr class="alt-row">
 									<td class="time-col">11:00 - 12:30 <br> <small><i class="fa fa-microphone"></i>
 											Invited talk</small></td>
-									<td><b>Helmut Simonis</b><br><b>(Applications II)</b></td>
+									<td><b>Applications, Real-world Examples and Success Stories II</b><br><b><p style="color: #2563eb !important;">Helmut Simonis</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">12:30 - 14:00</td>
@@ -1195,7 +1186,7 @@ function showDay(day) {
 								</tr>
 								<tr class="alt-row">
 									<td class="time-col">14:00 - 16:30</td>
-									<td><b>Allen Z. Zhong</b><br><b>(Hackathon workshop)</b></td>
+									<td><b>Hackathon workshop</b><br><b><p style="color: #2563eb !important;">Allen Z. Zhong</p></b></td>
 								</tr>
 								<tr>
 									<td class="time-col">16:30 - 17:30</td>
@@ -1214,15 +1205,14 @@ function showDay(day) {
 			<!-- 预留 Day6、Day7 空白面板 -->
 			<div class="schedule-day" id="day6" style="display:none;">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="col-md-6 col-md-offset-3 col-sm-12">
 						<div class="new-cars-txt">
 							<h2><a href="#"><span>29 August </span></a></h2>
 							<table class="schedule-table">
-								<tbody> <!-- 表格主体（语义必须） -->
-									<tr>
-										<td style="color: black;">All day Check-out & Departure</td>
-									</tr>
-								</tbody>
+								<tr>
+										<td class="time-col">TBD</td>
+										<td>Check-out & Departure</td>
+								</tr>
 							</table>
 						</div>
 					</div>

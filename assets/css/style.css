@@ -1005,8 +1005,8 @@ nav.navbar.bootsnav ul.nav > li > a {
 /* 日程表格样式 */
 .schedule-container {
     margin: 30px auto;
-    max-width: 800px;
-    width: 100%;
+    max-width: 500px;
+    width: 70%;
 }
 
 .schedule-table {
@@ -1019,13 +1019,17 @@ nav.navbar.bootsnav ul.nav > li > a {
     padding: 15px 20px;
     border-bottom: 1px solid #e0e0e0;
     vertical-align: top;
+    color: #000000;
+    text-align: center;
 }
 
 .schedule-table .time-col {
     width: 25%;
     font-weight: 600;
-    color: #4e4ffa;
-    border-right: 2px solid #4e4ffa;
+    /* color: #2563eb; */
+    color: #4b5563;
+    border-right: 2px solid #ffffff;
+    text-align: center;
 }
 
 .schedule-table tr:last-child td {
@@ -1037,7 +1041,7 @@ nav.navbar.bootsnav ul.nav > li > a {
 }
 
 .schedule-table strong {
-    color: #2a2d54;
+    color: #000000;
     font-size: 16px;
 }
 
