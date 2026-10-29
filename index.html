@@ -77,9 +77,9 @@
 
 						<!-- 头部导航 -->
 						<!-- <div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse"
-								data-target="#navbar-menu">
-								<i class="fa fa-bars"></i>
+											<button type="button" class="navbar-toggle" data-toggle="collapse"
+												data-target="#navbar-menu">
+												<i class="fa fa-bars"></i>
 							</button>
 							<a class="navbar-brand" href="index.html">ACP Summer School 2026</a>
 
@@ -902,52 +902,54 @@ function showDay(day) {
 				<!-- <h2 style="margin-bottom: -20px;">About the Summer School</h2> -->
 				<h2>event schedule</h2>
 			</div><!-- 结束：section-header -->
-			<div style="margin: 30px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; align-items: center;">
-    <style>
-        /* 基础按钮样式 - 白底适配+醒目简洁 */
-        .schedule-btn {
-            padding: 8px 6px;
-            border: none;
-            background: #2563eb;
-            color: #fff;
-            font-size: 17px;
-            font-weight: 600;
-            cursor: pointer;
-            border-radius: 4px;
-            letter-spacing: 0.5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: all 0.2s ease;
-            white-space: nowrap; /* 防止按钮内文字换行 */
-        }
+			<div
+				style="margin: 30px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; align-items: center;">
+				<style>
+					/* 基础按钮样式 - 白底适配+醒目简洁 */
+					.schedule-btn {
+						padding: 8px 6px;
+						border: none;
+						background: #2563eb;
+						color: #fff;
+						font-size: 17px;
+						font-weight: 600;
+						cursor: pointer;
+						border-radius: 4px;
+						letter-spacing: 0.5px;
+						box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+						transition: all 0.2s ease;
+						white-space: nowrap;
+						/* 防止按钮内文字换行 */
+					}
 
-        /* 激活态 - 高对比色，一眼识别 */
-        .schedule-btn.active {
-            background: #dc2626;
-            box-shadow: 0 3px 6px rgba(220, 38, 38, 0.2);
-        }
+					/* 激活态 - 高对比色，一眼识别 */
+					.schedule-btn.active {
+						background: #dc2626;
+						box-shadow: 0 3px 6px rgba(220, 38, 38, 0.2);
+					}
 
-        /* 悬浮态 - 微抬+深一点，交互反馈明显 */
-        .schedule-btn:hover {
-            background: #1d4ed8;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        }
+					/* 悬浮态 - 微抬+深一点，交互反馈明显 */
+					.schedule-btn:hover {
+						background: #1d4ed8;
+						transform: translateY(-2px);
+						box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+					}
 
-        /* 点击态 - 按下效果，符合交互习惯 */
-        .schedule-btn:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-	
-    <!-- <button class="schedule-btn active" onclick="showDay(0)">23 Aug.</button> -->
-    <button class="schedule-btn active" onclick="showDay(1)">24 Aug. Day 1</button>
-    <button class="schedule-btn" onclick="showDay(2)">25 Aug. Day 2</button>
-    <button class="schedule-btn" onclick="showDay(3)">26 Aug. Day 3</button>
-    <button class="schedule-btn" onclick="showDay(4)">27 Aug. Day 4</button>
-    <button class="schedule-btn" onclick="showDay(5)">28 Aug. Day 5</button>
-    <!-- <button class="schedule-btn" onclick="showDay(6)">29 Aug.</button> -->
-</div>
+					/* 点击态 - 按下效果，符合交互习惯 */
+					.schedule-btn:active {
+						transform: translateY(0);
+						box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+					}
+				</style>
+
+				<!-- <button class="schedule-btn active" onclick="showDay(0)">23 Aug.</button> -->
+				<button class="schedule-btn active" onclick="showDay(1)">24 Aug. Day 1</button>
+				<button class="schedule-btn" onclick="showDay(2)">25 Aug. Day 2</button>
+				<button class="schedule-btn" onclick="showDay(3)">26 Aug. Day 3</button>
+				<button class="schedule-btn" onclick="showDay(4)">27 Aug. Day 4</button>
+				<button class="schedule-btn" onclick="showDay(5)">28 Aug. Day 5</button>
+				<!-- <button class="schedule-btn" onclick="showDay(6)">29 Aug.</button> -->
+			</div>
 		</div>
 
 		<div class="new-cars-content">
@@ -974,48 +976,70 @@ function showDay(day) {
 							<h2><a href="#"><span>24 August </span>day 1</a></h2>
 							<table class="schedule-table">
 								<tr>
-									<td class="time-col">08:30 - 09:00</td>
+									<td class="time-col">08:00 </td>
+									<td>Departure to Jilin University<br>Gathering at 7:50</td>
+								</tr>
+								<tr>
+									<td class="time-col">9:00 - 09:30</td>
 									<td>Opening</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">09:00 - 10:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">09:30 - 11:00 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b style="color: #111827;">Efficient Computing with SAT I</b><br><b><p style="color: #2563eb !important;">Alexey Ignatiev</p></b></td>
+									<td><b style="color: #111827;">Efficient Computing with SAT I</b><br><b>
+											<p style="color: #2563eb !important;">Alexey Ignatiev</p>
+										</b></td>
 								</tr>
 								<tr>
-									<td class="time-col" style="color: #4b5563;">10:30 - 11:00</td>
+									<td class="time-col" style="color: #4b5563;">11:00 - 11:30</td>
 									<td>Coffee Break</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">11:00 - 12:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">11:30 - 13:00 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b style="color: #111827;">Efficient Computing with SAT II</b><br><b><p style="color: #2563eb !important;">Alexey Ignatiev</p></b></td>
+									<td><b style="color: #111827;">Efficient Computing with SAT II</b><br><b>
+											<p style="color: #2563eb !important;">Alexey Ignatiev</p>
+										</b></td>
 								</tr>
 								<tr>
-									<td class="time-col" style="color: #4b5563;">12:30 - 14:00</td>
+									<td class="time-col" style="color: #4b5563;">13:00 - 14:30</td>
 									<td>Lunch Break</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">14:00 - 15:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">14:30 - 16:00 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>Modelling Discrete Optimisation Problems I</b><br><b><p style="color: #2563eb !important;">Peter J. Stuckey</p></b></td>
+									<td><b>Modelling Discrete Optimisation Problems I</b><br><b>
+											<p style="color: #2563eb !important;">Peter J. Stuckey</p>
+										</b></td>
 								</tr>
 								<tr>
-									<td class="time-col" style="color: #4b5563;">15:30 - 16:00</td>
+									<td class="time-col" style="color: #4b5563;">16:00 - 16:30</td>
 									<td>Coffee Break</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">16:00 - 17:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">16:30 - 18:00 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>Modelling Discrete Optimisation Problems II</b><br><b><p style="color: #2563eb !important;">Peter J. Stuckey</p></b></td>
+									<td><b>Modelling Discrete Optimisation Problems II</b><br><b>
+											<p style="color: #2563eb !important;">Peter J. Stuckey</p>
+										</b></td>
 								</tr>
 								<tr>
-									<td class="time-col" style="color: #4b5563;">17:30 - 18:30</td>
+									<td class="time-col" style="color: #4b5563;">18:00 - 18:30</td>
 									<td>Group Photo Session</td>
 								</tr>
 								<tr class="alt-row">
 									<td class="time-col" style="color: #4b5563;">18:30 - 20:30</td>
-									<td>Welcome Dinner</td>
+									<td>Welcome Dinner<br>
+										<a href="https://www.tripadvisor.com/Restaurant_Review-g297448-d3430420-Reviews-Da_E_Dao_LvSeShengTai_Yuan_Restaurant-Changchun_Jilin.html" style="color:blue;font-size: 16px;">Da E Dao Lv Se Sheng Tai Yuan</a>
+										</td>
 								</tr>
 							</table>
 						</div>
@@ -1030,40 +1054,58 @@ function showDay(day) {
 							<h2><a href="#"><span>25 August</span> day 2</a></h2>
 							<table class="schedule-table">
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">09:00 - 10:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">09:00 - 10:30 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>Fundamentals of Constraint Programming Solvers I</b><br><b><p style="color: #2563eb !important;">Guido Tack</p></b></td>
+									<td><b>Fundamentals of Constraint Programming Solvers I</b><br><b>
+											<p style="color: #2563eb !important;">Guido Tack</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;">10:30 - 11:00</td>
 									<td>Coffee Break</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">11:00 - 12:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">11:00 - 12:30 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>Fundamentals of Constraint Programming Solvers II</b><br><b><p style="color: #2563eb !important;">Guido Tack</p></b></td>
+									<td><b>Fundamentals of Constraint Programming Solvers II</b><br><b>
+											<p style="color: #2563eb !important;">Guido Tack</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;">12:30 - 14:00</td>
 									<td>Lunch Break</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">14:00 - 15:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">14:00 - 15:30 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>LCG Solving I</b><br><b><p style="color: #2563eb !important;">Emir Demirović</p></b></td>
+									<td><b>LCG Solving I</b><br><b>
+											<p style="color: #2563eb !important;">Emir Demirović</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;">15:30 - 16:00</td>
 									<td>Coffee Break</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">16:00 - 17:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">16:00 - 17:30 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>LCG Solving II</b><br><b><p style="color: #2563eb !important;">Emir Demirović</p></b></td>
+									<td><b>LCG Solving II</b><br><b>
+											<p style="color: #2563eb !important;">Emir Demirović</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;">17:30 - 18:30</td>
-									<td><b>Hackathon</b><br><b><p style="color: #2563eb !important;">Allen Z. Zhong</p></b></td>
+									<td><b>Hackathon</b><br><b>
+											<p style="color: #2563eb !important;">Allen Z. Zhong</p>
+										</b></td>
 								</tr>
 								<tr class="alt-row">
 									<td class="time-col" style="color: #4b5563;">18:30 - 20:30</td>
@@ -1082,40 +1124,58 @@ function showDay(day) {
 							<h2><a href="#"><span>26 August</span> day 3</a></h2>
 							<table class="schedule-table">
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">09:00 - 10:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">09:00 - 10:30 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>Explainable Constraint Programming I</b><br><b><p style="color: #2563eb !important;">Tias Guns</p></b></td>
+									<td><b>Explainable Constraint Programming I</b><br><b>
+											<p style="color: #2563eb !important;">Tias Guns</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;">10:30 - 11:00</td>
 									<td>Coffee Break</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">11:00 - 12:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">11:00 - 12:30 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>Explainable Constraint Programming II</b><br><b><p style="color: #2563eb !important;">Tias Guns</p></b></td>
+									<td><b>Explainable Constraint Programming II</b><br><b>
+											<p style="color: #2563eb !important;">Tias Guns</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;">12:30 - 14:00</td>
 									<td>Lunch Break</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">14:00 - 15:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">14:00 - 15:30 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>The Joy of Pseudo-Boolean Proof Logging I</b><br><b><p style="color: #2563eb !important;">Jakob Nordström</p></b></td>
+									<td><b>The Joy of Pseudo-Boolean Proof Logging I</b><br><b>
+											<p style="color: #2563eb !important;">Jakob Nordström</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;">15:30 - 16:00</td>
 									<td>Coffee Break</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">16:00 - 17:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">16:00 - 17:30 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>The Joy of Pseudo-Boolean Proof Logging II</b><br><b><p style="color: #2563eb !important;">Jakob Nordström</p></b></td>
+									<td><b>The Joy of Pseudo-Boolean Proof Logging II</b><br><b>
+											<p style="color: #2563eb !important;">Jakob Nordström</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;	">17:30 - 18:30</td>
-									<td><b>Hackathon</b><br><b><p style="color: #2563eb !important;">Allen Z. Zhong</p></b></td>
+									<td><b>Hackathon</b><br><b>
+											<p style="color: #2563eb !important;">Allen Z. Zhong</p>
+										</b></td>
 								</tr>
 								<tr class="alt-row">
 									<td class="time-col" style="color: #4b5563;">18:30 - 20:30</td>
@@ -1134,18 +1194,26 @@ function showDay(day) {
 							<h2><a href="#"><span>27 August</span> day 4</a></h2>
 							<table class="schedule-table">
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">09:00 - 10:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">09:00 - 10:30 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>Proof Logging for Constraint Programming I</b><br><b><p style="color: #2563eb !important;">Ciaran McCreesh</p></b></td>
+									<td><b>Proof Logging for Constraint Programming I</b><br><b>
+											<p style="color: #2563eb !important;">Ciaran McCreesh</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;">10:30 - 11:00</td>
 									<td>Coffee Break</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">11:00 - 12:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">11:00 - 12:30 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>Proof Logging for Constraint Programming II</b><br><b><p style="color: #2563eb !important;">Ciaran McCreesh</p></b></td>
+									<td><b>Proof Logging for Constraint Programming II</b><br><b>
+											<p style="color: #2563eb !important;">Ciaran McCreesh</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;">12:30 - 14:00</td>
@@ -1172,18 +1240,26 @@ function showDay(day) {
 							<h2><a href="#"><span>28 August</span> day 5</a></h2>
 							<table class="schedule-table">
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">09:00 - 10:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">09:00 - 10:30 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>Applications, Real-world Examples and Success Stories I</b><br><b><p style="color: #2563eb !important;">Helmut Simonis</p></b></td>
+									<td><b>Applications, Real-world Examples and Success Stories I</b><br><b>
+											<p style="color: #2563eb !important;">Helmut Simonis</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;">10:30 - 11:00</td>
 									<td>Coffee Break</td>
 								</tr>
 								<tr class="alt-row">
-									<td class="time-col" style="color: #4b5563;">11:00 - 12:30 <br> <small style="color: #475569;"><i class="fa fa-microphone" style="color: #475569;"></i>
+									<td class="time-col" style="color: #4b5563;">11:00 - 12:30 <br> <small
+											style="color: #475569;"><i class="fa fa-microphone"
+												style="color: #475569;"></i>
 											Invited talk</small></td>
-									<td><b>Applications, Real-world Examples and Success Stories II</b><br><b><p style="color: #2563eb !important;">Helmut Simonis</p></b></td>
+									<td><b>Applications, Real-world Examples and Success Stories II</b><br><b>
+											<p style="color: #2563eb !important;">Helmut Simonis</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;">12:30 - 14:00</td>
@@ -1191,7 +1267,9 @@ function showDay(day) {
 								</tr>
 								<tr class="alt-row">
 									<td class="time-col" style="color: #4b5563;">14:00 - 16:30</td>
-									<td><b>Hackathon workshop</b><br><b><p style="color: #2563eb !important;">Allen Z. Zhong</p></b></td>
+									<td><b>Hackathon workshop</b><br><b>
+											<p style="color: #2563eb !important;">Allen Z. Zhong</p>
+										</b></td>
 								</tr>
 								<tr>
 									<td class="time-col" style="color: #4b5563;">16:30 - 17:30</td>
@@ -1286,6 +1364,9 @@ function showDay(day) {
 								<div class="featured-model-info">
 									<p style="font-size: medium;">
 										<b>Emir Demirović</b>
+										<a href="https://consol-lab.github.io/acp-summer-school-2026/" target="_blank"
+											style="color:#2563eb;font-size:13px;text-decoration:underline;">(Course
+											Materials)</a>
 									</p>
 									<p style="text-transform: none;">
 										Delft University of Technology<br>Netherlands
@@ -1305,7 +1386,7 @@ function showDay(day) {
 									</div>
 									<div style="margin-top: 16px;">
 										<p style="text-align: justify; text-justify: inter-word;"><strong>Topic:
-											</strong>LCG Solving</p>
+                                            </strong>Lazy Clause Generation and Beyond (<a href="https://consol-lab.github.io/acp-summer-school-2026/" target="_blank" style="color:#2563eb;font-size:16px;text-decoration:underline;">Course Materials</a>)</p>
 									</div>
 									<div style="margin-top: 16px;">
 										<p style="text-align: justify; text-justify: inter-word;"><strong>Bio:
@@ -1567,6 +1648,9 @@ function showDay(day) {
 								<div class="featured-model-info">
 									<p style="font-size: medium;">
 										<b>Helmut Simonis</b>
+										<a href="./assets/knowledge/slides.pdf" target="_blank"
+											style="color:#2563eb;font-size:13px;text-decoration:underline;">(Course
+											Materials)</a>
 									</p>
 									<p>
 										University College Cork<br>
@@ -1587,7 +1671,7 @@ function showDay(day) {
 									</div>
 									<div style="margin-top: 16px;">
 										<p style="text-align: justify; text-justify: inter-word;"><strong>Topic:
-											</strong>Applications, Real-world Examples and Success Stories</p>
+											</strong>Applications, Real-world Examples and Success Stories (<a href="./assets/knowledge/slides.pdf" target="_blank" style="color:#2563eb;font-size:16px;text-decoration:underline;">Course Materials</a>)</p>
 									</div>
 									<div style="margin-top: 16px;">
 										<p style="text-align: justify; text-justify: inter-word;"><strong>Bio:
@@ -1737,7 +1821,7 @@ function showDay(day) {
 							</div>
 							<div class="featured-ACP-txt">
 								<div id="allen-details" class="speaker-details" style="display: none;">
-									<h4>About Allen Z. Zhong</h4>
+									<h4>Allen Z. Zhong</h4>
 									<div style="margin-top: 16px;">
 										<p style="text-align: justify; text-justify: inter-word;"><strong>Title and
 												official affiliation: </strong>Lecturer, Monash University
